@@ -15312,7 +15312,7 @@ const planSlider = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"]('.p
     /*Брек-поинты*/
     breakpoints: {
         1400: {
-            slidesPerView: 2,
+            slidesPerView: 2.4,
             spaceBetween: 16,
         },
         // 1300: {
@@ -15363,7 +15363,7 @@ const previewProjectSlider = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["def
     /*Брек-поинты*/
     breakpoints: {
         1400: {
-            slidesPerView: 2,
+            slidesPerView: 2.4,
             spaceBetween: 16,
         },
         // 1300: {
@@ -15414,7 +15414,7 @@ const previewReviewsSlider = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["def
     /*Брек-поинты*/
     breakpoints: {
         1400: {
-            slidesPerView: 3,
+            slidesPerView: 3.7,
             spaceBetween: 16,
         },
         // 1300: {

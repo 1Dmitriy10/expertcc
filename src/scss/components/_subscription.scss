@@ -1,0 +1,133 @@
+.subscription {
+    margin-bottom: clamp-px(64, 160);
+}
+
+
+.subscription__container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    padding: clamp-px(20, 40);
+    background: var(--bg-bg-3);
+
+    @media (width< 1340px) {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    @include respond-to('tab') {
+        gap: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.subscription__icon-wrap {
+    border-radius: 16px;
+    width: 82px;
+    height: 82px;
+    background: var(--bg-white);
+    margin-right: clamp-px(15, 32);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &>svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    @include respond-to('tab') {
+        width: 48px;
+        height: 48px;
+        border-radius: 10px;
+
+        &>svg {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+.subscription-text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: clamp-px(30, 64);
+}
+
+.subscription__title {
+    font-weight: 500;
+    font-size: clamp-px(20, 32);
+    line-height: 125%;
+    color: var(--grays-black);
+}
+
+.subscription__subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--grays-grey-1);
+
+    @include respond-to('tab') {
+        display: none;
+    }
+}
+
+.subscription__form-box {
+    display: flex;
+    flex-direction: column;
+    min-width: 638px;
+    gap: 12px;
+
+    @include respond-to ('tab') {
+        min-width: auto;
+    }
+}
+
+.subscription__form {
+    display: flex;
+    gap: 12px;
+
+    &>input {
+        width: 100%;
+        max-width: 456px;
+        border-radius: 12px;
+        padding: 14px 20px 14px 18px;
+        background: var(--bg-white);
+
+        @include respond-to('tab') {}
+    }
+}
+
+.subscription__btn {
+    width: fit-content;
+    min-width: auto;
+    padding: 17px clamp-px(16, 38);
+}
+
+.subscription__form-agree {
+    font-size: clamp-px(13, 14);
+
+    &>a {
+        font-size: clamp-px(13, 14);
+    }
+}
+
+.subscription__btn-text {
+
+    @include respond-to('tab') {
+        display: none;
+    }
+}
+
+.subscription__btn-icon {
+    display: none;
+
+    @include respond-to('tab') {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

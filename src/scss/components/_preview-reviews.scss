@@ -1,5 +1,6 @@
 .preview-reviews {
     margin-bottom: clamp-px(64, 160);
+    overflow: hidden;
 }
 
 .preview-reviews__container {
@@ -33,6 +34,11 @@
 
 .preview-reviews__slider {
     padding: 10px 0 !important;
+    width: calc(50% + 50vw);
+
+    @include respond-to('tab') {
+        width: auto;
+    }
 }
 
 .preview-reviews__card {

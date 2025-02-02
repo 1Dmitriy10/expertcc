@@ -21,6 +21,14 @@ body {
 
 }
 
+a {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: clamp-px(16, 18);
+    line-height: 156%;
+    color: var(--blue-blue);
+}
+
 /* Для современных браузеров */
 ::placeholder {
     font-weight: 400;
@@ -90,3 +98,5 @@ input[type="search"]::-webkit-search-results-decoration {
 @import "./components/preview-blog";
 @import "./components/preview-news";
 @import "./components/second-form";
+@import "./components/monitoring";
+@import "./components/subscription";

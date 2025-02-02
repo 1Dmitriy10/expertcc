@@ -298,6 +298,7 @@
 
 .preview-business-plan {
     margin-bottom: clamp-px(64, 160);
+    overflow: hidden;
 }
 
 .preview-business-plan__title {
@@ -310,4 +311,9 @@
 
 .plan__slider {
     padding: 5px 0 !important;
+    width: calc(50% + 50vw);
+
+    @include respond-to('tab') {
+        width: auto;
+    }
 }

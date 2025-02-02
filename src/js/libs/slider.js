@@ -87,7 +87,7 @@ const planSlider = new Swiper('.plan__slider', {
     /*Брек-поинты*/
     breakpoints: {
         1400: {
-            slidesPerView: 2,
+            slidesPerView: 2.4,
             spaceBetween: 16,
         },
         // 1300: {
@@ -138,7 +138,7 @@ const previewProjectSlider = new Swiper('.preview-project__slider', {
     /*Брек-поинты*/
     breakpoints: {
         1400: {
-            slidesPerView: 2,
+            slidesPerView: 2.4,
             spaceBetween: 16,
         },
         // 1300: {
@@ -189,7 +189,7 @@ const previewReviewsSlider = new Swiper('.preview-reviews__slider', {
     /*Брек-поинты*/
     breakpoints: {
         1400: {
-            slidesPerView: 3,
+            slidesPerView: 3.7,
             spaceBetween: 16,
         },
         // 1300: {

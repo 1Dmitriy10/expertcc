@@ -1,5 +1,6 @@
 .preview-project {
     margin-bottom: clamp-px(64, 160);
+    overflow: hidden;
 }
 
 .preview-project__container {
@@ -23,9 +24,13 @@
     }
 }
 
-// .preview-project__slider {
-//     padding: 5px 0 !important;
-// }
+.preview-project__slider {
+    width: calc(50% + 50vw);
+
+    @include respond-to('tab') {
+        width: auto;
+    }
+}
 
 .preview-project__card {
     display: flex;
