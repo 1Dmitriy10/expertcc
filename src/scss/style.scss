@@ -1,0 +1,92 @@
+//=============================внешние импорты===================================
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Onest:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+//=============================рутовые стили===================================
+@import "fonts";
+@import "variables";
+@import "mixin";
+@import "reset";
+@import "root";
+@import "typography";
+@import "vendor";
+
+
+//========основные стили============
+body {
+    font-family: var(--font-family);
+
+}
+
+/* Для современных браузеров */
+::placeholder {
+    font-weight: 400;
+    font-size: clamp-px(12, 16);
+    line-height: 150%;
+    color: var(--grays-grey-1);
+    font-family: var(--font-family);
+}
+
+/* WebKit: Chrome, Safari, Opera 15+ */
+::-webkit-input-placeholder {
+    font-weight: 400;
+    font-size: clamp-px(12, 16);
+    line-height: 150%;
+    color: var(--grays-grey-1);
+    font-family: var(--font-family);
+}
+
+/* Firefox 19+ */
+::-moz-placeholder {
+    font-weight: 400;
+    font-size: clamp-px(12, 16);
+    line-height: 150%;
+    color: var(--grays-grey-1);
+    opacity: 1;
+    font-family: var(--font-family);
+}
+
+/* IE 10+, Edge */
+:-ms-input-placeholder {
+    font-weight: 400;
+    font-size: clamp-px(12, 16);
+    line-height: 150%;
+    color: var(--grays-grey-1);
+    font-family: var(--font-family);
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+
+//==================================
+
+
+//================Импорты компонентов=====================
+
+@import "./libs/_stories";
+@import "./components/header";
+@import "./components/footer";
+@import "./components/main-banner";
+@import "./components/_teasers";
+@import "./components/preview-services";
+@import "./components/_preview-industry";
+@import "./components/_preview-business-plan";
+@import "./components/first-form";
+@import "./components/conditions";
+@import "./components/preview-project";
+@import "./components/preview-reviews";
+@import "./components/_why";
+@import "./components/brands";
+@import "./components/preview-about";
+@import "./components/achievements";
+@import "./components/preview-blog";
+@import "./components/preview-news";
+@import "./components/second-form";

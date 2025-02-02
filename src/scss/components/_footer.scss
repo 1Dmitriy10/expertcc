@@ -1,0 +1,296 @@
+.footer {
+    padding: 0 10px;
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: 460px auto auto auto;
+    grid-template-rows: repeat(5, auto);
+    column-gap: 30px;
+    row-gap: 48px;
+    padding: 0 0 60px 0;
+
+    @include respond-to('tab') {
+        column-gap: 20px;
+        row-gap: 30px;
+        grid-template-columns: 1fr;
+    }
+}
+
+.footer__contact-box {
+    grid-row: span 3;
+    padding-right: 100px;
+
+    &>p {
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 162%;
+        color: var(--grays-grey-1);
+
+        &:first-of-type {
+            margin-bottom: 16px;
+        }
+    }
+
+    @include respond-to("nout") {
+        grid-row: span 1;
+        grid-column: span 4;
+        padding-right: 0;
+    }
+
+    @include respond-to('tel') {
+        &>p {
+            display: none;
+        }
+    }
+}
+
+.footer__industries {
+    grid-column: span 2;
+    max-height: 340px;
+
+    &>.footer__menu-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include respond-to('tab') {
+        grid-column: span 4;
+    }
+
+}
+
+.footer__about {
+    @include respond-to('tab') {
+        grid-column: span 4;
+        max-height: 142px;
+
+        &>.footer__menu-list {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+.footer__services {
+    grid-column: span 2;
+    max-height: 280px;
+
+    &>.footer__menu-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include respond-to('tab') {
+        grid-column: span 4;
+    }
+
+    @include respond-to('tel') {
+        grid-column: span 4;
+        max-height: 350px;
+    }
+
+}
+
+.footer__media {
+    @include respond-to('tab') {
+        grid-column: span 4;
+
+        &>.footer__menu-list {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+.footer__documents {
+    grid-column: span 2;
+
+    &>.footer__menu-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+.footer__business {
+    grid-column: 2 / span 3;
+
+    // grid-template-columns: 1fr 1fr;
+    &>.footer__menu-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+
+        &>li {
+            background: var(--bg-7);
+            border-radius: 8px;
+            padding: 8px 16px;
+
+            &>a {
+                font-size: clamp-px(14, 16);
+            }
+        }
+    }
+
+    @include respond-to("nout") {
+        grid-column: span 4;
+
+    }
+
+}
+
+.footer__text-box {
+    grid-column: 2 /span 3;
+
+    @include respond-to("nout") {
+        grid-column: span 4;
+
+    }
+
+}
+
+p.footer__text-box-text {
+    font-weight: 400;
+    font-size: clamp-px(13, 14);
+    line-height: 157%;
+    color: var(--grays-grey-1);
+
+    &:not(:last-child) {
+        margin-bottom: 12px;
+    }
+}
+
+.footer__logo {
+    display: flex;
+    margin-bottom: clamp-px(40, 56);
+
+    @include respond-to('tel') {
+        &>img {
+            width: 278px;
+        }
+    }
+}
+
+.footer__addres {
+    font-weight: 500;
+    font-size: clamp-px(18, 20);
+    line-height: 150%;
+    color: var(--grays-black);
+    margin-bottom: 10px;
+}
+
+.footer__addres-subtitle {
+    font-weight: 400;
+    font-size: clamp-px(15, 16);
+    line-height: 162%;
+    color: var(--grays-grey-1);
+    display: block;
+    margin-bottom: clamp-px(20, 30);
+}
+
+.footer__tel {
+    font-weight: 500;
+    font-size: clamp-px(18, 20);
+    line-height: 150%;
+    color: var(--grays-black);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer__contact-work-clock {
+    font-weight: 400;
+    font-size: clamp-px(15, 16);
+    line-height: 162%;
+    color: var(--grays-grey-1);
+    display: block;
+    margin-bottom: clamp-px(20, 30);
+
+}
+
+.footer__social-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: clamp-px(20, 30);
+
+    &>.footer__tel {
+        margin-bottom: 0;
+        margin-right: 16px;
+    }
+}
+
+.footer__contact-email {
+    font-weight: 400;
+    font-size: clamp-px(16, 18);
+    line-height: 156%;
+    color: var(--grays-black);
+    display: block;
+    margin-bottom: clamp-px(20, 30);
+}
+
+.footer__btn-box {
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.footer__btn {
+    margin-right: 20px;
+}
+
+.footer__social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    background: var(--bg-7);
+
+    &:first-of-type {
+        margin-right: 8px;
+    }
+}
+
+.footer__column-title {
+
+    font-weight: 500;
+    font-size: clamp-px(16, 18);
+    line-height: 156%;
+    color: var(--grays-black);
+    margin-bottom: clamp-px(16, 20);
+}
+
+.footer__menu-list {
+    display: grid;
+    gap: clamp-px(14, 16);
+
+    &>li {
+        >a {
+            transition: 0.3s;
+            font-weight: 400;
+            font-size: clamp-px(15, 18);
+            line-height: 156%;
+            color: var(--grays-grey);
+        }
+
+        &:hover {
+            >a {
+                transition: 0.3s;
+
+                color: var(--blue-blue);
+            }
+        }
+    }
+}
+
+.footer__text-box-mob {
+    display: none;
+
+    @include respond-to('tel') {
+        display: block;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 154%;
+        color: var(--grays-grey-1);
+
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+}

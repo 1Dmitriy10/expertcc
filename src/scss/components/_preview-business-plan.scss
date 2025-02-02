@@ -1,0 +1,313 @@
+.category-link {
+    border-radius: 12px;
+    padding: 10px 16px;
+    background: var(--bg-bg-1);
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    gap: clamp-px(4, 6);
+    border: 2px solid transparent;
+    transition: 0.3s;
+
+    &.active {
+        border: 2px solid var(--blue-blue);
+        transition: 0.3s;
+    }
+
+    @include respond-to('pc-old') {
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+    }
+}
+
+.category-link__name {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: clamp-px(15, 16);
+    line-height: 162%;
+    color: var(--grays-black);
+}
+
+.category-link__count {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: clamp-px(15, 16);
+    line-height: 147%;
+    color: var(--grays-grey-1);
+}
+
+.plan__tabs-item-category-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: clamp-px(20, 32);
+
+    @include respond-to("pc-old") {
+        flex-wrap: nowrap;
+        scroll-snap-type: x mandatory;
+        overflow-x: auto;
+        // -----цвет скрола
+        scrollbar-color: var(--blue-blue) transparent;
+        scrollbar-width: thin;
+        padding-bottom: 10px;
+    }
+}
+
+.plan__tabs-title-box {
+    margin-bottom: 32px;
+    align-items: flex-end;
+
+    @include respond-to("tab") {
+        gap: 8px;
+    }
+}
+
+.plan__tabs__title {
+    font-weight: 500;
+    font-size: clamp-px(20, 32);
+    line-height: 125%;
+    color: #7587ae;
+    border: none;
+    padding: 0;
+    padding-bottom: 6px;
+
+    &::after {
+        content: "/";
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 125%;
+        color: #7587ae;
+        margin-left: 20px;
+
+        @include respond-to("tel") {
+            content: none;
+        }
+    }
+
+    &:last-child {
+        &::after {
+            content: ">";
+            font-size: 24px;
+
+            @include respond-to("tel") {
+                content: none;
+            }
+        }
+
+
+    }
+
+    &.active {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: clamp-px(28, 56);
+        border: none;
+        background-color: transparent;
+        color: var(--grays-black);
+        padding-bottom: 0;
+    }
+
+    &:hover {
+        border: none;
+        background-color: transparent;
+    }
+}
+
+.plan__tabs-item {
+    &.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+.block-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.business-plan-card {
+    flex: 0 1 calc((100% - 16px * 1) / 2);
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+    column-gap: clamp-px(16, 32);
+    border: 1px solid var(--bg-bg-1);
+    border-radius: 24px;
+    padding: 32px;
+    box-shadow: 0 4px 16px 0 rgba(0, 51, 153, 0.06), 0 2px 2px 0 rgba(0, 51, 153, 0.06);
+    background: var(--bg-white);
+
+    @include respond-to('nout') {
+        grid-template-columns: 150px 1fr;
+        grid-template-rows: auto auto;
+        padding: 20px;
+    }
+
+    @include respond-to('tel') {
+        grid-template-columns: 90px 1fr;
+    }
+}
+
+.business-plan-card__img-wrap {
+    grid-row: span 2;
+    border-radius: 12px;
+    width: 200px;
+    height: 280px;
+    background: var(--bg-bg-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include respond-to('nout') {
+        grid-row: span 1;
+        width: 150px;
+        height: 180px;
+
+    }
+
+    @include respond-to('tel') {
+        width: 90px;
+        height: 120px;
+    }
+}
+
+.business-plan-card__img-bg {
+    width: 164px;
+    height: 232px;
+    position: relative;
+
+    @include respond-to('nout') {
+        grid-row: span 1;
+        width: 115px;
+        height: 157px;
+
+    }
+
+    @include respond-to('tel') {
+        width: 70px;
+        height: 96px;
+    }
+}
+
+.business-plan-card__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.business-plan-card__contant-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.business-plan-card__up-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.business-plan-card__title {
+    font-weight: 400;
+    font-size: clamp-px(15, 20);
+    line-height: 150%;
+    color: var(--grays-black);
+    margin-bottom: clamp-px(5, 12);
+}
+
+.business-plan-card__price-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.business-plan-card__price {
+    font-weight: 500;
+    font-size: clamp-px(15, 24);
+    line-height: 133%;
+    color: var(--grays-black);
+    margin-right: 8px;
+
+    @include respond-to('nout') {
+        display: block;
+        width: 100%;
+    }
+}
+
+.business-plan-card__old-price {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    text-decoration: line-through;
+    color: var(--grays-grey-1);
+    margin-right: 8px;
+}
+
+.business-plan-card__sale {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 162%;
+    color: var(--blue-blue);
+}
+
+.business-plan-card__down-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 50px;
+
+    @include respond-to('nout') {
+        grid-column: span 2;
+        gap: 16px 20px;
+
+    }
+}
+
+.business-plan-card__down-row-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.business-plan-card__down-row-item-name {
+    font-weight: 400;
+    font-size: clamp-px(14, 16);
+    line-height: 162%;
+    color: var(--grays-grey-1);
+}
+
+.business-plan-card__down-row-item-value {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: clamp-px(14, 18);
+    line-height: 143%;
+    color: var(--grays-black);
+}
+
+.plan__btn-slider-next {
+    background: var(--bg-bg-1);
+}
+
+.plan__btn-slider-prev {
+    background: var(--bg-bg-1);
+}
+
+
+.preview-business-plan {
+    margin-bottom: clamp-px(64, 160);
+}
+
+.preview-business-plan__title {
+    font-weight: 400;
+    font-size: clamp-px(15, 20);
+    line-height: 150%;
+    color: var(--bg-5);
+    margin-bottom: 16px;
+}
+
+.plan__slider {
+    padding: 5px 0 !important;
+}

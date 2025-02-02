@@ -1,0 +1,110 @@
+.preview-reviews {
+    margin-bottom: clamp-px(64, 160);
+}
+
+.preview-reviews__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.preview-reviews__title-box {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.preview-reviews__title {
+    margin-bottom: clamp-px(20, 40);
+}
+
+.preview-reviews-title-link {
+    @include respond-to('tab') {
+        display: none;
+    }
+}
+
+.preview-reviews-bottom-link {
+    display: none;
+
+    @include respond-to('tab') {
+        display: flex;
+    }
+}
+
+.preview-reviews__slider {
+    padding: 10px 0 !important;
+}
+
+.preview-reviews__card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--bg-bg-1);
+    border-radius: 20px;
+    padding: clamp-px(24, 32) clamp-px(20, 32);
+    min-height: 540px;
+    box-shadow: 0 4px 8px 0 rgba(0, 51, 153, 0.08), 0 8px 20px 0 rgba(0, 51, 153, 0.08);
+    background: var(--bg-white);
+
+    @include respond-to("tab") {
+        min-height: 480px;
+    }
+}
+
+.preview-reviews__card-title {
+    font-weight: 500;
+    font-size: clamp-px(18, 20);
+    line-height: 150%;
+    color: var(--grays-black);
+    margin-bottom: clamp-px(4, 8);
+}
+
+.preview-reviews__card-subtitle {
+    font-weight: 400;
+    font-size: clamp-px(14, 16);
+    line-height: 162%;
+    color: var(--grays-grey-1);
+    margin-bottom: clamp-px(24, 32);
+}
+
+.preview-reviews__card-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: clamp-px(16, 18);
+    line-height: 156%;
+    color: var(--grays-black);
+    margin-bottom: 8px;
+}
+
+.preview-reviews__card-link {
+    margin-bottom: 20px;
+}
+
+.preview-reviews__card-footer {
+    margin-top: auto;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.preview-reviews__card-logo-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 70px;
+    width: 60px;
+    height: 60px;
+    border-radius: 70px;
+    background: #f9fafc;
+}
+
+.preview-reviews__card-logo {
+    width: 36px;
+    height: 36px;
+}
+
+.preview-reviews__card-logo-lable {
+    font-weight: 400;
+    font-size: clamp-px(15, 18);
+    line-height: 156%;
+    color: var(--grays-black);
+}
