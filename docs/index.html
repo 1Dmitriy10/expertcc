@@ -1,0 +1,3843 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="@@description" />
+
+    <!-- --------------------------------Стили-------------------------------- -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- --------------------------------Плагины-------------------------------- -->
+    <link rel="stylesheet" href="./files/font-awesome/css/font-awesome.min.css">
+
+    <!-- --------------------------------фавикон-------------------------------- -->
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="files/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="files/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="files/favicon/favicon-16x16.png">
+    <link rel="manifest" href="files/favicon/site.webmanifest">
+    <link rel="mask-icon" href="files/favicon/safari-pinned-tab.svg" color="#5bbad5"> -->
+
+    <!-- --------------------------------скрипты-------------------------------- -->
+    <script defer type="module" src="assets/js/vendor.js"></script>
+    <script defer type="module" src="assets/js/main.js"></script>
+
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Главная</title>
+</head>
+
+<body>
+    <header class="header">
+    <div class="header__container">
+        <div class="header__topline">
+            <a class="logo header__logo" href="/">
+                <img src="assets/images/icons/Logo.png" alt="" class="logo__img">
+            </a>
+
+            <div class="header__contact-box">
+                <a class="header__contact-tel" href="tel:+74956173902">
+                    +7 (495) 617-39-02
+                </a>
+                <span class="header__contact-work-clock">
+                    пн-пт 09:00-18:00
+                </span>
+                <a class="header__contact-tel header__contact-tel_m" href="tel:+79857609692">
+                    +7 (985) 760-96-92
+                </a>
+
+                <div class="social-box header_social-box">
+                    <a class="social-link" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.77895 9.63525C7.14765 7.2962 10.7276 5.75415 12.5189 5.0091C17.6332 2.88186 18.696 2.51233 19.3886 2.50013C19.541 2.49745 19.8816 2.5352 20.1023 2.71424C20.2886 2.86542 20.3398 3.06964 20.3644 3.21298C20.3889 3.35631 20.4194 3.68283 20.3952 3.93796C20.118 6.85 18.9188 13.9167 18.3087 17.1783C18.0505 18.5584 17.5422 19.0211 17.0501 19.0664C15.9807 19.1648 15.1686 18.3596 14.1327 17.6806C12.5119 16.6181 11.5962 15.9567 10.0228 14.9199C8.20458 13.7217 9.38328 13.0631 10.4195 11.9869C10.6907 11.7052 15.4028 7.41921 15.494 7.0304C15.5054 6.98177 15.516 6.80052 15.4083 6.7048C15.3006 6.60909 15.1417 6.64182 15.027 6.66785C14.8644 6.70475 12.2751 8.41622 7.25892 11.8023C6.52394 12.3069 5.85822 12.5529 5.26175 12.54C4.6042 12.5258 3.33933 12.1682 2.39903 11.8625C1.24571 11.4876 0.32908 11.2894 0.408898 10.6527C0.450472 10.3211 0.907156 9.98194 1.77895 9.63525Z"
+                                fill="#8C94A8" />
+                        </svg>
+                    </a>
+
+                    <a class="social-link" href="#" href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                            <path
+                                d="M19.9613 9.54828C19.871 7.07641 18.8294 4.73503 17.0539 3.01296C15.2783 1.2909 12.9062 0.321301 10.4328 0.306643H10.386C8.72037 0.305406 7.08314 0.737852 5.63532 1.56143C4.18752 2.385 2.97909 3.57132 2.12893 5.00366C1.27877 6.43601 0.816176 8.06505 0.786663 9.73041C0.75715 11.3958 1.16174 13.0401 1.96061 14.5018L1.11233 19.5778C1.11095 19.5882 1.1118 19.5988 1.11483 19.6089C1.11786 19.6189 1.123 19.6282 1.1299 19.6361C1.13681 19.6441 1.14532 19.6504 1.15487 19.6548C1.16441 19.6592 1.17479 19.6614 1.18529 19.6615H1.19989L6.2205 18.5447C7.51772 19.1675 8.9383 19.4907 10.3773 19.4903C10.4688 19.4903 10.5602 19.4903 10.6516 19.4903C11.9174 19.4541 13.1635 19.1677 14.318 18.6474C15.4725 18.1272 16.5125 17.3834 17.378 16.4591C18.2436 15.5348 18.9175 14.4482 19.3609 13.262C19.8042 12.0759 20.0083 10.8137 19.9613 9.54828ZM10.6039 17.8219C10.528 17.8219 10.4522 17.8219 10.3773 17.8219C9.10553 17.8235 7.85198 17.5192 6.72247 16.9347L6.46565 16.8005L3.06085 17.605L3.68928 14.1603L3.54336 13.9132C2.84643 12.725 2.47103 11.3757 2.45416 9.99821C2.43729 8.62079 2.77952 7.26266 3.44714 6.05773C4.11476 4.85277 5.08474 3.8425 6.26156 3.12643C7.43837 2.41035 8.7814 2.01318 10.1584 1.97403C10.2349 1.97403 10.3118 1.97403 10.3889 1.97403C12.468 1.98019 14.4613 2.80282 15.9396 4.26469C17.4179 5.72655 18.2627 7.71066 18.292 9.78944C18.3213 11.8683 17.5329 13.8754 16.0965 15.3784C14.66 16.8814 12.6907 17.76 10.6127 17.8249L10.6039 17.8219Z"
+                                fill="#8C94A8" />
+                            <path
+                                d="M7.04236 5.26854C6.92385 5.27086 6.80698 5.29693 6.6987 5.34522C6.59043 5.39351 6.49294 5.46304 6.41201 5.54968C6.1834 5.78413 5.54427 6.34835 5.5073 7.53323C5.47034 8.71807 6.29819 9.89033 6.41396 10.0547C6.52972 10.2191 7.99668 12.7786 10.4131 13.8165C11.8335 14.4285 12.456 14.5335 12.8597 14.5335C13.0261 14.5335 13.1516 14.516 13.2829 14.5082C13.7255 14.481 14.7246 13.9693 14.9425 13.4128C15.1604 12.8564 15.175 12.37 15.1176 12.2727C15.0602 12.1754 14.9026 12.1054 14.6653 11.9808C14.4279 11.8563 13.2635 11.2337 13.0446 11.1462C12.9634 11.1084 12.876 11.0857 12.7867 11.0791C12.7286 11.0821 12.6721 11.0993 12.6221 11.1292C12.5721 11.159 12.5301 11.2006 12.4998 11.2503C12.3053 11.4925 11.8587 12.0188 11.7089 12.1706C11.6762 12.2083 11.6358 12.2386 11.5906 12.2598C11.5454 12.2809 11.4962 12.2923 11.4462 12.2932C11.3542 12.2891 11.2642 12.2648 11.1826 12.2221C10.4773 11.9226 9.83417 11.4936 9.28662 10.9575C8.77501 10.4532 8.34094 9.87594 7.99862 9.24439C7.86636 8.99923 7.99862 8.87278 8.11927 8.75801C8.23991 8.64317 8.36927 8.48465 8.49378 8.34742C8.59597 8.23026 8.68114 8.0993 8.74675 7.95833C8.78068 7.89291 8.79785 7.82007 8.79662 7.74639C8.79546 7.67265 8.77597 7.60046 8.73991 7.53613C8.68256 7.41355 8.25352 6.20827 8.05217 5.72479C7.88875 5.31135 7.69417 5.29773 7.52391 5.28508C7.38385 5.27535 7.22333 5.27049 7.06281 5.26562H7.04236"
+                                fill="#8C94A8" />
+                        </svg>
+                    </a>
+                </div>
+
+                <a class="header__contact-email" href="mailto:contact@expertcc.ru">
+                    contact@expertcc.ru
+                </a>
+            </div>
+
+            <nav class="top-nav">
+                <ul class="top-nav-list">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">О нас</a>
+                        <ul class="top-sub-menu">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    О компании
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    Отзывы
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    Вакансии
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    Методология
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    Вопрос-ответ
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Медиацентр</a>
+                        <ul class="top-sub-menu">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Новости</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Наш блог</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Публикации в СМИ</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Мониторинг инвестпроектов в РФ</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Контакты</a>
+                    </li>
+
+
+                    <!-- добавить скрытый пункт -->
+                </ul>
+            </nav>
+
+            <button class="btn-search btn-search_mob">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16.927 17.04L20.4001 20.4M19.2801 11.44C19.2801 15.7699 15.77 19.28 11.4401 19.28C7.11019 19.28 3.6001 15.7699 3.6001 11.44C3.6001 7.11006 7.11019 3.59998 11.4401 3.59998C15.77 3.59998 19.2801 7.11006 19.2801 11.44Z"
+                        stroke="#191B1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </button>
+
+            <!-- кнопка мобильного меню -->
+<button class="mob-nav-btn">
+    <span></span>
+</button>
+        </div>
+
+        <div class="header__nav">
+            <nav class="nav">
+    <ul class="nav-list">
+        <li class="nav-item">
+            <a href="#" class="nav-link">Бизнес-планы</a>
+
+        </li>
+
+        <li class="nav-item">
+            <a href="#" class="nav-link">Маркетинговые исследования</a>
+        </li>
+
+        <li class="nav-item">
+            <a href="#" class="nav-link">Отрасли</a>
+            <ul class="sub-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Производство</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Торговля</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Строительство</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Сельское хозяйство</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Транспорт</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Образование</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Недвижимость</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Услуги</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">СМИ</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Медицина</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Энергетика</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Общественное питание</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Финансы</a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="nav-item">
+            <a href="#" class="nav-link">Услуги</a>
+            <ul class="sub-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Разработка бизнес-плана</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Оценка стоимости бизнеса</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Маркетинговое исследование</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Разработка финансовой модели</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Консалтинг</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Перевод на иностранные языки</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Проектное финансирование</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Готовые бизнес-планы</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Готовые и маркетинговые исследования</a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="nav-item">
+            <a href="#" class="nav-link">Проекты</a>
+        </li>
+
+        <!-- добавить скрытый пункт -->
+    </ul>
+</nav>
+
+            <nav class="header-nav-mob">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Бизнес-планы</a>
+
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Маркетинговые исследования</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__nav-btns-box">
+                <button class="btn-search">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.927 17.04L20.4001 20.4M19.2801 11.44C19.2801 15.7699 15.77 19.28 11.4401 19.28C7.11019 19.28 3.6001 15.7699 3.6001 11.44C3.6001 7.11006 7.11019 3.59998 11.4401 3.59998C15.77 3.59998 19.2801 7.11006 19.2801 11.44Z"
+                            stroke="#191B1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+                <button class="btn header__btn">
+                    Оставить заявку
+                </button>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</header>
+
+<div class="search-wrap">
+    <button class="search__exit">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 6L18 18M18 6L6 18" stroke="#4B5978" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+    </button>
+    <div class="search-block">
+        <div class="search-block__title">
+            Поиск по сайту
+        </div>
+
+        <div class="search-block__input-box">
+            <form action="" class="search">
+                <input class="search__input" type="search" placeholder="Что вы ищете?">
+
+                <svg class="search__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16.927 17.04L20.4001 20.4M19.2801 11.44C19.2801 15.7699 15.77 19.28 11.4401 19.28C7.11019 19.28 3.6001 15.7699 3.6001 11.44C3.6001 7.11006 7.11019 3.59998 11.4401 3.59998C15.77 3.59998 19.2801 7.11006 19.2801 11.44Z"
+                        stroke="#707A8A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+
+                <svg class="search__icon-exid" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L13 13M13 1L1 13" stroke="#7587AE" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </form>
+
+
+
+            <button class="btn search_btn" type="submit">
+                Найти
+            </button>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- ===========мобильное меню ===============-->
+
+<!-- выезжающее меню -->
+<nav class="mob-nav">
+
+    <div class="mob-nav-title">
+        Меню
+    </div>
+
+    <button class="mob-nav-exit">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L13 13M13 1L1 13" stroke="#8C94A8" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+    </button>
+
+    <nav class="mob-nav-wrap">
+        <!-- <ul class="mob-nav-list">
+            <li class="mob-nav-item">
+                <a href="#" class="mob-nav-link">Главная</a>
+                <ul class="spoiler-content-menu">
+                    <li class="mob-nav-item">
+                        <a class="mob-nav-link" href="#">
+                            второй уровень
+                        </a>
+                        <ul class="spoiler-content-menu">
+                            <li class="mob-nav-item">
+                                <a class="mob-nav-link" href="#">
+                                    третий уровень
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+                    <li class="mob-nav-item">
+                        <a class="mob-nav-link" href="#">
+                            второй уровень
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="mob-nav-item">
+                <a href="#" class="mob-nav-link">Контакты</a>
+            </li>
+        </ul> -->
+
+        <details class="mob-menu-spoiler">
+            <summary class="mob-menu-title">
+                <a href="#">Бизнес-планы</a>
+            </summary>
+
+        </details>
+
+        <details class="mob-menu-spoiler">
+            <summary class="mob-menu-title _spoiler-js">Отрасли</summary>
+            <ul class="spoiler-content mob-nav-list">
+                <li class="mob-nav-item">
+                    <a href="#" class="mob-nav-link">Производство</a>
+
+                </li>
+
+                <li class="mob-nav-item">
+                    <a href="#" class="mob-nav-link">Сельское хозяйство</a>
+                </li>
+
+                <li class="mob-nav-item">
+                    <a href="#" class="mob-nav-link">Производство</a>
+
+                </li>
+
+                <li class="mob-nav-item">
+                    <a href="#" class="mob-nav-link">Сельское хозяйство</a>
+                </li>
+
+                <li class="mob-nav-item">
+                    <a href="#" class="mob-nav-link">Производство</a>
+
+                </li>
+
+                <li class="mob-nav-item">
+                    <a href="#" class="mob-nav-link">Сельское хозяйство</a>
+                </li>
+            </ul>
+        </details>
+
+    </nav>
+
+    <button class="btn mob-nav__btn">
+        Оставить заявку
+    </button>
+
+    <div class="mob-nav__contact-box">
+        <a class="header__contact-tel mob__contact-tel" href="tel:+79857609692">
+            +7 (985) 760-96-92
+        </a>
+
+        <a class="social-link social-link_m" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.77895 9.63525C7.14765 7.2962 10.7276 5.75415 12.5189 5.0091C17.6332 2.88186 18.696 2.51233 19.3886 2.50013C19.541 2.49745 19.8816 2.5352 20.1023 2.71424C20.2886 2.86542 20.3398 3.06964 20.3644 3.21298C20.3889 3.35631 20.4194 3.68283 20.3952 3.93796C20.118 6.85 18.9188 13.9167 18.3087 17.1783C18.0505 18.5584 17.5422 19.0211 17.0501 19.0664C15.9807 19.1648 15.1686 18.3596 14.1327 17.6806C12.5119 16.6181 11.5962 15.9567 10.0228 14.9199C8.20458 13.7217 9.38328 13.0631 10.4195 11.9869C10.6907 11.7052 15.4028 7.41921 15.494 7.0304C15.5054 6.98177 15.516 6.80052 15.4083 6.7048C15.3006 6.60909 15.1417 6.64182 15.027 6.66785C14.8644 6.70475 12.2751 8.41622 7.25892 11.8023C6.52394 12.3069 5.85822 12.5529 5.26175 12.54C4.6042 12.5258 3.33933 12.1682 2.39903 11.8625C1.24571 11.4876 0.32908 11.2894 0.408898 10.6527C0.450472 10.3211 0.907156 9.98194 1.77895 9.63525Z"
+                    fill="#2AABEE"></path>
+            </svg>
+        </a>
+
+        <a class="social-link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                <path
+                    d="M19.9613 9.54828C19.871 7.07641 18.8294 4.73503 17.0539 3.01296C15.2783 1.2909 12.9062 0.321301 10.4328 0.306643H10.386C8.72037 0.305406 7.08314 0.737852 5.63532 1.56143C4.18752 2.385 2.97909 3.57132 2.12893 5.00366C1.27877 6.43601 0.816176 8.06505 0.786663 9.73041C0.75715 11.3958 1.16174 13.0401 1.96061 14.5018L1.11233 19.5778C1.11095 19.5882 1.1118 19.5988 1.11483 19.6089C1.11786 19.6189 1.123 19.6282 1.1299 19.6361C1.13681 19.6441 1.14532 19.6504 1.15487 19.6548C1.16441 19.6592 1.17479 19.6614 1.18529 19.6615H1.19989L6.2205 18.5447C7.51772 19.1675 8.9383 19.4907 10.3773 19.4903C10.4688 19.4903 10.5602 19.4903 10.6516 19.4903C11.9174 19.4541 13.1635 19.1677 14.318 18.6474C15.4725 18.1272 16.5125 17.3834 17.378 16.4591C18.2436 15.5348 18.9175 14.4482 19.3609 13.262C19.8042 12.0759 20.0083 10.8137 19.9613 9.54828ZM10.6039 17.8219C10.528 17.8219 10.4522 17.8219 10.3773 17.8219C9.10553 17.8235 7.85198 17.5192 6.72247 16.9347L6.46565 16.8005L3.06085 17.605L3.68928 14.1603L3.54336 13.9132C2.84643 12.725 2.47103 11.3757 2.45416 9.99821C2.43729 8.62079 2.77952 7.26266 3.44714 6.05773C4.11476 4.85277 5.08474 3.8425 6.26156 3.12643C7.43837 2.41035 8.7814 2.01318 10.1584 1.97403C10.2349 1.97403 10.3118 1.97403 10.3889 1.97403C12.468 1.98019 14.4613 2.80282 15.9396 4.26469C17.4179 5.72655 18.2627 7.71066 18.292 9.78944C18.3213 11.8683 17.5329 13.8754 16.0965 15.3784C14.66 16.8814 12.6907 17.76 10.6127 17.8249L10.6039 17.8219Z"
+                    fill="#25D366"></path>
+                <path
+                    d="M7.04236 5.26854C6.92385 5.27086 6.80698 5.29693 6.6987 5.34522C6.59043 5.39351 6.49294 5.46304 6.41201 5.54968C6.1834 5.78413 5.54427 6.34835 5.5073 7.53323C5.47034 8.71807 6.29819 9.89033 6.41396 10.0547C6.52972 10.2191 7.99668 12.7786 10.4131 13.8165C11.8335 14.4285 12.456 14.5335 12.8597 14.5335C13.0261 14.5335 13.1516 14.516 13.2829 14.5082C13.7255 14.481 14.7246 13.9693 14.9425 13.4128C15.1604 12.8564 15.175 12.37 15.1176 12.2727C15.0602 12.1754 14.9026 12.1054 14.6653 11.9808C14.4279 11.8563 13.2635 11.2337 13.0446 11.1462C12.9634 11.1084 12.876 11.0857 12.7867 11.0791C12.7286 11.0821 12.6721 11.0993 12.6221 11.1292C12.5721 11.159 12.5301 11.2006 12.4998 11.2503C12.3053 11.4925 11.8587 12.0188 11.7089 12.1706C11.6762 12.2083 11.6358 12.2386 11.5906 12.2598C11.5454 12.2809 11.4962 12.2923 11.4462 12.2932C11.3542 12.2891 11.2642 12.2648 11.1826 12.2221C10.4773 11.9226 9.83417 11.4936 9.28662 10.9575C8.77501 10.4532 8.34094 9.87594 7.99862 9.24439C7.86636 8.99923 7.99862 8.87278 8.11927 8.75801C8.23991 8.64317 8.36927 8.48465 8.49378 8.34742C8.59597 8.23026 8.68114 8.0993 8.74675 7.95833C8.78068 7.89291 8.79785 7.82007 8.79662 7.74639C8.79546 7.67265 8.77597 7.60046 8.73991 7.53613C8.68256 7.41355 8.25352 6.20827 8.05217 5.72479C7.88875 5.31135 7.69417 5.29773 7.52391 5.28508C7.38385 5.27535 7.22333 5.27049 7.06281 5.26562H7.04236"
+                    fill="#25D366"></path>
+            </svg>
+        </a>
+    </div>
+
+    <div class="mob-nav__tel-box">
+        <a class="header__contact-tel mob__contact-tel" href="tel:+74956173902">
+            +7 (495) 617-39-02
+        </a>
+
+        <span class="header__contact-work-clock mob__header__contact-work-clock">
+            пн-пт 09:00-18:00
+        </span>
+    </div>
+
+    <a class="header__contact-email mob__header__contact-email" href="mailto:contact@expertcc.ru">
+        contact@expertcc.ru
+    </a>
+
+</nav>
+    <main>
+        <section class='main-banner'>
+    <div class='main-banner__container'>
+        <div class="main-banner__item main-banner__item_big">
+            <img class="main-banner__item_big-img" src="assets/images/banner/main-banner.png" alt="">
+
+            <h1 class="main-banner__item_big-title">
+                Экспертиза и упаковка Ваших планов
+            </h1>
+
+            <div class="main-banner__item_big-subtitle">
+                Лучшие практики разработанных нами 1500+ успешных инвестпроектов с 2006 года. Присоединяйтесь к успеху!
+                ЭКЦ «ИнвестПроект»
+            </div>
+
+            <button class="btn main-banner__btn">
+                Купить готовый бизнес-план
+            </button>
+        </div>
+
+        <div class="main-banner__slider">
+            <div class="main-banner__item">
+                <div class="main-banner__item-title">
+                    Еще больше надежности и доверия!
+                </div>
+
+                <div class="main-banner__item-text">
+                    Мы стали эксклюзивным партнером Банка ВТБ (ПАО) по направлению бизнес-планирование и маркетинговые
+                    исследования!
+                </div>
+
+                <a class="link main-banner__link" href="#">
+                    Сайт ВТБ
+                </a>
+            </div>
+
+            <div class="main-banner__item">
+                <div class="main-banner__item-title">
+                    Заголовок новости
+                </div>
+
+                <div class="main-banner__item-text">
+                    Мы стали эксклюзивным партнером Банка ВТБ (ПАО) по направлению бизнес-планирование и маркетинговые
+                    исследования!
+                </div>
+
+                <a class="link main-banner__link" href="#">
+                    Подробнее
+
+
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class='teasers'>
+    <div class='teasers__container'>
+
+        <div class="teasers__item">
+            <div class="teasers__item-wrap">
+                <div class="teasers__item-title">
+                    Нужен бизнес план
+                </div>
+
+                <img src="assets/images/stories/Stories-1.png" alt="" class="teasers__item-img">
+            </div>
+
+        </div>
+
+        <div class="teasers__item">
+            <div class="teasers__item-wrap">
+                <div class="teasers__item-title">
+                    Проект есть, бюджета нет
+                </div>
+
+                <img src="assets/images/stories/Stories-2.png" alt="" class="teasers__item-img">
+            </div>
+
+        </div>
+
+        <div class="teasers__item">
+            <div class="teasers__item-wrap">
+                <div class="teasers__item-title teasers__item-title_black">
+                    Есть ТЗ на маркетинговое исследование
+                </div>
+
+                <img src="assets/images/stories/Stories-3.png" alt="" class="teasers__item-img">
+            </div>
+
+        </div>
+
+        <div class="teasers__item">
+            <div class="teasers__item-wrap">
+                <div class="teasers__item-title">
+                    Маркетинговое исследование рынка — обязательно!
+                </div>
+
+                <img src="assets/images/stories/Stories-4.png" alt="" class="teasers__item-img">
+            </div>
+
+        </div>
+
+        <div class="teasers__item">
+            <div class="teasers__item-wrap">
+                <div class="teasers__item-title">
+                    Для получения мер господдрежки
+                </div>
+
+                <img src="assets/images/stories/Stories-5.png" alt="" class="teasers__item-img">
+            </div>
+
+        </div>
+
+        <div class="teasers__item">
+            <div class="teasers__item-wrap">
+                <div class="teasers__item-title">
+                    Получатель бизнес-плана уже известен?
+                </div>
+
+                <img src="assets/images/stories/Stories-6.png" alt="" class="teasers__item-img">
+            </div>
+
+        </div>
+
+        <div class="teasers__item">
+            <div class="teasers__item-wrap">
+                <div class="teasers__item-title teasers__item-title_black">
+                    Экспертный консалтинг прокачает бизнес
+                </div>
+
+                <img src="assets/images/stories/Stories-7.png" alt="" class="teasers__item-img">
+            </div>
+
+        </div>
+
+    </div>
+</section>
+        <section class='preview-services'>
+    <div class='container preview-services__container'>
+        <h2 class="block-title preview-services__title">
+            Услуги
+        </h2>
+
+        <div class="preview-services__box">
+            <div class="preview-services__item preview-services__item_light">
+                <div class="preview-services__item-title">
+                    Разработка бизнес-плана
+                </div>
+
+                <div class="preview-services__item-text">
+                    Профессиональная разработка бизнес-планов для любых отраслей для себя, инвестора, банка или фонда
+                </div>
+
+                <img src="assets/images/services/services_1.png" alt="" class="preview-services__item-img">
+
+                <a href="#" class="secondary-link preview-services__secondary-link">
+                    <div class="secondary-link-blure">
+                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.3333 1L17 8M17 8L10.3333 15M17 8L1 8" stroke="white" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+
+                </a>
+            </div>
+
+            <div class="preview-services__item preview-services__item_darck">
+                <div class="preview-services__item-title">
+                    Разработка финансовой модели
+                </div>
+
+                <div class="preview-services__item-text">
+                    Разработка финансово-экономических моделей для себя, инвесторов, банков, фондов, органов власти,
+                    международных инвесторов.
+                </div>
+
+                <img src="assets/images/services/services_2.png" alt="" class="preview-services__item-img">
+
+                <a href="#" class="secondary-link preview-services__secondary-link">
+                    <div class="secondary-link-blure">
+                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.3333 1L17 8M17 8L10.3333 15M17 8L1 8" stroke="white" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+
+                </a>
+            </div>
+
+            <div class="preview-services__item preview-services__item_darck">
+
+                <div class="preview-services__item-title">
+                    Консалтинг
+                </div>
+
+                <div class="preview-services__item-text">
+                    Мы эффективно решаем все вопросы подготовки и реализации инвестиционных проектов
+                </div>
+
+                <img src="assets/images/services/services_3.png" alt="" class="preview-services__item-img">
+
+                <a href="#" class="secondary-link preview-services__secondary-link">
+                    <div class="secondary-link-blure">
+                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.3333 1L17 8M17 8L10.3333 15M17 8L1 8" stroke="white" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+
+                </a>
+
+            </div>
+
+            <div class="preview-services__item preview-services__item_light">
+
+                <div class="preview-services__item-title">
+                    Консалтинг
+                </div>
+
+                <div class="preview-services__item-text">
+                    Мы эффективно решаем все вопросы подготовки и реализации инвестиционных проектов
+                </div>
+
+                <img src="assets/images/services/services_4.png" alt="" class="preview-services__item-img">
+
+                <a href="#" class="secondary-link preview-services__secondary-link">
+                    <div class="secondary-link-blure">
+                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.3333 1L17 8M17 8L10.3333 15M17 8L1 8" stroke="white" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+
+                </a>
+
+            </div>
+
+            <div class="preview-services__item preview-services__item_small">
+                <div class="preview-services__item-title">
+                    Проектное финансирование
+                </div>
+
+                <div class="preview-services__item-icon-wrap">
+                    <svg width="46" height="36" viewBox="0 0 46 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M5 34H41M23 20V34M35 20V34M11 20V34M23.4472 2.22361L43.59 12.295C44.4395 12.7197 44.1372 14 43.1875 14H2.81246C1.86276 14 1.56053 12.7197 2.40997 12.295L22.5528 2.22361C22.8343 2.08284 23.1657 2.08284 23.4472 2.22361Z"
+                            stroke="#006DF0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="preview-services__item preview-services__item_small">
+                <div class="preview-services__item-title">
+                    Проектное финансирование
+                </div>
+
+                <div class="preview-services__item-icon-wrap">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14 10.5798C8.21702 12.3009 4 17.658 4 24C4 30.342 8.21702 35.6991 14 37.4202M44 24C44 31.732 37.732 38 30 38C22.268 38 16 31.732 16 24C16 16.268 22.268 10 30 10C37.732 10 44 16.268 44 24Z"
+                            stroke="#006DF0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="preview-services__item preview-services__item_small">
+                <div class="preview-services__item-title">
+                    Проектное финансирование
+                </div>
+
+                <div class="preview-services__item-icon-wrap">
+                    <svg width="40" height="32" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8 30L2 24M2 24L8 18M2 24H21C22.6569 24 24 22.6569 24 21V16M16 16V11C16 9.34315 17.3431 8 19 8H38M38 8L32 14M38 8L32 2"
+                            stroke="#006DF0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="preview-services__box-business">
+            <div class="preview-services__business-item">
+                <div class="preview-services__item-title">
+                    Бизнес-планы
+                </div>
+
+                <div class="preview-services__item-text">
+                    Более 350 готовых бизнес-планов по 13 основным отраслям экономики
+                </div>
+
+                <img src="assets/images/services/services_5.png" alt="" class="preview-services__item-img">
+
+                <a href="#" class="secondary-link preview-services__secondary-link">
+                    <div class="secondary-link-blure">
+                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.3333 1L17 8M17 8L10.3333 15M17 8L1 8" stroke="white" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+
+                </a>
+            </div>
+
+            <div class="preview-services__business-item">
+                <div class="preview-services__item-title">
+                    Маркетинговые исследования
+                </div>
+
+                <div class="preview-services__item-text">
+                    Более 350 маркетинговых исследований по 13 основным отраслям экономики
+                </div>
+
+                <img src="assets/images/services/services_6.png" alt="" class="preview-services__item-img">
+
+                <a href="#" class="secondary-link preview-services__secondary-link">
+                    <div class="secondary-link-blure">
+                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.3333 1L17 8M17 8L10.3333 15M17 8L1 8" stroke="white" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class='preview-industry'>
+    <div class='container_b preview-industry__container'>
+
+        <h2 class="block-title preview-industry__title">
+            Отрасли
+        </h2>
+
+        <div class="preview-industry__subtitle">
+            Благодаря нашим обширным знаниям и навыкам в различных отраслях, поможем клиентам реализовать свой потенциал
+            и достичь успеха в условиях быстро меняющейся реальности
+        </div>
+
+        <div class="preview-industry__slider-wrap">
+
+            <!-- Slider main container -->
+            <div class="swiper preview-industry__slider">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <a href="#" class="swiper-slide preview-industry__slide">
+                        <div class="preview-industry__slide-icon-wrap">
+                            <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.6506 2.56614C14.854 1.65106 15.6656 1 16.603 1H21.3943C22.3317 1 23.1433 1.65106 23.3467 2.56614L24.1006 5.9587C25.4228 6.47638 26.6471 7.18934 27.738 8.0621L31.0567 7.01755C31.9509 6.73612 32.9205 7.11348 33.3892 7.92529L35.7849 12.0747C36.2536 12.8865 36.0956 13.9149 35.4048 14.5486L32.8421 16.8992C32.9452 17.5845 32.9986 18.286 32.9986 19C32.9986 19.714 32.9452 20.4155 32.8421 21.1008L35.4048 23.4514C36.0956 24.0851 36.2536 25.1135 35.7849 25.9253L33.3893 30.0747C32.9206 30.8865 31.9509 31.2639 31.0568 30.9824L27.738 29.9379C26.6471 30.8107 25.4228 31.5236 24.1006 32.0413L23.3467 35.4339C23.1433 36.3489 22.3317 37 21.3943 37H16.603C15.6656 37 14.854 36.3489 14.6506 35.4339L13.8967 32.0413C12.5744 31.5236 11.3501 30.8106 10.2592 29.9379L6.94049 30.9824C6.04633 31.2639 5.07668 30.8865 4.60798 30.0747L2.21233 25.9253C1.74363 25.1135 1.90165 24.0851 2.59246 23.4514L5.1552 21.1007C5.05209 20.4155 4.99864 19.714 4.99864 19C4.99864 18.286 5.05209 17.5845 5.15521 16.8992L2.59248 14.5486C1.90168 13.9149 1.74366 12.8865 2.21236 12.0747L4.60801 7.9253C5.07671 7.11349 6.04636 6.73613 6.94052 7.01757L10.2592 8.06212C11.3501 7.18935 12.5745 6.47638 13.8967 5.9587L14.6506 2.56614Z"
+                                    stroke="#006DF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M20.9986 19C20.9986 20.1046 20.1032 21 18.9986 21C17.894 21 16.9986 20.1046 16.9986 19C16.9986 17.8954 17.894 17 18.9986 17C20.1032 17 20.9986 17.8954 20.9986 19Z"
+                                    stroke="#006DF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+
+                        <div class="preview-industry__slide-title">
+                            Производство
+                        </div>
+                    </a>
+
+                    <a href="#" class="swiper-slide preview-industry__slide">
+                        <div class="preview-industry__slide-icon-wrap">
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.0007 12.8452V23.5119M12.0007 12.6549C12.0007 6.79989 16.7181 2.04668 22.5594 1.98877C22.6305 2.48628 22.6673 2.99486 22.6673 3.51204C22.6673 9.36705 17.9499 14.1203 12.1086 14.1782C12.0375 13.6807 12.0007 13.1721 12.0007 12.6549ZM12.0007 12.6549C12.0007 6.79989 7.28325 2.04668 1.44193 1.98877C1.37079 2.48628 1.33398 2.99486 1.33398 3.51204C1.33398 9.36705 6.05139 14.1203 11.8927 14.1782C11.9638 13.6807 12.0007 13.1721 12.0007 12.6549Z"
+                                    stroke="#006DF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+
+                        <div class="preview-industry__slide-title">
+                            Сельское хозяйство
+                        </div>
+                    </a>
+
+                    <a href="#" class="swiper-slide preview-industry__slide">
+                        <div class="preview-industry__slide-icon-wrap">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.6673 22.1785V8.34031C14.6673 7.80988 14.4566 7.30117 14.0815 6.9261L9.41486 2.25943C8.63382 1.47838 7.36749 1.47838 6.58644 2.25943L1.91977 6.9261C1.5447 7.30117 1.33398 7.80988 1.33398 8.34031V20.1786C1.33398 21.2831 2.2294 22.1786 3.33396 22.1786L8.00065 22.1786M14.6673 22.1785L22.0006 22.1786C23.1052 22.1786 24.0006 21.2832 24.0006 20.1786V12.3404C24.0006 11.81 23.7899 11.3012 23.4149 10.9262L20.0815 7.59284C19.3005 6.81179 18.0342 6.81179 17.2531 7.59284L14.6673 10.1786M14.6673 22.1785L8.00065 22.1786M8.00065 22.1786V16.8453"
+                                    stroke="#006DF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+
+                        <div class="preview-industry__slide-title">
+                            Недвижимость
+                        </div>
+                    </a>
+
+                    <a href="#" class="swiper-slide preview-industry__slide">
+                        <div class="preview-industry__slide-icon-wrap">
+                            <svg width="26" height="24" viewBox="0 0 26 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.33333 12.5122H7.66667L9.66667 8.51221L12.3333 15.1789L14.3333 12.5122H17M13 5.0853C13.6458 3.79834 14.9578 2.81311 15.9583 2.32489C18.4792 1.09481 20.9776 1.72857 23.0474 3.79834C25.6509 6.40184 25.6509 10.6229 23.0474 13.2264L13.7071 22.5667C13.3166 22.9572 12.6834 22.9572 12.2929 22.5667L2.95262 13.2264C0.349126 10.6229 0.349126 6.40184 2.95262 3.79834C5.0224 1.72857 7.52075 1.09481 10.0417 2.32489C11.0422 2.81311 12.3542 3.79834 13 5.0853Z"
+                                    stroke="#006DF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+
+                        <div class="preview-industry__slide-title">
+                            Медицина
+                        </div>
+                    </a>
+
+                    <a href="#" class="swiper-slide preview-industry__slide">
+                        <div class="preview-industry__slide-icon-wrap">
+                            <svg width="26" height="25" viewBox="0 0 26 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M25 13.312L23.642 14.6022C22.8985 15.3084 21.7414 15.338 20.9629 14.6707L18.9682 12.961C18.2193 12.319 17.1141 12.319 16.3651 12.961L14.3016 14.7297C13.5526 15.3717 12.4474 15.3717 11.6984 14.7297L9.63491 12.961C8.88593 12.319 7.78073 12.319 7.03175 12.961L5.03711 14.6707C4.25857 15.338 3.10147 15.3084 2.35805 14.6022L1 13.312M13 1.84538C5.2442 1.84538 2.5011 4.63022 1.53091 6.60011C1.04289 7.59102 1.89543 8.51205 3 8.51205H23C24.1046 8.51205 24.9571 7.59102 24.4691 6.60011C23.4989 4.63021 20.7558 1.84538 13 1.84538ZM3 19.1787H23C24.1046 19.1787 25 20.0741 25 21.1787V21.1787C25 22.2833 24.1046 23.1787 23 23.1787H3C1.89543 23.1787 1 22.2833 1 21.1787V21.1787C1 20.0741 1.89543 19.1787 3 19.1787Z"
+                                    stroke="#006DF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+
+                        <div class="preview-industry__slide-title">
+                            Общественное питание
+                        </div>
+                    </a>
+
+                    <a href="#" class="swiper-slide preview-industry__slide">
+                        <div class="preview-industry__slide-icon-wrap">
+                            <svg width="22" height="24" viewBox="0 0 22 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.99935 6.84554H3.91948C3.39939 6.84554 2.96613 7.2442 2.92294 7.7625L1.75627 21.7625C1.70768 22.3455 2.16777 22.8455 2.75281 22.8455H19.2459C19.8309 22.8455 20.291 22.3455 20.2424 21.7625L19.0758 7.7625C19.0326 7.2442 18.5993 6.84554 18.0792 6.84554H14.9993M6.99935 6.84554V3.51221C6.99935 2.40764 7.89478 1.51221 8.99935 1.51221H12.9993C14.1039 1.51221 14.9993 2.40764 14.9993 3.51221V6.84554M6.99935 6.84554H14.9993"
+                                    stroke="#006DF0" stroke-width="2" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+
+                        <div class="preview-industry__slide-title">
+                            Торговля
+                        </div>
+                    </a>
+
+                    <a href="#" class="swiper-slide preview-industry__slide">
+                        <div class="preview-industry__slide-icon-wrap">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M22.6673 17.5122V9.83676C22.6673 9.6218 22.6327 9.40824 22.5647 9.20431L20.4565 2.87975C20.1843 2.06307 19.42 1.51221 18.5591 1.51221H5.44217C4.58131 1.51221 3.81703 2.06307 3.5448 2.87975L1.43662 9.20431C1.36864 9.40824 1.33398 9.6218 1.33398 9.83676V17.5122M22.6673 17.5122H1.33398M22.6673 17.5122V19.5122C22.6673 19.8804 22.3688 20.1789 22.0006 20.1789C21.6325 20.1789 21.334 19.8804 21.334 19.5122V17.5122M1.33398 17.5122V19.5122C1.33398 19.8804 1.63246 20.1789 2.00065 20.1789C2.36884 20.1789 2.66732 19.8804 2.66732 19.5122V17.5122M1.77843 8.17887H22.2229M6.66732 12.1789V13.5122M17.334 12.1789V13.5122"
+                                    stroke="#006DF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+
+                        <div class="preview-industry__slide-title">
+                            Транспорт
+                        </div>
+                    </a>
+
+                    <a href="#" class="swiper-slide preview-industry__slide">
+                        <div class="preview-industry__slide-icon-wrap">
+                            <svg width="26" height="27" viewBox="0 0 26 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13 1.51221C13 8.13962 7.62742 13.5122 1 13.5122C7.62742 13.5122 13 18.8848 13 25.5122C13 18.8848 18.3726 13.5122 25 13.5122C18.3726 13.5122 13 8.13962 13 1.51221Z"
+                                    stroke="#006DF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+
+                        <div class="preview-industry__slide-title">
+                            Услуги
+                        </div>
+                    </a>
+
+                    <a href="#" class="swiper-slide preview-industry__slide">
+                        <div class="preview-industry__slide-icon-wrap">
+                            <svg width="24" height="29" viewBox="0 0 24 29" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.33398 17.1787L14.6673 1.17871L13.2734 11.8454H22.6674L9.33403 27.8454L10.728 17.1787H1.33398Z"
+                                    stroke="#006DF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+
+                        <div class="preview-industry__slide-title">
+                            Энергетика
+                        </div>
+                    </a>
+
+                    <a href="#" class="swiper-slide preview-industry__slide">
+                        <div class="preview-industry__slide-icon-wrap">
+                            <svg width="30" height="24" viewBox="0 0 30 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 22.8455H27M15 13.5122V22.8455M23 13.5122V22.8455M7 13.5122V22.8455M15.4472 1.73581L27.59 7.80722C28.4395 8.23194 28.1372 9.51221 27.1875 9.51221H2.81246C1.86276 9.51221 1.56053 8.23194 2.40997 7.80722L14.5528 1.73581C14.8343 1.59505 15.1657 1.59505 15.4472 1.73581Z"
+                                    stroke="#006DF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+
+                        <div class="preview-industry__slide-title">
+                            Финансы
+                        </div>
+                    </a>
+
+                    <a href="#" class="swiper-slide preview-industry__slide">
+                        <div class="preview-industry__slide-icon-wrap">
+                            <svg width="25" height="31" viewBox="0 0 25 31" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.9328 17.4647L21 1.51204L23.6667 4.17871L23.6667 7.51204L21 7.51204L21 11.512L18.3333 11.512L18.3333 15.512L15.6667 15.512V19.512L11.6667 19.512L11.6667 24.1787M4.9328 17.4647L11.6667 24.1787M4.9328 17.4647L1.69892 20.7791C0.9398 21.5571 0.941086 22.799 1.70182 23.5755L5.8756 27.8356L6.94281 28.9028C7.98048 29.9404 9.74518 29.5444 10.2399 28.1628L11.6667 24.1787"
+                                    stroke="#006DF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+
+                        <div class="preview-industry__slide-title">
+                            Строительство
+                        </div>
+                    </a>
+
+                    <a href="#" class="swiper-slide preview-industry__slide">
+                        <div class="preview-industry__slide-icon-wrap">
+                            <svg width="28" height="24" viewBox="0 0 28 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M25 7.84538L13 1.17871L1 7.84538L5 10.0676M25 7.84538L21 10.0676M25 7.84538L25.2278 7.95926C25.9053 8.29804 26.3333 8.99057 26.3333 9.74811V17.1785M5 10.0676L13 14.512L21 10.0676M5 10.0676V18.0676L13 22.512L21 18.0676L21 10.0676"
+                                    stroke="#006DF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+
+                        <div class="preview-industry__slide-title">
+                            Образование
+                        </div>
+                    </a>
+
+                    <a href="#" class="swiper-slide preview-industry__slide">
+                        <div class="preview-industry__slide-icon-wrap">
+                            <svg width="18" height="26" viewBox="0 0 18 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1 12.1789C1 16.5972 4.58172 20.1789 9 20.1789M9 20.1789C13.4183 20.1789 17 16.5972 17 12.1789M9 20.1789V24.1789M9 14.8455V14.8455C10.4728 14.8455 11.6667 13.6516 11.6667 12.1789V4.17887C11.6667 2.70611 10.4728 1.51221 9 1.51221V1.51221C7.52724 1.51221 6.33333 2.70611 6.33333 4.17887V12.1789C6.33333 13.6516 7.52724 14.8455 9 14.8455Z"
+                                    stroke="#006DF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+
+                        <div class="preview-industry__slide-title">
+                            СМИ
+                        </div>
+                    </a>
+
+
+                </div>
+
+
+
+
+
+            </div>
+
+            <div class="preview-industry__slider-bottom">
+                <!-- If we need navigation buttons -->
+                <div class="btn-slider-box preview-industry__btn-slider-box">
+
+                    <div class="btn-slider btn-slider-prev preview-industry__btn-slider-prev">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3333 5L20 12M20 12L13.3333 19M20 12L4 12" stroke="#191B1E" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+
+
+                    <div class="btn-slider btn-slider-next preview-industry__btn-slider-next">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3333 5L20 12M20 12L13.3333 19M20 12L4 12" stroke="#191B1E" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+                </div>
+
+                <a class="link preview-industry__link" href="#">
+                    Все отрасли
+                </a>
+            </div>
+
+
+        </div>
+
+
+    </div>
+</section>
+        <section class='preview-business-plan'>
+    <div class='container preview-business-plan__container'>
+        <h2 class="preview-business-plan__title">
+            Готовые отчёты
+        </h2>
+
+        <div class="_tabs-js">
+            <div class="tabs__title-box plan__tabs-title-box">
+                <span class="tabs__title plan__tabs__title">Бизнес-планы</span>
+                <span class="tabs__title plan__tabs__title">Маркетинговые исследования</span>
+
+            </div>
+            <div class="tabs__item-box">
+                <div class="tabs__item plan__tabs-item">
+
+                    <div class="plan__tabs-item-category-box">
+
+                        <a href="#" class="category-link active">
+                            <span class="category-link__name">
+                                Все
+                            </span>
+
+                            <span class="category-link__count">
+                                350
+                            </span>
+                        </a>
+
+                        <a href="#" class="category-link">
+                            <span class="category-link__name">
+                                Производство
+                            </span>
+
+                            <span class="category-link__count">
+                                102
+                            </span>
+                        </a>
+
+                        <a href="#" class="category-link">
+                            <span class="category-link__name">
+                                Сельское хозяйство
+                            </span>
+
+                            <span class="category-link__count">
+                                70
+                            </span>
+                        </a>
+
+                        <a href="#" class="category-link">
+                            <span class="category-link__name">
+                                Недвижимость
+                            </span>
+
+                            <span class="category-link__count">
+                                30
+                            </span>
+                        </a>
+
+                        <a href="#" class="category-link">
+                            <span class="category-link__name">
+                                Медицина
+                            </span>
+
+                            <span class="category-link__count">
+                                43
+                            </span>
+                        </a>
+
+                        <a href="#" class="category-link">
+                            <span class="category-link__name">
+                                Общественное питание
+                            </span>
+
+                            <span class="category-link__count">
+                                41
+                            </span>
+                        </a>
+
+                        <a href="#" class="category-link">
+                            <span class="category-link__name">
+                                Торговля
+                            </span>
+
+                            <span class="category-link__count">
+                                30
+                            </span>
+                        </a>
+
+                        <a href="#" class="category-link">
+                            <span class="category-link__name">
+                                Транспорт
+                            </span>
+
+                            <span class="category-link__count">
+                                15
+                            </span>
+                        </a>
+
+                        <a href="#" class="category-link">
+                            <span class="category-link__name">
+                                Услуги
+                            </span>
+
+                            <span class="category-link__count">
+                                84
+                            </span>
+                        </a>
+
+                        <a href="#" class="category-link">
+                            <span class="category-link__name">
+                                Энергетика
+                            </span>
+
+                            <span class="category-link__count">
+                                7
+                            </span>
+                        </a>
+
+                        <a href="#" class="category-link">
+                            <span class="category-link__name">
+                                Финансы
+                            </span>
+
+                            <span class="category-link__count">
+                                8
+                            </span>
+                        </a>
+
+                        <a href="#" class="category-link">
+                            <span class="category-link__name">
+                                Строительство
+                            </span>
+
+                            <span class="category-link__count">
+                                36
+                            </span>
+                        </a>
+
+                        <a href="#" class="category-link">
+                            <span class="category-link__name">
+                                Образование
+                            </span>
+
+                            <span class="category-link__count">
+                                5
+                            </span>
+                        </a>
+
+                        <a href="#" class="category-link">
+                            <span class="category-link__name">
+                                СМИ
+                            </span>
+
+                            <span class="category-link__count">
+                                5
+                            </span>
+                        </a>
+
+                    </div>
+
+                    <div class="plan__slider-wrap">
+
+                        <!-- Slider main container -->
+                        <div class="swiper plan__slider">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide plan__slide">
+
+                                    <div class="business-plan-card">
+
+                                        <div class="business-plan-card__img-wrap">
+                                            <div class="business-plan-card__img-bg">
+                                                <img src="assets/images/business-plan/business-plan-img-1.png" alt=""
+                                                    class="business-plan-card__img">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="business-plan-card__up-row">
+
+                                            <div class="business-plan-card__title">
+                                                Бизнес-план глэмпинг-отеля, 2024
+                                            </div>
+
+                                            <div class="business-plan-card__price-box">
+                                                <span class="business-plan-card__price">
+                                                    30 030 ₽
+                                                </span>
+
+                                                <span class="business-plan-card__old-price">
+                                                    80 385 ₽
+                                                </span>
+
+                                                <span class="business-plan-card__sale">
+                                                    −15%
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="business-plan-card__down-row">
+                                            <div class="business-plan-card__down-row-item">
+                                                <div class="business-plan-card__down-row-item-name">
+                                                    Сумма инвестиций
+                                                </div>
+
+                                                <div class="business-plan-card__down-row-item-value">
+                                                    35,5 млн. руб.
+                                                </div>
+                                            </div>
+
+                                            <div class="business-plan-card__down-row-item">
+                                                <div class="business-plan-card__down-row-item-name">
+                                                    Рентабельность
+                                                </div>
+
+                                                <div class="business-plan-card__down-row-item-value">
+                                                    16,9%
+                                                </div>
+                                            </div>
+
+                                            <div class="business-plan-card__down-row-item">
+                                                <div class="business-plan-card__down-row-item-name">
+                                                    Срок окупаемости
+                                                </div>
+
+                                                <div class="business-plan-card__down-row-item-value">
+                                                    4,5 года
+                                                </div>
+                                            </div>
+
+                                            <div class="business-plan-card__down-row-item">
+                                                <div class="business-plan-card__down-row-item-name">
+                                                    Дата выпуска
+                                                </div>
+
+                                                <div class="business-plan-card__down-row-item-value">
+                                                    16 дек 2024
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-slide plan__slide">
+
+                                    <div class="business-plan-card">
+
+                                        <div class="business-plan-card__img-wrap">
+                                            <div class="business-plan-card__img-bg">
+                                                <img src="assets/images/business-plan/business-plan-img-1.png" alt=""
+                                                    class="business-plan-card__img">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="business-plan-card__up-row">
+
+                                            <div class="business-plan-card__title">
+                                                Бизнес-план глэмпинг-отеля, 2024
+                                            </div>
+
+                                            <div class="business-plan-card__price-box">
+                                                <span class="business-plan-card__price">
+                                                    30 030 ₽
+                                                </span>
+
+                                                <span class="business-plan-card__old-price">
+                                                    80 385 ₽
+                                                </span>
+
+                                                <span class="business-plan-card__sale">
+                                                    −15%
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="business-plan-card__down-row">
+                                            <div class="business-plan-card__down-row-item">
+                                                <div class="business-plan-card__down-row-item-name">
+                                                    Сумма инвестиций
+                                                </div>
+
+                                                <div class="business-plan-card__down-row-item-value">
+                                                    35,5 млн. руб.
+                                                </div>
+                                            </div>
+
+                                            <div class="business-plan-card__down-row-item">
+                                                <div class="business-plan-card__down-row-item-name">
+                                                    Рентабельность
+                                                </div>
+
+                                                <div class="business-plan-card__down-row-item-value">
+                                                    16,9%
+                                                </div>
+                                            </div>
+
+                                            <div class="business-plan-card__down-row-item">
+                                                <div class="business-plan-card__down-row-item-name">
+                                                    Срок окупаемости
+                                                </div>
+
+                                                <div class="business-plan-card__down-row-item-value">
+                                                    4,5 года
+                                                </div>
+                                            </div>
+
+                                            <div class="business-plan-card__down-row-item">
+                                                <div class="business-plan-card__down-row-item-name">
+                                                    Дата выпуска
+                                                </div>
+
+                                                <div class="business-plan-card__down-row-item-value">
+                                                    16 дек 2024
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-slide plan__slide">
+
+                                    <div class="business-plan-card">
+
+                                        <div class="business-plan-card__img-wrap">
+                                            <div class="business-plan-card__img-bg">
+                                                <img src="assets/images/business-plan/business-plan-img-1.png" alt=""
+                                                    class="business-plan-card__img">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="business-plan-card__up-row">
+
+                                            <div class="business-plan-card__title">
+                                                Бизнес-план глэмпинг-отеля, 2024
+                                            </div>
+
+                                            <div class="business-plan-card__price-box">
+                                                <span class="business-plan-card__price">
+                                                    30 030 ₽
+                                                </span>
+
+                                                <span class="business-plan-card__old-price">
+                                                    80 385 ₽
+                                                </span>
+
+                                                <span class="business-plan-card__sale">
+                                                    −15%
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="business-plan-card__down-row">
+                                            <div class="business-plan-card__down-row-item">
+                                                <div class="business-plan-card__down-row-item-name">
+                                                    Сумма инвестиций
+                                                </div>
+
+                                                <div class="business-plan-card__down-row-item-value">
+                                                    35,5 млн. руб.
+                                                </div>
+                                            </div>
+
+                                            <div class="business-plan-card__down-row-item">
+                                                <div class="business-plan-card__down-row-item-name">
+                                                    Рентабельность
+                                                </div>
+
+                                                <div class="business-plan-card__down-row-item-value">
+                                                    16,9%
+                                                </div>
+                                            </div>
+
+                                            <div class="business-plan-card__down-row-item">
+                                                <div class="business-plan-card__down-row-item-name">
+                                                    Срок окупаемости
+                                                </div>
+
+                                                <div class="business-plan-card__down-row-item-value">
+                                                    4,5 года
+                                                </div>
+                                            </div>
+
+                                            <div class="business-plan-card__down-row-item">
+                                                <div class="business-plan-card__down-row-item-name">
+                                                    Дата выпуска
+                                                </div>
+
+                                                <div class="business-plan-card__down-row-item-value">
+                                                    16 дек 2024
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-slide plan__slide">
+
+                                    <div class="business-plan-card">
+
+                                        <div class="business-plan-card__img-wrap">
+                                            <div class="business-plan-card__img-bg">
+                                                <img src="assets/images/business-plan/business-plan-img-1.png" alt=""
+                                                    class="business-plan-card__img">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="business-plan-card__up-row">
+
+                                            <div class="business-plan-card__title">
+                                                Бизнес-план глэмпинг-отеля, 2024
+                                            </div>
+
+                                            <div class="business-plan-card__price-box">
+                                                <span class="business-plan-card__price">
+                                                    30 030 ₽
+                                                </span>
+
+                                                <span class="business-plan-card__old-price">
+                                                    80 385 ₽
+                                                </span>
+
+                                                <span class="business-plan-card__sale">
+                                                    −15%
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="business-plan-card__down-row">
+                                            <div class="business-plan-card__down-row-item">
+                                                <div class="business-plan-card__down-row-item-name">
+                                                    Сумма инвестиций
+                                                </div>
+
+                                                <div class="business-plan-card__down-row-item-value">
+                                                    35,5 млн. руб.
+                                                </div>
+                                            </div>
+
+                                            <div class="business-plan-card__down-row-item">
+                                                <div class="business-plan-card__down-row-item-name">
+                                                    Рентабельность
+                                                </div>
+
+                                                <div class="business-plan-card__down-row-item-value">
+                                                    16,9%
+                                                </div>
+                                            </div>
+
+                                            <div class="business-plan-card__down-row-item">
+                                                <div class="business-plan-card__down-row-item-name">
+                                                    Срок окупаемости
+                                                </div>
+
+                                                <div class="business-plan-card__down-row-item-value">
+                                                    4,5 года
+                                                </div>
+                                            </div>
+
+                                            <div class="business-plan-card__down-row-item">
+                                                <div class="business-plan-card__down-row-item-name">
+                                                    Дата выпуска
+                                                </div>
+
+                                                <div class="business-plan-card__down-row-item-value">
+                                                    16 дек 2024
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="preview-industry__slider-bottom">
+                            <!-- If we need navigation buttons -->
+                            <div class="btn-slider-box preview-industry__btn-slider-box">
+
+                                <div class="btn-slider btn-slider-prev plan__btn-slider-prev">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.3333 5L20 12M20 12L13.3333 19M20 12L4 12" stroke="#191B1E"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+
+                                </div>
+
+
+                                <div class="btn-slider btn-slider-next plan__btn-slider-next">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.3333 5L20 12M20 12L13.3333 19M20 12L4 12" stroke="#191B1E"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+
+                                </div>
+                            </div>
+
+                            <a class="link preview-industry__link" href="#">
+                                Все бизнес-планы
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tabs__item">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+        <section class='first-form'>
+    <div class='container_b first-form__container'>
+        <h2 class="first-form__title">
+            Закажите свой бизнес-план прямо сейчас!
+        </h2>
+
+        <button class="btn first-form__btn">
+            Бесплатная консультация
+        </button>
+
+        <div class="first-form__bottom">
+
+            <div class="first-form_text">
+                Опытный менеджер бесплатно снавигирует в потребностях и предложит лучшее решение
+            </div>
+
+            <div class="first-form_text first-form_text_hidden">
+
+                Или просто <br>
+                <a href="#">напишите нам в Telegram</a> <br>
+                или <a href="#">WhatsApp</a>
+            </div>
+
+
+        </div>
+
+        <div class="first-social-box">
+            <a class="first-social__link first-social__link_telegram" href="#">
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1.3749 10.1475C6.74359 7.8084 10.3236 6.26635 12.1148 5.52131C17.2292 3.39406 18.2919 3.02454 18.9846 3.01234C19.1369 3.00965 19.4776 3.04741 19.6982 3.22645C19.8845 3.37763 19.9358 3.58185 19.9603 3.72518C19.9848 3.86852 20.0154 4.19504 19.9911 4.45017C19.714 7.36221 18.5147 14.429 17.9046 17.6905C17.6465 19.0706 17.1382 19.5333 16.6461 19.5786C15.5766 19.677 14.7645 18.8718 13.7287 18.1928C12.1078 17.1303 11.1921 16.4689 9.61879 15.4321C7.80053 14.2339 8.97923 13.5753 10.0154 12.4991C10.2866 12.2174 14.9987 7.93142 15.0899 7.54261C15.1013 7.49398 15.1119 7.31272 15.0042 7.21701C14.8965 7.1213 14.7376 7.15403 14.6229 7.18006C14.4604 7.21696 11.871 8.92842 6.85486 12.3145C6.11988 12.8192 5.45416 13.0651 4.8577 13.0522C4.20015 13.038 2.93528 12.6804 1.99498 12.3747C0.84166 11.9998 -0.074973 11.8016 0.00484519 11.1649C0.0464194 10.8333 0.503103 10.4941 1.3749 10.1475Z"
+                        fill="white" />
+                </svg>
+            </a>
+            <a class="first-social__link first-social__link_watsup" href="#">
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M19.557 10.0615C19.4667 7.58959 18.4251 5.24821 16.6496 3.52614C14.874 1.80408 12.5019 0.834485 10.0285 0.819827H9.98175C8.31607 0.818589 6.67885 1.25104 5.23102 2.07461C3.78323 2.89818 2.57479 4.08451 1.72463 5.51685C0.874472 6.9492 0.411879 8.57824 0.382366 10.2436C0.352853 11.909 0.75744 13.5533 1.55632 15.0149L0.708033 20.091C0.706653 20.1014 0.707504 20.112 0.710537 20.122C0.713562 20.1321 0.718704 20.1414 0.725608 20.1493C0.732511 20.1573 0.741021 20.1636 0.750569 20.168C0.760117 20.1724 0.770492 20.1746 0.780995 20.1747H0.795588L5.81621 19.0579C7.11343 19.6807 8.53401 20.0038 9.97297 20.0035C10.0645 20.0035 10.1559 20.0035 10.2473 20.0035C11.5131 19.9673 12.7592 19.6809 13.9137 19.1606C15.0682 18.6404 16.1082 17.8966 16.9737 16.9723C17.8393 16.048 18.5132 14.9614 18.9566 13.7752C19.3999 12.5891 19.604 11.3269 19.557 10.0615ZM10.1996 18.3351C10.1237 18.3351 10.0479 18.3351 9.97297 18.3351C8.70123 18.3367 7.44768 18.0324 6.31818 17.4479L6.06136 17.3137L2.65656 18.1182L3.28498 14.6735L3.13907 14.4264C2.44213 13.2382 2.06674 11.8889 2.04987 10.5114C2.03299 9.13398 2.37522 7.77585 3.04284 6.57091C3.71047 5.36595 4.68045 4.35569 5.85726 3.63962C7.03407 2.92354 8.3771 2.52636 9.75414 2.48721C9.83065 2.48721 9.90749 2.48721 9.98465 2.48721C12.0637 2.49337 14.057 3.316 15.5353 4.77787C17.0136 6.23974 17.8584 8.22385 17.8877 10.3026C17.917 12.3815 17.1286 14.3886 15.6922 15.8916C14.2557 17.3946 12.2864 18.2732 10.2084 18.338L10.1996 18.3351Z"
+                        fill="white" />
+                    <path
+                        d="M6.63782 5.7805C6.5193 5.78282 6.40244 5.80889 6.29416 5.85718C6.18589 5.90547 6.0884 5.975 6.00747 6.06165C5.77886 6.29609 5.13973 6.86032 5.10276 8.04519C5.0658 9.23003 5.89365 10.4023 6.00941 10.5667C6.12518 10.7311 7.59214 13.2905 10.0086 14.3285C11.4289 14.9404 12.0515 15.0455 12.4552 15.0455C12.6216 15.0455 12.747 15.028 12.8783 15.0202C13.321 14.9929 14.3201 14.4813 14.5379 13.9248C14.7559 13.3684 14.7705 12.882 14.713 12.7847C14.6557 12.6874 14.4981 12.6173 14.2607 12.4928C14.0234 12.3683 12.8589 11.7457 12.64 11.6582C12.5589 11.6204 12.4715 11.5976 12.3822 11.5911C12.3241 11.5941 12.2676 11.6113 12.2176 11.6411C12.1676 11.6709 12.1256 11.7125 12.0952 11.7622C11.9007 12.0045 11.4542 12.5307 11.3043 12.6825C11.2716 12.7202 11.2313 12.7506 11.1861 12.7718C11.1409 12.7929 11.0916 12.8042 11.0417 12.8051C10.9497 12.8011 10.8597 12.7768 10.7781 12.7341C10.0727 12.4345 9.42963 12.0056 8.88208 11.4695C8.37047 10.9652 7.9364 10.3879 7.59408 9.75636C7.46182 9.51119 7.59408 9.38474 7.71472 9.26997C7.83537 9.15513 7.96472 8.99661 8.08924 8.85939C8.19143 8.74223 8.2766 8.61126 8.34221 8.47029C8.37614 8.40487 8.3933 8.33203 8.39208 8.25836C8.39092 8.18461 8.37143 8.11242 8.33537 8.0481C8.27801 7.92552 7.84898 6.72023 7.64763 6.23675C7.48421 5.82331 7.28963 5.80969 7.11937 5.79705C6.9793 5.78732 6.81879 5.78245 6.65827 5.77759H6.63782"
+                        fill="white" />
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+        <section class='conditions'>
+    <div class='container_b conditions__container'>
+        <h2 class="block-title conditions__title">
+            Условия разработки бизнес-плана
+        </h2>
+
+        <div class="conditions__subtitle">
+            Очень гибкие тарифы под любую задачу — от самой маленькой идеи до крупного проекта
+
+        </div>
+
+        <div class="conditions__card-box">
+
+            <div class="conditions__item">
+                <div class="conditions__item-top">
+                    <div class="conditions__item-title">
+                        Sprint
+                    </div>
+
+                    <div class="conditions__item-subtitle">
+                        целесообразность
+                    </div>
+
+                    <div class="conditions__item-price">
+                        от 90 000 ₽
+                    </div>
+                </div>
+
+                <div class="conditions__item-content-box">
+                    <ul class="conditions__item-list">
+                        <li class="conditions__item-list-item">
+                            Финансовый психоанализ
+                        </li>
+
+                        <li class="conditions__item-list-item">
+                            Финансовая модель
+                        </li>
+
+                        <li class="conditions__item-list-item">
+                            Пояснительная записка
+                        </li>
+
+                        <li class="conditions__item-list-item">
+                            Стресс-тест
+                        </li>
+
+                        <li class="conditions__item-list-item">
+                            Зум-сессия
+                        </li>
+
+                        <li class="conditions__item-list-item conditions__item-list-item_not">
+                            Маркетинговое исследование
+                        </li>
+
+                        <li class="conditions__item-list-item conditions__item-list-item_not">
+                            Дизайнерская презентация
+                        </li>
+
+                        <li class="conditions__item-list-item conditions__item-list-item_not">
+                            Обучение
+                        </li>
+
+                        <li class="conditions__item-list-item conditions__item-list-item_not">
+                            Сопровождение до одобрения
+                        </li>
+
+                        <li class="conditions__item-list-item conditions__item-list-item_not">
+                            Текстовая часть бизнес-плана
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="conditions__item-bottom">
+                    <button class="btn">
+                        Заказать
+                    </button>
+
+                    <div class="conditions__item-deadlines">
+                        <span>
+                            Сроки разработки:
+                        </span>
+
+                        <span>
+                            до 7 дней
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="conditions__item">
+                <div class="conditions__item-top">
+                    <div class="conditions__item-title">
+                        Scrum
+                    </div>
+
+                    <div class="conditions__item-subtitle">
+                        для инвесторов и банков
+                    </div>
+
+                    <div class="conditions__item-price">
+                        от 130 000 ₽
+                    </div>
+                </div>
+
+                <div class="conditions__item-content-box">
+                    <ul class="conditions__item-list">
+                        <li class="conditions__item-list-item">
+                            Финансовый психоанализ
+                        </li>
+
+                        <li class="conditions__item-list-item">
+                            Финансовая модель
+                        </li>
+
+                        <li class="conditions__item-list-item">
+                            Пояснительная записка
+                        </li>
+
+                        <li class="conditions__item-list-item">
+                            Стресс-тест
+                        </li>
+
+                        <li class="conditions__item-list-item">
+                            Зум-сессия
+                        </li>
+
+                        <li class="conditions__item-list-item">
+                            Маркетинговое исследование
+                        </li>
+
+                        <li class="conditions__item-list-item">
+                            Дизайнерская презентация
+                        </li>
+
+                        <li class="conditions__item-list-item">
+                            Обучение
+                        </li>
+
+                        <li class="conditions__item-list-item">
+                            Сопровождение до одобрения
+                        </li>
+
+                        <li class="conditions__item-list-item">
+                            Текстовая часть бизнес-плана
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="conditions__item-bottom">
+                    <button class="btn">
+                        Заказать
+                    </button>
+
+                    <div class="conditions__item-deadlines">
+                        <span>
+                            Сроки разработки:
+                        </span>
+
+                        <span>
+                            до 14 дней
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="conditions__item">
+                <div class="conditions__item-top conditions__item-top_select">
+                    <div class="conditions__item-title">
+                        Agile
+                    </div>
+
+                    <div class="conditions__item-subtitle">
+                        для фондов, господдержки
+                    </div>
+
+                    <div class="conditions__item-price">
+                        от 200 000 ₽
+                    </div>
+                </div>
+
+                <div class="conditions__item-content-box">
+                    <ul class="conditions__item-list">
+                        <li class="conditions__item-list-item">
+                            Финансовый психоанализ
+                        </li>
+
+                        <li class="conditions__item-list-item">
+                            Финансовая модель
+                        </li>
+
+                        <li class="conditions__item-list-item">
+                            Пояснительная записка
+                        </li>
+
+                        <li class="conditions__item-list-item">
+                            Стресс-тест
+                        </li>
+
+                        <li class="conditions__item-list-item">
+                            Зум-сессия
+                        </li>
+
+                        <li class="conditions__item-list-item">
+                            Маркетинговое исследование
+                        </li>
+
+                        <li class="conditions__item-list-item">
+                            Дизайнерская презентация
+                        </li>
+
+                        <li class="conditions__item-list-item">
+                            Обучение
+                        </li>
+
+                        <li class="conditions__item-list-item">
+                            Сопровождение до одобрения
+                        </li>
+
+                        <li class="conditions__item-list-item">
+                            Текстовая часть бизнес-плана
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="conditions__item-bottom">
+                    <button class="btn">
+                        Заказать
+                    </button>
+
+                    <div class="conditions__item-deadlines">
+                        <span>
+                            Сроки разработки:
+                        </span>
+
+                        <span>
+                            до 28 дней
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="conditions__footer">
+            Как правило, крупные консалтинговые корпорации (бывш. PwC, KPMG, BCG) передают
+            финансово-экономическую модель заказчикам за дополнительную плату в размере от 10 тыс. евро. Мы в ЭКЦ
+            «ИнвестПроект» предоставляем фин. модель в рамках договора и консультируем заказчика, чтобы он в дальнейшем
+            мог самостоятельно использовать ее в качестве инструмента управления.
+        </div>
+
+    </div>
+</section>
+        <section class='preview-project'>
+    <div class='container preview-project__container'>
+        <h2 class="block-title preview-project__title">
+            Успешно реализованные проекты
+        </h2>
+
+        <div class="preview-project__subtitle">
+            Лучшие практики разработанных нами 1500+ успешных инвестпроектов с 2006 года.
+        </div>
+
+        <div class="plan__tabs-item-category-box">
+
+            <a href="#" class="category-link active">
+                <span class="category-link__name">
+                    Все
+                </span>
+            </a>
+
+            <a href="#" class="category-link">
+                <span class="category-link__name">
+                    Бизнес-план
+                </span>
+                <div class="category-link__color"></div>
+            </a>
+
+            <a href="#" class="category-link">
+                <span class="category-link__name">
+                    Консалтинг
+                </span>
+
+                <div class="category-link__color"></div>
+
+            </a>
+
+            <a href="#" class="category-link">
+                <span class="category-link__name">
+                    Маркетинг
+                </span>
+                <div class="category-link__color"></div>
+            </a>
+
+            <a href="#" class="category-link">
+                <span class="category-link__name">
+                    Оценка
+                </span>
+                <div class="category-link__color"></div>
+            </a>
+
+            <a href="#" class="category-link">
+                <span class="category-link__name">
+                    Финансирование
+                </span>
+                <div class="category-link__color"></div>
+            </a>
+
+        </div>
+
+        <div class="slider-wrap">
+
+            <!-- Slider main container -->
+            <div class="swiper preview-project__slider">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide preview-project__slide">
+
+                        <div class="preview-project__card">
+                            <div class="preview-project__card-header">
+                                <div class="preview-project__card-title">
+                                    По нашему бизнес-плану глэмпинг-парка в Московской области одобрен кредит 100 млн.
+                                    руб.
+                                </div>
+
+                                <a href="#" class="third-link preview-project__link">
+                                    Подробнее
+                                </a>
+                            </div>
+
+                            <div class="preview-project__card-img-wrap">
+                                <img src="assets/images/progect/project-img-1.png" alt="" class="preview-project__card-img">
+                            </div>
+
+                            <div class="preview-project__card-tag-box">
+                                <a href="#" class="category-link">
+                                    <span class="category-link__name">
+                                        Бизнес-план
+                                    </span>
+                                    <div class="category-link__color"></div>
+                                </a>
+
+                                <a href="#" class="category-link">
+                                    <span class="category-link__name">
+                                        Консалтинг
+                                    </span>
+                                    <div class="category-link__color"></div>
+                                </a>
+
+                                <a href="#" class="category-link">
+                                    <span class="category-link__name">
+                                        Маркетинг
+                                    </span>
+                                    <div class="category-link__color"></div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide preview-project__slide">
+
+                        <div class="preview-project__card">
+                            <div class="preview-project__card-header">
+                                <div class="preview-project__card-title">
+                                    По нашему бизнес-плану глэмпинг-парка в Московской области одобрен кредит 100 млн.
+                                    руб.
+                                </div>
+
+                                <a href="#" class="third-link preview-project__link">
+                                    Подробнее
+                                </a>
+                            </div>
+
+                            <div class="preview-project__card-img-wrap">
+                                <img src="assets/images/progect/project-img-1.png" alt="" class="preview-project__card-img">
+                            </div>
+
+                            <div class="preview-project__card-tag-box">
+                                <a href="#" class="category-link">
+                                    <span class="category-link__name">
+                                        Бизнес-план
+                                    </span>
+                                    <div class="category-link__color"></div>
+                                </a>
+
+                                <a href="#" class="category-link">
+                                    <span class="category-link__name">
+                                        Консалтинг
+                                    </span>
+                                    <div class="category-link__color"></div>
+                                </a>
+
+                                <a href="#" class="category-link">
+                                    <span class="category-link__name">
+                                        Маркетинг
+                                    </span>
+                                    <div class="category-link__color"></div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide preview-project__slide">
+
+                        <div class="preview-project__card">
+                            <div class="preview-project__card-header">
+                                <div class="preview-project__card-title">
+                                    По нашему бизнес-плану глэмпинг-парка в Московской области одобрен кредит 100 млн.
+                                    руб.
+                                </div>
+
+                                <a href="#" class="third-link preview-project__link">
+                                    Подробнее
+                                </a>
+                            </div>
+
+                            <div class="preview-project__card-img-wrap">
+                                <img src="assets/images/progect/project-img-1.png" alt="" class="preview-project__card-img">
+                            </div>
+
+                            <div class="preview-project__card-tag-box">
+                                <a href="#" class="category-link">
+                                    <span class="category-link__name">
+                                        Бизнес-план
+                                    </span>
+                                </a>
+
+                                <a href="#" class="category-link">
+                                    <span class="category-link__name">
+                                        Консалтинг
+                                    </span>
+                                </a>
+
+                                <a href="#" class="category-link">
+                                    <span class="category-link__name">
+                                        Маркетинг
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide preview-project__slide">
+
+                        <div class="preview-project__card">
+                            <div class="preview-project__card-header">
+                                <div class="preview-project__card-title">
+                                    По нашему бизнес-плану глэмпинг-парка в Московской области одобрен кредит 100 млн.
+                                    руб.
+                                </div>
+
+                                <a href="#" class="third-link preview-project__link">
+                                    Подробнее
+                                </a>
+                            </div>
+
+                            <div class="preview-project__card-img-wrap">
+                                <img src="assets/images/progect/project-img-1.png" alt="" class="preview-project__card-img">
+                            </div>
+
+                            <div class="preview-project__card-tag-box">
+                                <a href="#" class="category-link">
+                                    <span class="category-link__name">
+                                        Бизнес-план
+                                    </span>
+                                </a>
+
+                                <a href="#" class="category-link">
+                                    <span class="category-link__name">
+                                        Консалтинг
+                                    </span>
+                                </a>
+
+                                <a href="#" class="category-link">
+                                    <span class="category-link__name">
+                                        Маркетинг
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="preview-industry__slider-bottom">
+                <!-- If we need navigation buttons -->
+                <div class="btn-slider-box preview-industry__btn-slider-box">
+
+                    <div class="btn-slider btn-slider_gray btn-slider-prev preview-project__btn-slider-prev">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3333 5L20 12M20 12L13.3333 19M20 12L4 12" stroke="#191B1E" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+
+
+                    <div class="btn-slider btn-slider_gray btn-slider-next preview-project-slider-next">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3333 5L20 12M20 12L13.3333 19M20 12L4 12" stroke="#191B1E" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+                </div>
+
+                <a class="link preview-industry__link" href="#">
+                    Все бизнес-планы
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+        <section class='preview-reviews'>
+    <div class='container preview-reviews__container'>
+        <div class="preview-reviews__title-box">
+            <h2 class="block-title preview-reviews__title">
+                Отзывы наших клиентов
+            </h2>
+
+            <a class="link preview-reviews-title-link" href="#">
+                Все отзывы
+            </a>
+        </div>
+
+        <div class="slider-wrap">
+
+            <!-- Slider main container -->
+            <div class="swiper preview-reviews__slider">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide preview-reviews__slide">
+
+                        <div class="preview-reviews__card">
+                            <div class="preview-reviews__card-title">
+                                Сулоев А.В.
+                            </div>
+
+                            <div class="preview-reviews__card-subtitle">
+                                Президент, доктор экономических наук
+                            </div>
+
+                            <p class="preview-reviews__card-text">
+                                «...В процессе разработки бизнес-плана Ваша команда продемонстрировала высокую
+                                квалификацию и партнёрский подход к работе с клиентами, а также проявила
+                                профессиональную и этическую корректность при подготовке маркетингового обоснования
+                                данного проекта...»
+                            </p>
+
+                            <a href="#" class="third-link preview-reviews__card-link">
+                                Читать полностью
+                            </a>
+
+                            <div class="preview-reviews__card-footer">
+                                <div class="preview-reviews__card-logo-wrap">
+                                    <img src="assets/images/reviews/reviews-logo-1.png" alt=""
+                                        class="preview-reviews__card-logo">
+                                </div>
+
+                                <span class="preview-reviews__card-logo-lable">
+                                    Ассоциация крематориев России
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide preview-reviews__slide">
+
+                        <div class="preview-reviews__card">
+                            <div class="preview-reviews__card-title">
+                                Сулоев А.В.
+                            </div>
+
+                            <div class="preview-reviews__card-subtitle">
+                                Президент, доктор экономических наук
+                            </div>
+
+                            <p class="preview-reviews__card-text">
+                                «...В процессе разработки бизнес-плана Ваша команда продемонстрировала высокую
+                                квалификацию и партнёрский подход к работе с клиентами, а также проявила
+                                профессиональную и этическую корректность при подготовке маркетингового обоснования
+                                данного проекта...»
+                            </p>
+
+                            <a href="#" class="third-link preview-reviews__card-link">
+                                Читать полностью
+                            </a>
+
+                            <div class="preview-reviews__card-footer">
+                                <div class="preview-reviews__card-logo-wrap">
+                                    <img src="assets/images/reviews/reviews-logo-1.png" alt=""
+                                        class="preview-reviews__card-logo">
+                                </div>
+
+                                <span class="preview-reviews__card-logo-lable">
+                                    Ассоциация крематориев России
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide preview-reviews__slide">
+
+                        <div class="preview-reviews__card">
+                            <div class="preview-reviews__card-title">
+                                Сулоев А.В.
+                            </div>
+
+                            <div class="preview-reviews__card-subtitle">
+                                Президент, доктор экономических наук
+                            </div>
+
+                            <p class="preview-reviews__card-text">
+                                «...В процессе разработки бизнес-плана Ваша команда продемонстрировала высокую
+                                квалификацию и партнёрский подход к работе с клиентами, а также проявила
+                                профессиональную и этическую корректность при подготовке маркетингового обоснования
+                                данного проекта...»
+                            </p>
+
+                            <a href="#" class="third-link preview-reviews__card-link">
+                                Читать полностью
+                            </a>
+
+                            <div class="preview-reviews__card-footer">
+                                <div class="preview-reviews__card-logo-wrap">
+                                    <img src="assets/images/reviews/reviews-logo-1.png" alt=""
+                                        class="preview-reviews__card-logo">
+                                </div>
+
+                                <span class="preview-reviews__card-logo-lable">
+                                    Ассоциация крематориев России
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide preview-reviews__slide">
+
+                        <div class="preview-reviews__card">
+                            <div class="preview-reviews__card-title">
+                                Сулоев А.В.
+                            </div>
+
+                            <div class="preview-reviews__card-subtitle">
+                                Президент, доктор экономических наук
+                            </div>
+
+                            <p class="preview-reviews__card-text">
+                                «...В процессе разработки бизнес-плана Ваша команда продемонстрировала высокую
+                                квалификацию и партнёрский подход к работе с клиентами, а также проявила
+                                профессиональную и этическую корректность при подготовке маркетингового обоснования
+                                данного проекта...»
+                            </p>
+
+                            <a href="#" class="third-link preview-reviews__card-link">
+                                Читать полностью
+                            </a>
+
+                            <div class="preview-reviews__card-footer">
+                                <div class="preview-reviews__card-logo-wrap">
+                                    <img src="assets/images/reviews/reviews-logo-1.png" alt=""
+                                        class="preview-reviews__card-logo">
+                                </div>
+
+                                <span class="preview-reviews__card-logo-lable">
+                                    Ассоциация крематориев России
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide preview-reviews__slide">
+
+                        <div class="preview-reviews__card">
+                            <div class="preview-reviews__card-title">
+                                Сулоев А.В.
+                            </div>
+
+                            <div class="preview-reviews__card-subtitle">
+                                Президент, доктор экономических наук
+                            </div>
+
+                            <p class="preview-reviews__card-text">
+                                «...В процессе разработки бизнес-плана Ваша команда продемонстрировала высокую
+                                квалификацию и партнёрский подход к работе с клиентами, а также проявила
+                                профессиональную и этическую корректность при подготовке маркетингового обоснования
+                                данного проекта...»
+                            </p>
+
+                            <a href="#" class="third-link preview-reviews__card-link">
+                                Читать полностью
+                            </a>
+
+                            <div class="preview-reviews__card-footer">
+                                <div class="preview-reviews__card-logo-wrap">
+                                    <img src="assets/images/reviews/reviews-logo-1.png" alt=""
+                                        class="preview-reviews__card-logo">
+                                </div>
+
+                                <span class="preview-reviews__card-logo-lable">
+                                    Ассоциация крематориев России
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+            <div class="preview-industry__slider-bottom">
+                <!-- If we need navigation buttons -->
+                <div class="btn-slider-box preview-industry__btn-slider-box">
+
+                    <div class="btn-slider btn-slider_gray btn-slider-prev preview-reviews__btn-slider-prev">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3333 5L20 12M20 12L13.3333 19M20 12L4 12" stroke="#191B1E" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+
+
+                    <div class="btn-slider btn-slider_gray btn-slider-next preview-reviews__btn-slider-next">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3333 5L20 12M20 12L13.3333 19M20 12L4 12" stroke="#191B1E" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+
+
+                </div>
+
+                <a class="link preview-reviews-bottom-link" href="#">
+                    Все отзывы
+                </a>
+
+            </div>
+        </div>
+    </div>
+</section>
+        <section class='why'>
+    <div class='container why__container'>
+        <h2 class="block-title why__title">
+            Почему нас выбирают
+        </h2>
+
+        <div class="why__card-box">
+            <div class="why__item">
+                <div class="why__item-img-wrap">
+                    <img src="assets/images/why/nadezhnost.png" alt="" class="why__item-img">
+                </div>
+
+                <div class="why__item-title">
+                    Надежность
+                </div>
+
+                <p class="why__item-tetx">
+                    Наши бизнес-планы одобряют сразу или с минимальными уточнениями, даже если это ФРП.
+                </p>
+
+                <p class="why__item-tetx">
+                    Более 90% одобрений банками и инвесторами, если мы подтвердили перспективность проекта.
+                </p>
+            </div>
+
+            <div class="why__item why__item-bg">
+                <img src="assets/images/why/why-img-1.png" alt="" class="why__item-img">
+
+                <div class="why__item-logo-wrap">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8 10L13.197 10.5774C15.6458 10.8495 18.1088 10.208 20.1137 8.77594L24 6L27.8863 8.77594C29.8912 10.208 32.3542 10.8495 34.803 10.5774L40 10V29.0557C40 32.0859 38.288 34.856 35.5777 36.2111L24 42L12.4223 36.2111C9.71202 34.856 8 32.0859 8 29.0557V10Z"
+                            stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+
+                <div class="why__item-title">
+                    Гарантия
+                </div>
+
+                <p class="why__item-tetx">
+                    Если в течение 1 года после сдачи проекта вы найдете ошибку в расчетах, мы ее исправим и бесплатно
+                    актуализируем расчеты.
+                </p>
+
+            </div>
+
+            <div class="why__item">
+                <div class="why__item-logo-wrap">
+                    <svg width="36" height="42" viewBox="0 0 36 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M18 16V24M14 2H22M29.3137 12.6863L32 10M18 40C26.8366 40 34 32.8366 34 24C34 15.1634 26.8366 8 18 8C9.16344 8 2 15.1634 2 24C2 32.8366 9.16344 40 18 40Z"
+                            stroke="#006DF0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+
+                <div class="why__item-title">
+                    Сверхкороткие сроки
+                </div>
+
+                <p class="why__item-tetx">
+                    Мы отвечаем за сроки разработки Вашего инвест-проекта. Поэтому гарантируем Вам скидку за каждый день
+                    просрочки в сдаче работ. Пока никому не довелось ей воспользоваться.
+                </p>
+            </div>
+
+            <div class="why__item">
+                <div class="why__item-img-wrap">
+                    <img src="assets/images/why/soprovozhdenie.png" alt="" class="why__item-img">
+                </div>
+
+                <div class="why__item-title">
+                    Сопровождение
+                </div>
+
+                <p class="why__item-tetx">
+                    Мы сопровождаем ваши проекты до одобрения банком, инвестором или фондом, даже если это займет год.
+                </p>
+            </div>
+
+            <div class="why__item">
+                <div class="why__item-img-wrap">
+                    <img src="assets/images/why/resultat.png" alt="" class="why__item-img">
+                </div>
+
+                <div class="why__item-title">
+                    Результат
+                </div>
+
+                <p class="why__item-tetx">
+                    Мы не берем 100% предоплаты. Разработка проекта —это сложносоставная услуга.
+                </p>
+
+                <p class="why__item-tetx">
+                    И мы понимаем Ваши сомнения.
+                </p>
+
+                <p class="why__item-tetx">
+                    Вы можете не платить остаток, если передумаете или откажетесь от проекта по каким-либо причинам.
+                </p>
+
+            </div>
+
+            <div class="why__item why__item_darck">
+                <div class="why__item-logo-wrap">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8 12C6.89543 12 6 12.8954 6 14L6 34C6 35.1046 6.89543 36 8 36H28C29.1046 36 30 35.1046 30 34V14C30 12.8954 29.1046 12 28 12H8Z"
+                            stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M31.4142 22.5858C30.6332 23.3668 30.6332 24.6332 31.4142 25.4142L40.2929 34.2929C40.9229 34.9229 42 34.4767 42 33.5858V14.4142C42 13.5233 40.9229 13.0771 40.2929 13.7071L31.4142 22.5858Z"
+                            stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+
+                <div class="why__item-title">
+                    Онлайн и оффлайн
+                </div>
+
+                <p class="why__item-tetx">
+                    Вы всегда можете запросить зум-консультацию или приехать к нам в офис.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class='brands'>
+    <div class='container brands__container'>
+        <div class="brands__title-box">
+            <h2 class="block-title brands__title">
+                Мы сотрудничаем<br>
+                с крупнейшими компаниями
+            </h2>
+
+            <a class="link brands__top-link" href="#">
+                Все партнёры
+            </a>
+        </div>
+    </div>
+
+    <div class="slider-wrap">
+
+        <!-- Slider main container -->
+        <div class="swiper brands__slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <a href="#" class="swiper-slide brands__slide">
+                    <img class="brands__slide-img" src="assets/images/brands/Untitled.png" alt="">
+                </a>
+
+                <a href="#" class="swiper-slide brands__slide">
+                    <img class="brands__slide-img" src="assets/images/brands/brands-img-2.png" alt="">
+                </a>
+
+                <a href="#" class="swiper-slide brands__slide">
+                    <img class="brands__slide-img" src="assets/images/brands/brands-img-3.png" alt="">
+                </a>
+
+                <a href="#" class="swiper-slide brands__slide">
+                    <img class="brands__slide-img" src="assets/images/brands/brands-img-4.png" alt="">
+                </a>
+
+                <a href="#" class="swiper-slide brands__slide">
+                    <img class="brands__slide-img" src="assets/images/brands/brands-img-5.png" alt="">
+                </a>
+
+                <a href="#" class="swiper-slide brands__slide">
+                    <img class="brands__slide-img" src="assets/images/brands/brands-img-6.png" alt="">
+                </a>
+
+                <a href="#" class="swiper-slide brands__slide">
+                    <img class="brands__slide-img" src="assets/images/brands/brands-img-7.png" alt="">
+                </a>
+
+                <a href="#" class="swiper-slide brands__slide">
+                    <img class="brands__slide-img" src="assets/images/brands/brands-img-8.png" alt="">
+                </a>
+
+                <a href="#" class="swiper-slide brands__slide">
+                    <img class="brands__slide-img" src="assets/images/brands/Untitled.png" alt="">
+                </a>
+
+                <a href="#" class="swiper-slide brands__slide">
+                    <img class="brands__slide-img" src="assets/images/brands/brands-img-2.png" alt="">
+                </a>
+
+            </div>
+
+
+
+
+
+        </div>
+
+        <div class="preview-industry__slider-bottom">
+
+
+            <a class="link brands__bottom-link" href="#">
+                Все партнёры
+            </a>
+        </div>
+
+
+    </div>
+
+    <div class='container brands__container'>
+
+    </div>
+</section>
+        <section class='preview-about'>
+    <div class='container preview-about__container'>
+
+        <div class="preview-about__title-box">
+            <h2 class="block-title preview-about__title">
+                О компании
+            </h2>
+
+            <a class="link preview-about__top-link" href="#">
+                Подробнее
+            </a>
+        </div>
+
+        <div class="preview-about__top-box">
+            <div class="preview-about__top-item">
+                <img src="assets/images/about/about-img-1.png" alt="" class="preview-about__top-item-img">
+
+                <div class="preview-about__top-item-title">
+                    18 лет успешной работы!
+                </div>
+
+                <p class="preview-about__top-item-text">
+                    Совместно с партнерами мы профессионально оказываем полный комплекс услуг по подготовке и реализации
+                    инвестпроектов — разработка бизнес-планов, проведение маркетинговых исследований, консалтинг,
+                    проектирование, оценка, перевод, сопровождение.
+                </p>
+
+                <p class="preview-about__top-item-text">
+                    С 2006 года ЭКЦ «Инвест-Проект» успешно разработал более 1000 бизнес-проектов на сумму более
+                    1,2 трлн. руб.
+                </p>
+            </div>
+
+            <div class="preview-about__top-item">
+                <img src="assets/images/about/about-img-2.png" alt="" class="preview-about__top-item-img">
+
+                <div class="preview-about__top-item-title">
+                    Книга «Бизнес-планирование инвестиционных проектов»
+                </div>
+
+                <p class="preview-about__top-item-text">
+                    В подарок при покупке готового бизнес-плана
+                </p>
+
+                <button class="btn preview-about__top-item-btn">
+                    Получить книгу
+                </button>
+            </div>
+        </div>
+
+        <div class="preview-about__bottom-box">
+
+            <div class="preview-about__bottom-item">
+                <div class="preview-about__bottom-item-logo-wrap">
+                    <svg width="32" height="42" viewBox="0 0 32 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16 26V30M8 16V10C8 5.58172 11.5817 2 16 2C20.4183 2 24 5.58172 24 10V16M4 40H28C29.1046 40 30 39.1046 30 38V18C30 16.8954 29.1046 16 28 16H4C2.89543 16 2 16.8954 2 18V38C2 39.1046 2.89543 40 4 40Z"
+                            stroke="#006DF0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+
+                <div class="preview-about__bottom-item-title">
+                    Конфиденциальность
+                </div>
+
+                <p class="preview-about__bottom-item-tetx">
+                    Мы гарантируем защиту данных вашего проекта соглашением о неразглашении и своей заинтересованностью
+                    поддерживать многолетнюю репутацию надежного исполнителя
+                </p>
+            </div>
+
+            <div class="preview-about__bottom-item">
+                <div class="preview-about__bottom-item-logo-wrap">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M18 14H8C6.89543 14 6 14.8954 6 16V38C6 39.1046 6.89543 40 8 40H40C41.1046 40 42 39.1046 42 38V16C42 14.8954 41.1046 14 40 14H30M18 14V8C18 6.89543 18.8954 6 20 6H28C29.1046 6 30 6.89543 30 8V14M18 14H30"
+                            stroke="#006DF0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+
+                <div class="preview-about__bottom-item-title">
+                    Репутация
+                </div>
+
+                <p class="preview-about__bottom-item-tetx">
+                    Самое дорогое в любом бизнесе — это репутация. Мы несем личную ответственность за качество работы. И
+                    гордимся безупречной репутацией
+                </p>
+            </div>
+
+            <div class="preview-about__bottom-item">
+                <div class="preview-about__bottom-item-logo-wrap">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M32 33.4166C30.9665 28.75 27.0713 26 20.0002 26C12.9292 26 9.03352 28.75 8 33.4166M20 38C29.9411 38 38 29.9411 38 20C38 10.0589 29.9411 2 20 2C10.0589 2 2 10.0589 2 20C2 29.9411 10.0589 38 20 38ZM20 20C22.6667 20 24 18.5714 24 15C24 11.4286 22.6667 10 20 10C17.3333 10 16 11.4286 16 15C16 18.5714 17.3333 20 20 20Z"
+                            stroke="#006DF0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+
+                <div class="preview-about__bottom-item-title">
+                    Команда
+                </div>
+
+                <p class="preview-about__bottom-item-tetx">
+                    Разработкой каждого бизнес-плана занимаются 3 штатных специалиста — финансист, маркетолог и
+                    руководитель проекта
+                </p>
+            </div>
+        </div>
+
+        <a class="link preview-about__bottom-link" href="#">
+            Подробнее
+        </a>
+    </div>
+</section>
+        <section class='achievements'>
+    <div class='container achievements__container'>
+        <h2 class="block-title achievements__title">
+            Наши достижения
+        </h2>
+
+        <div class="achievements__box">
+
+            <div class="achievements__list-box">
+                <ul class="achievements_list">
+                    <li class="achievements_list-item">
+                        Национально значимое предприятие
+                    </li>
+
+                    <li class="achievements_list-item">
+                        Золотой партнер РБК
+                    </li>
+
+                    <li class="achievements_list-item">
+                        Лучший инвестиционный проект 2010 г.
+                    </li>
+
+                    <li class="achievements_list-item">
+                        Участник торгов по ФЗ-223
+                    </li>
+
+                    <li class="achievements_list-itemv achievements_list-item_sel">
+                        Все крупнейшие банки России
+                    </li>
+                </ul>
+
+                <ul class="achievements_list">
+                    <li class="achievements_list-item">
+                        <div class="achievements_list-item-lable-box">
+                            <div class="achievements_list-item-lable-item">
+                                <img src="assets/images/achievements-img-2.png" alt=""
+                                    class="achievements_list-item-lable-item-img">
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="achievements_list-item achievements_list-item_small">
+                        Сбербанк, ВТБ, ВЭБ, Газпромбанк, Россельхозбанк, другие российские и зарубежные банки, а также
+                        Минсельхоз, Минпром, ОЭЗ, ТОСЭР и т.д.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="achievements_item">
+                Эксклюзивный партнер Банка ВТБ
+            </div>
+
+            <div class="achievements__img-wrap">
+                <img src="assets/images/achievements-img.png" alt="" class="achievements__img">
+            </div>
+        </div>
+    </div>
+</section>
+        <section class='preview-blog'>
+    <div class='container preview-blog__container'>
+        <div class="preview-blog__title-box">
+            <h2 class="block-title preview-blog__title">
+                Наш блог о бизнес-планировании
+            </h2>
+
+            <div class="telegram-block">
+                <div class="telegram-block__text-block">
+                    <div class="telegram-block__text-title">
+                        Наш телеграм-канал
+                    </div>
+
+                    <div class="telegram-block__text-subtitle">
+                        Будни бизнес-планированияс 2006 года
+                    </div>
+                </div>
+
+                <a class="first-social__link first-social__link_telegram" href="#">
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M1.3749 10.1475C6.74359 7.8084 10.3236 6.26635 12.1148 5.52131C17.2292 3.39406 18.2919 3.02454 18.9846 3.01234C19.1369 3.00965 19.4776 3.04741 19.6982 3.22645C19.8845 3.37763 19.9358 3.58185 19.9603 3.72518C19.9848 3.86852 20.0154 4.19504 19.9911 4.45017C19.714 7.36221 18.5147 14.429 17.9046 17.6905C17.6465 19.0706 17.1382 19.5333 16.6461 19.5786C15.5766 19.677 14.7645 18.8718 13.7287 18.1928C12.1078 17.1303 11.1921 16.4689 9.61879 15.4321C7.80053 14.2339 8.97923 13.5753 10.0154 12.4991C10.2866 12.2174 14.9987 7.93142 15.0899 7.54261C15.1013 7.49398 15.1119 7.31272 15.0042 7.21701C14.8965 7.1213 14.7376 7.15403 14.6229 7.18006C14.4604 7.21696 11.871 8.92842 6.85486 12.3145C6.11988 12.8192 5.45416 13.0651 4.8577 13.0522C4.20015 13.038 2.93528 12.6804 1.99498 12.3747C0.84166 11.9998 -0.074973 11.8016 0.00484519 11.1649C0.0464194 10.8333 0.503103 10.4941 1.3749 10.1475Z"
+                            fill="white"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="preview-blog_box">
+            <div class="preview-blog__item">
+                <div class="preview-blog__item-img-wrap">
+                    <img src="assets/images/blog/blog-img-1.png" alt="" class="preview-blog__item-img">
+                </div>
+
+                <a href="#" class="preview-blog__item-title">
+                    Систематические и несистематические риски в бизнес плане
+                </a>
+
+                <p class="preview-blog__item-text">
+                    В наиболее широком смысле риск представляет собой вероятность отклонения итогов того или иного
+                    события от планируемого результата. Рассматривая феномен через призму экономической сферы и
+                    конкретно бизнеса, можно сделать вывод о том, что риск в этой сфере представляет собой возможное
+                    наступление событий, которые способны отрицательно сказаться на финансовом результате той или иной
+                    операции.
+                </p>
+
+                <div class="preview-blog__item-data-box">
+
+                    <span class="preview-blog__item-data">30 ноября 2024</span>
+                    <span class="preview-blog__item-tag">Бизнес-планирование</span>
+                </div>
+            </div>
+
+            <div class="preview-blog__item">
+                <div class="preview-blog__item-img-wrap">
+                    <img src="assets/images/blog/blog-img-1.png" alt="" class="preview-blog__item-img">
+                </div>
+
+                <a href="#" class="preview-blog__item-title">
+                    Систематические и несистематические риски в бизнес плане
+                </a>
+
+                <p class="preview-blog__item-text">
+                    В наиболее широком смысле риск представляет собой вероятность отклонения итогов того или иного
+                    события от планируемого результата. Рассматривая феномен через призму экономической сферы и
+                    конкретно бизнеса, можно сделать вывод о том, что риск в этой сфере представляет собой возможное
+                    наступление событий, которые способны отрицательно сказаться на финансовом результате той или иной
+                    операции.
+                </p>
+
+                <div class="preview-blog__item-data-box">
+
+                    <span class="preview-blog__item-data">30 ноября 2024</span>
+                    <span class="preview-blog__item-tag">Бизнес-планирование</span>
+                </div>
+            </div>
+
+            <div class="preview-blog__item">
+                <div class="preview-blog__item-img-wrap">
+                    <img src="assets/images/blog/blog-img-1.png" alt="" class="preview-blog__item-img">
+                </div>
+
+                <a href="#" class="preview-blog__item-title">
+                    Систематические и несистематические риски в бизнес плане
+                </a>
+
+                <p class="preview-blog__item-text">
+                    В наиболее широком смысле риск представляет собой вероятность отклонения итогов того или иного
+                    события от планируемого результата. Рассматривая феномен через призму экономической сферы и
+                    конкретно бизнеса, можно сделать вывод о том, что риск в этой сфере представляет собой возможное
+                    наступление событий, которые способны отрицательно сказаться на финансовом результате той или иной
+                    операции.
+                </p>
+
+                <div class="preview-blog__item-data-box">
+
+                    <span class="preview-blog__item-data">30 ноября 2024</span>
+                    <span class="preview-blog__item-tag">Бизнес-планирование</span>
+                </div>
+            </div>
+
+            <div class="preview-blog__item">
+                <div class="preview-blog__item-img-wrap">
+                    <img src="assets/images/blog/blog-img-1.png" alt="" class="preview-blog__item-img">
+                </div>
+
+                <a href="#" class="preview-blog__item-title">
+                    Систематические и несистематические риски в бизнес плане
+                </a>
+
+                <p class="preview-blog__item-text">
+                    В наиболее широком смысле риск представляет собой вероятность отклонения итогов того или иного
+                    события от планируемого результата. Рассматривая феномен через призму экономической сферы и
+                    конкретно бизнеса, можно сделать вывод о том, что риск в этой сфере представляет собой возможное
+                    наступление событий, которые способны отрицательно сказаться на финансовом результате той или иной
+                    операции.
+                </p>
+
+                <div class="preview-blog__item-data-box">
+
+                    <span class="preview-blog__item-data">30 ноября 2024</span>
+                    <span class="preview-blog__item-tag">Бизнес-планирование</span>
+                </div>
+            </div>
+        </div>
+
+        <a class="link preview-blog__link" href="#">
+            Все статьи
+        </a>
+    </div>
+</section>
+        <section class='preview-news'>
+    <div class='container preview-news__container'>
+
+        <div class="preview-news__title-box">
+            <h2 class="block-title preview-news__title">
+                Новости
+            </h2>
+
+        </div>
+
+        <div class="slider-wrap">
+
+            <!-- Slider main container -->
+            <div class="swiper preview-news__slider">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide preview-news__slide">
+                        <div class="preview-news__card">
+                            <div class="preview-news__card-text-box">
+
+                                <a href="#" class="preview-news__card-title">
+                                    Объем инвестиций в ОЭЗ России за три квартала 2024 года превысил показатель всего
+                                    прошлого года
+                                </a>
+
+                                <div class="preview-news__card-data">
+                                    18 декабря 2024
+                                </div>
+                            </div>
+
+                            <div class="preview-news__card-img-wrap">
+                                <img src="assets/images/news/news-img-1.png" alt="" class="preview-news__card-img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide preview-news__slide">
+                        <div class="preview-news__card">
+                            <div class="preview-news__card-text-box">
+
+                                <a href="#" class="preview-news__card-title">
+                                    Объем инвестиций в ОЭЗ России за три квартала 2024 года превысил показатель всего
+                                    прошлого года
+                                </a>
+
+                                <div class="preview-news__card-data">
+                                    18 декабря 2024
+                                </div>
+                            </div>
+
+                            <div class="preview-news__card-img-wrap">
+                                <img src="assets/images/news/news-img-1.png" alt="" class="preview-news__card-img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide preview-news__slide">
+                        <div class="preview-news__card">
+                            <div class="preview-news__card-text-box">
+
+                                <a href="#" class="preview-news__card-title">
+                                    Объем инвестиций в ОЭЗ России за три квартала 2024 года превысил показатель всего
+                                    прошлого года
+                                </a>
+
+                                <div class="preview-news__card-data">
+                                    18 декабря 2024
+                                </div>
+                            </div>
+
+                            <div class="preview-news__card-img-wrap">
+                                <img src="assets/images/news/news-img-1.png" alt="" class="preview-news__card-img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide preview-news__slide">
+                        <div class="preview-news__card">
+                            <div class="preview-news__card-text-box">
+
+                                <a href="#" class="preview-news__card-title">
+                                    Объем инвестиций в ОЭЗ России за три квартала 2024 года превысил показатель всего
+                                    прошлого года
+                                </a>
+
+                                <div class="preview-news__card-data">
+                                    18 декабря 2024
+                                </div>
+                            </div>
+
+                            <div class="preview-news__card-img-wrap">
+                                <img src="assets/images/news/news-img-1.png" alt="" class="preview-news__card-img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide preview-news__slide">
+                        <div class="preview-news__card">
+                            <div class="preview-news__card-text-box">
+
+                                <a href="#" class="preview-news__card-title">
+                                    Объем инвестиций в ОЭЗ России за три квартала 2024 года превысил показатель всего
+                                    прошлого года
+                                </a>
+
+                                <div class="preview-news__card-data">
+                                    18 декабря 2024
+                                </div>
+                            </div>
+
+                            <div class="preview-news__card-img-wrap">
+                                <img src="assets/images/news/news-img-1.png" alt="" class="preview-news__card-img">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="preview-industry__slider-bottom">
+                <!-- If we need navigation buttons -->
+                <div class="btn-slider-box preview-news__btn-slider-box">
+
+                    <div class="btn-slider btn-slider-prev preview-news__btn-slider-prev">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3333 5L20 12M20 12L13.3333 19M20 12L4 12" stroke="#191B1E" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+
+
+                    <div class="btn-slider btn-slider-next preview-news__btn-slider-next">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3333 5L20 12M20 12L13.3333 19M20 12L4 12" stroke="#191B1E" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+                </div>
+
+                <a class="link preview-news__bottom-link" href="#">
+                    Все новости
+                </a>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+</section>
+        <section class='second-form'>
+    <div class='container_b second-form__container'>
+
+        <div class="second-form__text-box">
+            <div class="second-form__title">
+                Нужна консультация?
+            </div>
+
+            <div class="second-form__subtitle">
+                Заполните форму или свяжитесь с нами иначе, и мы поможем найти лучшее решение
+            </div>
+
+            <div class="second-form__contact-box">
+                <div class="second-form__contact-icon-wrap">
+                    <img src="assets/images/form/form-icon.png" alt="" class="second-form__contact-icon">
+                </div>
+
+                <div class="second-form__contact-text-box">
+                    <div class="second-form__contact-name">
+                        Лумпов Алексей Андреевич
+                    </div>
+
+                    <div class="second-form__contact-post">
+                        Генеральный директор ЭКЦ «ИнвестПроект»
+                    </div>
+
+                    <a class="second-form-tel" href="tel:+74956173902">
+                        +7 (495) 617-39-02
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="second-form__form-box">
+
+            <form class="form" action="">
+
+                <div class="form__row-wrap">
+                    <div class="form__row">
+                        <input type="text" name="name" placeholder="Ваше имя*">
+                    </div>
+
+                    <div class="form__row">
+                        <input type="text" name="tel" placeholder="Телефон*">
+                    </div>
+                </div>
+
+                <div class="form__row">
+                    <textarea name="text" id="" placeholder="Ваш вопрос"></textarea>
+                </div>
+
+                <button class="btn form__btn" type="submit">Заказать консультацию</button>
+
+                <span class="form-agree">
+                    Нажимая кнопку, вы соглашаетесь на обработку <a href="#" class="form-agree__link">персональных
+                        данных</a> и принимаете <a href="#" class="form-agree__link">оферту</a>
+                </span>
+            </form>
+
+        </div>
+
+        <div class="second-form__contact-box second-form__contact-box_mob">
+            <div class="second-form__contact-icon-wrap">
+                <img src="assets/images/form/form-icon.png" alt="" class="second-form__contact-icon">
+            </div>
+
+            <div class="second-form__contact-text-box">
+                <div class="second-form__contact-name">
+                    Лумпов Алексей Андреевич
+                </div>
+
+                <div class="second-form__contact-post">
+                    Генеральный директор ЭКЦ «ИнвестПроект»
+                </div>
+
+                <a class="second-form-tel" href="tel:+74956173902">
+                    +7 (495) 617-39-02
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+        <section class='monitoring'>
+    <div class='container monitoring__container'>
+
+        <div class="monitoring__title-box">
+            <h2 class="block-title monitoring__title">
+                Мониторинг инвестпроектов в РФ
+            </h2>
+
+            <a class="link monitoring__top-link" href="#">
+                Все проекты
+            </a>
+        </div>
+
+        <div class="monitoring__box">
+
+            <div class="monitoring__item">
+                <div class="monitoring__item-title">
+                    В аэропорту Иркутска открыт новый терминал внутренних авиалиний
+                </div>
+
+                <p class="monitoring__item-text">
+                    Площадь нового терминала 2,6 тыс. м2, пассажиропоток 4 млн. пассажиров в год. Стоимость
+                    строительства составила 585 млн. руб. Этот объект необходим на то время, пока будет решаться вопрос
+                    с переносом действующего аэропорта.
+                </p>
+
+                <div class="monitoring__item-data">
+                    Обновлено 13 октября
+                </div>
+            </div>
+
+            <div class="monitoring__item">
+                <div class="monitoring__item-title">
+                    «ТМХ-Электротех» освоил выпуск асинхронных тяговых электродвигателей 4 новых типов
+                </div>
+
+                <p class="monitoring__item-text">
+                    В «ТМХ-Электротехе» подвели промежуточные итоги реализации двух крупных проектов, направленных на
+                    развитие производства электрических машин для локомотивов, вагонов метро и моторвагонного подвижного
+                    состава, при финансовой поддержке <a href="#">Фонда развития промышленности</a> (ФРП) — завод
+                    получил два льготных
+                    займа на общую сумму 5,2 млрд. руб.
+                </p>
+
+                <div class="monitoring__item-data">
+                    Обновлено 13 октября
+                </div>
+            </div>
+
+            <div class="monitoring__item">
+                <div class="monitoring__item-title">
+                    В Новороссийске открыли новый складской комплекс для хранения продуктов
+                </div>
+
+                <p class="monitoring__item-text">
+                    Площадь нового терминала 2,6 тыс. м2, пассажиропоток 4 млн. пассажиров в год. Стоимость
+                    строительства составила 585 млн. руб. Этот объект необходим на то время, пока будет решаться вопрос
+                    с переносом действующего аэропорта.
+                </p>
+
+                <div class="monitoring__item-data">
+                    Обновлено 13 октября
+                </div>
+            </div>
+
+            <div class="monitoring__item">
+                <div class="monitoring__item-title">
+                    В Улан-Удэ открыли новый терминал аэропорта «Байкал»
+                </div>
+
+                <p class="monitoring__item-text">
+                    Площадь нового терминала 2,6 тыс. м2, пассажиропоток 4 млн. пассажиров в год. Стоимость
+                    строительства составила 585 млн. руб. Этот объект необходим на то время, пока будет решаться вопрос
+                    с переносом действующего аэропорта.
+                </p>
+
+                <div class="monitoring__item-data">
+                    Обновлено 13 октября
+                </div>
+            </div>
+
+            <div class="monitoring__item">
+                <div class="monitoring__item-title">
+                    В Твери открыт завод по производству пищевого оборудования
+                </div>
+
+                <p class="monitoring__item-text">
+                    Площадь нового терминала 2,6 тыс. м2, пассажиропоток 4 млн. пассажиров в год. Стоимость
+                    строительства составила 585 млн. руб. Этот объект необходим на то время, пока будет решаться вопрос
+                    с переносом действующего аэропорта.
+                </p>
+
+                <div class="monitoring__item-data">
+                    Обновлено 13 октября
+                </div>
+            </div>
+
+        </div>
+
+        <a class="link monitoring__bottom-link" href="#">
+            Все проекты
+        </a>
+
+    </div>
+</section>
+        <section class='subscription'>
+    <div class='container subscription__container'>
+        <div class="subscription__icon-wrap">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M5 13.3333V29.6667C5 30.7712 5.89543 31.6667 7 31.6667H33C34.1046 31.6667 35 30.7712 35 29.6667V13.3333M5 13.3333L19.0287 5.5396C19.6328 5.20402 20.3672 5.20402 20.9713 5.5396L35 13.3333M5 13.3333C7.6294 15.0863 15.8843 20.5895 18.8908 22.5938C19.5626 23.0417 20.4376 23.0416 21.1094 22.5937L35 13.3333"
+                    stroke="#006DF0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+
+        <div class="subscription-text-box">
+            <div class="subscription__title">
+                Подпишитесь на нашу рассылку
+            </div>
+
+            <div class="subscription__subtitle">
+                Оставайтесь в курсе событий
+            </div>
+        </div>
+
+        <div class="subscription__form-box">
+            <form class="subscription__form" action="">
+                <input type="email" placeholder="Введите свой email">
+
+                <button class="btn subscription__btn" type="submit">
+                    <div class="subscription__btn-text">
+                        Подписаться
+                    </div>
+
+                    <div class="subscription__btn-icon">
+                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.11176 1.67822L14.6673 7.51156M14.6673 7.51156L9.11176 13.3449M14.6673 7.51156L1.33398 7.51156"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </button>
+            </form>
+
+            <span class="form-agree subscription__form-agree">
+                Подписываясь, вы соглашаетесь на обработку <a href="#" class="form-agree__link">персональных
+                    данных</a> и принимаете <a href="#" class="form-agree__link">оферту</a>
+            </span>
+        </div>
+
+    </div>
+</section>
+
+    </main>
+    <footer class='footer'>
+    <div class='container footer__container'>
+        <div class="footer__contact-box">
+            <a class="logo footer__logo" href="/">
+                <img src="assets/images/icons/Logo-footer.png" alt="" class="logo__img">
+            </a>
+
+            <span class="footer__addres">
+                129085, г. Москва, пр-кт Мира, д. 95, стр. 1, 16 этаж, офис 1615
+            </span>
+
+            <span class="footer__addres-subtitle">
+                ст. м. Алексеевская
+            </span>
+
+            <a class="footer__tel" href="tel:+74956173902">
+                +7 (495) 617-39-02
+            </a>
+
+            <span class="contact-work-clock footer__contact-work-clock">
+                пн-пт 09:00-18:00
+            </span>
+
+            <div class="footer__social-box">
+                <a class="footer__tel" href="tel:+79857609692">
+                    +7 (985) 760-96-92
+                </a>
+
+                <a class="social-link social-link_m" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M1.77895 9.63525C7.14765 7.2962 10.7276 5.75415 12.5189 5.0091C17.6332 2.88186 18.696 2.51233 19.3886 2.50013C19.541 2.49745 19.8816 2.5352 20.1023 2.71424C20.2886 2.86542 20.3398 3.06964 20.3644 3.21298C20.3889 3.35631 20.4194 3.68283 20.3952 3.93796C20.118 6.85 18.9188 13.9167 18.3087 17.1783C18.0505 18.5584 17.5422 19.0211 17.0501 19.0664C15.9807 19.1648 15.1686 18.3596 14.1327 17.6806C12.5119 16.6181 11.5962 15.9567 10.0228 14.9199C8.20458 13.7217 9.38328 13.0631 10.4195 11.9869C10.6907 11.7052 15.4028 7.41921 15.494 7.0304C15.5054 6.98177 15.516 6.80052 15.4083 6.7048C15.3006 6.60909 15.1417 6.64182 15.027 6.66785C14.8644 6.70475 12.2751 8.41622 7.25892 11.8023C6.52394 12.3069 5.85822 12.5529 5.26175 12.54C4.6042 12.5258 3.33933 12.1682 2.39903 11.8625C1.24571 11.4876 0.32908 11.2894 0.408898 10.6527C0.450472 10.3211 0.907156 9.98194 1.77895 9.63525Z"
+                            fill="#2AABEE"></path>
+                    </svg>
+                </a>
+
+                <a class="social-link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                        <path
+                            d="M19.9613 9.54828C19.871 7.07641 18.8294 4.73503 17.0539 3.01296C15.2783 1.2909 12.9062 0.321301 10.4328 0.306643H10.386C8.72037 0.305406 7.08314 0.737852 5.63532 1.56143C4.18752 2.385 2.97909 3.57132 2.12893 5.00366C1.27877 6.43601 0.816176 8.06505 0.786663 9.73041C0.75715 11.3958 1.16174 13.0401 1.96061 14.5018L1.11233 19.5778C1.11095 19.5882 1.1118 19.5988 1.11483 19.6089C1.11786 19.6189 1.123 19.6282 1.1299 19.6361C1.13681 19.6441 1.14532 19.6504 1.15487 19.6548C1.16441 19.6592 1.17479 19.6614 1.18529 19.6615H1.19989L6.2205 18.5447C7.51772 19.1675 8.9383 19.4907 10.3773 19.4903C10.4688 19.4903 10.5602 19.4903 10.6516 19.4903C11.9174 19.4541 13.1635 19.1677 14.318 18.6474C15.4725 18.1272 16.5125 17.3834 17.378 16.4591C18.2436 15.5348 18.9175 14.4482 19.3609 13.262C19.8042 12.0759 20.0083 10.8137 19.9613 9.54828ZM10.6039 17.8219C10.528 17.8219 10.4522 17.8219 10.3773 17.8219C9.10553 17.8235 7.85198 17.5192 6.72247 16.9347L6.46565 16.8005L3.06085 17.605L3.68928 14.1603L3.54336 13.9132C2.84643 12.725 2.47103 11.3757 2.45416 9.99821C2.43729 8.62079 2.77952 7.26266 3.44714 6.05773C4.11476 4.85277 5.08474 3.8425 6.26156 3.12643C7.43837 2.41035 8.7814 2.01318 10.1584 1.97403C10.2349 1.97403 10.3118 1.97403 10.3889 1.97403C12.468 1.98019 14.4613 2.80282 15.9396 4.26469C17.4179 5.72655 18.2627 7.71066 18.292 9.78944C18.3213 11.8683 17.5329 13.8754 16.0965 15.3784C14.66 16.8814 12.6907 17.76 10.6127 17.8249L10.6039 17.8219Z"
+                            fill="#25D366"></path>
+                        <path
+                            d="M7.04236 5.26854C6.92385 5.27086 6.80698 5.29693 6.6987 5.34522C6.59043 5.39351 6.49294 5.46304 6.41201 5.54968C6.1834 5.78413 5.54427 6.34835 5.5073 7.53323C5.47034 8.71807 6.29819 9.89033 6.41396 10.0547C6.52972 10.2191 7.99668 12.7786 10.4131 13.8165C11.8335 14.4285 12.456 14.5335 12.8597 14.5335C13.0261 14.5335 13.1516 14.516 13.2829 14.5082C13.7255 14.481 14.7246 13.9693 14.9425 13.4128C15.1604 12.8564 15.175 12.37 15.1176 12.2727C15.0602 12.1754 14.9026 12.1054 14.6653 11.9808C14.4279 11.8563 13.2635 11.2337 13.0446 11.1462C12.9634 11.1084 12.876 11.0857 12.7867 11.0791C12.7286 11.0821 12.6721 11.0993 12.6221 11.1292C12.5721 11.159 12.5301 11.2006 12.4998 11.2503C12.3053 11.4925 11.8587 12.0188 11.7089 12.1706C11.6762 12.2083 11.6358 12.2386 11.5906 12.2598C11.5454 12.2809 11.4962 12.2923 11.4462 12.2932C11.3542 12.2891 11.2642 12.2648 11.1826 12.2221C10.4773 11.9226 9.83417 11.4936 9.28662 10.9575C8.77501 10.4532 8.34094 9.87594 7.99862 9.24439C7.86636 8.99923 7.99862 8.87278 8.11927 8.75801C8.23991 8.64317 8.36927 8.48465 8.49378 8.34742C8.59597 8.23026 8.68114 8.0993 8.74675 7.95833C8.78068 7.89291 8.79785 7.82007 8.79662 7.74639C8.79546 7.67265 8.77597 7.60046 8.73991 7.53613C8.68256 7.41355 8.25352 6.20827 8.05217 5.72479C7.88875 5.31135 7.69417 5.29773 7.52391 5.28508C7.38385 5.27535 7.22333 5.27049 7.06281 5.26562H7.04236"
+                            fill="#25D366"></path>
+                    </svg>
+                </a>
+            </div>
+
+            <a class="footer__contact-email" href="mailto:contact@expertcc.ru">
+                contact@expertcc.ru
+            </a>
+
+            <div class="footer__btn-box">
+                <button class="btn footer__btn">
+                    Оставить заявку
+                </button>
+
+                <a class="footer__social-icon" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2004_17542)">
+                            <mask id="mask0_2004_17542" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0"
+                                y="0" width="24" height="24">
+                                <path d="M23.9159 0H0.0522461V23.8637H23.9159V0Z" fill="white" />
+                            </mask>
+                            <g mask="url(#mask0_2004_17542)">
+                                <path
+                                    d="M11.9337 23.8594H12.0288C16.7669 23.8594 19.5171 23.3824 21.4653 21.4911C23.4516 19.4849 23.9103 16.7161 23.9103 11.9964V11.863C23.9103 7.14476 23.4516 4.39449 21.4653 2.36833C19.5186 0.477075 16.7485 0 12.0302 0H11.9351C7.19701 0 4.4453 0.477075 2.49726 2.36833C0.510863 4.3746 0.0522461 7.14476 0.0522461 11.863V11.9964C0.0522461 16.7147 0.510863 19.465 2.49726 21.4911C4.42686 23.3824 7.19701 23.8594 11.9337 23.8594Z"
+                                    fill="#202022" />
+                                <path
+                                    d="M21.0701 11.7483C21.0701 11.6574 20.9963 11.5822 20.9054 11.5779C17.6444 11.4544 15.6598 11.0385 14.2713 9.65002C12.88 8.25875 12.4654 6.27261 12.3419 3.00452C12.3391 2.91366 12.2638 2.83984 12.1716 2.83984H11.7911C11.7002 2.83984 11.625 2.91366 11.6207 3.00452C11.4972 6.27119 11.0827 8.25875 9.69139 9.65002C8.30154 11.0399 6.31824 11.4544 3.05725 11.5779C2.9664 11.5808 2.89258 11.656 2.89258 11.7483V12.1288C2.89258 12.2196 2.9664 12.2949 3.05725 12.2991C6.31824 12.4226 8.30295 12.8386 9.69139 14.2271C11.0798 15.6155 11.4944 17.596 11.6193 20.8512C11.6221 20.9421 11.6974 21.0159 11.7897 21.0159H12.1716C12.2624 21.0159 12.3377 20.9421 12.3419 20.8512C12.4669 17.596 12.8814 15.6155 14.2699 14.2271C15.6598 12.8372 17.643 12.4226 20.904 12.2991C20.9949 12.2963 21.0687 12.2211 21.0687 12.1288V11.7483H21.0701Z"
+                                    fill="white" />
+                            </g>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_2004_17542">
+                                <rect width="24" height="24" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+
+                <a class="footer__social-icon" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M1.64987 11.5623C8.09231 8.75543 12.3883 6.90497 14.5378 6.01092C20.675 3.45823 21.9503 3.0148 22.7815 3.00016C22.9643 2.99694 23.3731 3.04224 23.6379 3.25709C23.8614 3.43851 23.9229 3.68357 23.9524 3.85557C23.9818 4.02757 24.0185 4.4194 23.9893 4.72555C23.6568 8.22 22.2177 16.7001 21.4856 20.6139C21.1758 22.27 20.5658 22.8253 19.9753 22.8796C18.6919 22.9977 17.7174 22.0315 16.4744 21.2167C14.5294 19.9417 13.4305 19.148 11.5425 17.9039C9.36064 16.466 10.7751 15.6758 12.0185 14.3842C12.344 14.0463 17.9985 8.90305 18.1079 8.43648C18.1216 8.37813 18.1343 8.16062 18.0051 8.04577C17.8759 7.93091 17.6851 7.97019 17.5475 8.00142C17.3524 8.0457 14.2452 10.0995 8.22584 14.1627C7.34386 14.7683 6.545 15.0634 5.82924 15.048C5.04018 15.0309 3.52233 14.6018 2.39397 14.235C1.00999 13.7851 -0.0899676 13.5473 0.00581423 12.7833C0.0557033 12.3853 0.603723 11.9783 1.64987 11.5623Z"
+                            fill="#2AABEE" />
+                    </svg>
+                </a>
+            </div>
+
+            <p>
+                © 2006-2024. ООО ЭКЦ «ИнвестПроект». Разработка бизнес-планов, маркетинговые исследования, консалтинг.⁠
+            </p>
+
+            <p>
+                Копирование материалов сайта expertcc.ru допускается только при наличии ссылки
+            </p>
+        </div>
+
+        <div class="footer__industries">
+
+            <div class="footer__column-title">
+                Отрасли
+            </div>
+
+            <ul class="footer__menu-list">
+                <li>
+                    <a href="#">
+                        Производство
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Услуги
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Сельское хозяйство
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Энергетика
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Недвижимость
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Финансы
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Здоровье
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Строительство
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Общественное питание
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Образование
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Торговля
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        СМИ
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Транспорт
+
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="footer__about">
+
+            <div class="footer__column-title">
+                О компании
+            </div>
+
+            <ul class="footer__menu-list">
+                <li>
+                    <a href="#">
+                        Наши проекты
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        О компании
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Отзывы
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Вакансии
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Методология
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Вопрос-ответ
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer__services">
+
+            <div class="footer__column-title">
+                Услуги
+            </div>
+
+            <ul class="footer__menu-list">
+                <li>
+                    <a href="#">
+                        Разработка бизнес-плана
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Оценка стоимости бизнеса
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Маркетинговое исследование
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Перевод на иностранные языки
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Консалтинг
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Бизнес-планы
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Проектное финансирование
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Маркетинговые исследования
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Разработка финансово-экономической модели
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer__media">
+            <div class="footer__column-title">
+                Медиа
+            </div>
+
+            <ul class="footer__menu-list">
+                <li>
+                    <a href="#">
+                        Новости
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Наш блог
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Публикации в СМИ
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Мониторинг инвестпроектов в РФ
+                    </a>
+                </li>
+
+
+
+            </ul>
+        </div>
+
+        <div class="footer__documents">
+            <div class="footer__column-title">
+                Документы
+            </div>
+
+            <ul class="footer__menu-list">
+                <li>
+                    <a href="#">
+                        Типовые документы
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Договор оферты ВТБ
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Договор оферты
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Политика конфиденциальности
+                    </a>
+                </li>
+
+
+
+            </ul>
+        </div>
+
+        <div class="footer__business">
+
+            <ul class="footer__menu-list footer__menu-list_bak">
+                <li>
+                    <a href="#">
+                        Бизнес-план для банка
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Бизнес-план для инвестора
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Бизнес-план для ФРП
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Бизнес-план для ОЭЗ
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Бизнес-план для ТОСЭР
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="footer__text-box">
+            <p class="footer__text-box-mob">
+                © 2006-2024. ООО ЭКЦ «ИнвестПроект». Разработка бизнес-планов, маркетинговые исследования, консалтинг.⁠
+            </p>
+
+            <p class="footer__text-box-mob">
+                Копирование материалов сайта expertcc.ru допускается только при наличии ссылки
+            </p>
+
+            <p class="footer__text-box-text">
+                Бизнес-планы разрабатываются на основе информации, предоставленной Заказчиком. После передачи
+                бизнес-плана или финансовой модели Заказчику мы не несем ответственности за какие-либо изменения,
+                сделанные в фин. модели. Модель разработана на основе прогнозов и допущений, предоставленных Заказчиком
+                как обоснованные в сложившихся условиях.
+            </p>
+            <p class="footer__text-box-text">
+                Критическое замечание: начало обсуждения какого-либо инвестиционного проекта не обязывает стороны к
+                подписанию договора. Все предоставляемые нами договоры и коммерческие предложения актуальны не более 1
+                месяца, по истечении которого могут быть пересмотрены или отозваны. Мы также оставляем за собой право
+                привлекать сторонних экспертов или отказаться от переговоров в случае, если сомневаемся в своей
+                компетенции.
+            </p>
+        </div>
+    </div>
+</footer>
+
+<!-- <main role="main">
+    <div class="daily-stories">
+        <div class="daily-stories__outer">
+            <div class="daily-stories__container">
+
+                <div class="slide" data-timeout="2000">
+                    <img src="https://ostylish.co.uk/stock/7.jpg" alt="Image" title="Title 1" />
+                </div>
+                <div class="slide" data-timeout="3000">
+                    <img src="https://ostylish.co.uk/stock/2.jpg" alt="Image" title="Title 1" />
+                </div>
+                <div class="slide video" data-timeout="6000">
+                    <video src="https://ostylish.co.uk/stock/39_n.mp4" preload="true" muted="muted"></video>
+                </div>
+                <div class="slide active" data-timeout="3500">
+                    <img src="https://ostylish.co.uk/stock/6.jpg" alt="Image" title="Title 1" />
+                </div>
+                <div class="slide" data-timeout="2000">
+                    <img src="https://ostylish.co.uk/stock/1.jpg" alt="Image" title="Title 1" />
+                </div>
+                <div class="slide" data-timeout="4000">
+                    <img src="https://ostylish.co.uk/stock/8.jpg" alt="Image" title="Title 1" />
+                </div>
+                <div class="slide" data-timeout="3000">
+                    <img src="https://ostylish.co.uk/stock/5.jpg" alt="Image" title="Title 1" />
+                </div>
+            </div>
+        </div>
+
+        <div class="progress-bars" data-count="4">
+            <div class="bar" data-index="0"><span style="animation-duration: 2000ms;"></span></div>
+            <div class="bar" data-index="1"><span style="animation-duration: 3000ms;"></span></div>
+            <div class="bar video" data-index="2"><span style="animation-duration: 6000ms"></span></div>
+            <div class="bar" data-index="3"><span style="animation-duration: 3500ms;"></span></div>
+            <div class="bar" data-index="4"><span style="animation-duration: 2000ms;"></span></div>
+            <div class="bar" data-index="5"><span style="animation-duration: 4000ms;"></span></div>
+            <div class="bar" data-index="6"><span style="animation-duration: 3000ms;"></span></div>
+        </div>
+
+        <a class="logo" href="#" title="Cretive Design Lab">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                <path fill="#f6bb42"
+                    d="M63 32H53c0-5.801-2.35-11.051-6.15-14.851l7.07-7.069C59.53 15.689 63 23.439 63 32z" />
+                <path fill="#8cc152" d="M53 32h10c0 8.55-3.46 16.3-9.08 21.909l-7.07-7.06C50.65 43.05 53 37.8 53 32z" />
+                <path fill="#37bc9b"
+                    d="M53.92 53.909v.011C48.31 59.529 40.57 63 32 63V53c5.8 0 11.05-2.351 14.85-6.15z" />
+                <path fill="#e9573f"
+                    d="M53.92 10.08l-7.07 7.069C43.05 13.35 37.8 11 32 11V1c8.57 0 16.31 3.47 21.92 9.08z" />
+                <path fill="#ffce54"
+                    d="M53 32H43c0-3.04-1.23-5.79-3.22-7.78l7.069-7.07C50.65 20.949 53 26.199 53 32z" />
+                <path fill="#48cfad"
+                    d="M39.78 39.779l7.069 7.07C43.05 50.649 37.8 53 32 53V43c3.04 0 5.79-1.23 7.78-3.221z" />
+                <path fill="#4a89dc"
+                    d="M32 53v10c-8.56 0-16.31-3.471-21.92-9.08l7.07-7.07C20.95 50.649 26.21 53 32 53z" />
+                <path fill="#5d9cec"
+                    d="M32 43v10c-5.79 0-11.05-2.351-14.85-6.15l7.069-7.07C26.21 41.77 28.97 43 32 43z" />
+                <path fill="#ed5565"
+                    d="M32 11v10c-3.03 0-5.78 1.229-7.77 3.22h-.01l-7.069-7.07C20.95 13.35 26.21 11 32 11z" />
+                <path fill="#967adc"
+                    d="M17.15 46.85l-7.07 7.07C4.47 48.31 1 40.56 1 32h10c0 5.8 2.35 11.05 6.15 14.85z" />
+                <path fill="#a0d468"
+                    d="M43.01 32H53c0 5.8-2.35 11.05-6.15 14.85l-7.069-7.07C41.77 37.79 43 35.029 43 32z" />
+                <path fill="#ec87c0"
+                    d="M17.15 17.149l7.069 7.07C22.23 26.21 21 28.96 21 32H11c0-5.801 2.35-11.051 6.15-14.851z" />
+                <path fill="#ac92ec"
+                    d="M24.22 39.779l-7.069 7.07C13.35 43.05 11 37.8 11 32h10c0 3.029 1.23 5.79 3.22 7.779z" />
+                <path fill="#d770ad"
+                    d="M10.08 10.08l7.07 7.069C13.35 20.949 11 26.199 11 32H1c0-8.561 3.47-16.311 9.08-21.92z" />
+                <path fill="#fc6e51"
+                    d="M46.85 17.149l-7.069 7.07C37.79 22.229 35.04 21 32 21V11c5.8 0 11.05 2.35 14.85 6.149z" />
+                <path fill="#da4453" d="M32 1v10c-5.79 0-11.05 2.35-14.85 6.149l-7.07-7.069C15.69 4.47 23.44 1 32 1z" />
+            </svg>
+        </a>
+
+        <div class="context-menu-container">
+            <a href="#" class="button">
+                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <circle fill="#ffffff" cx="7" cy="16" r="2" />
+                    <circle fill="#ffffff" cx="16" cy="16" r="2" />
+                    <circle fill="#ffffff" cx="25" cy="16" r="2" />
+                </svg>
+            </a>
+            <div class="context-menu">
+                <a href="#" id="c-menu_save" target="_blank" class="link">Save picture</a>
+                <a href="#" id="c-menu_share" target="_blank" class="link">Share</a>
+                <a href="https://creative-design-lab.com" id="c-menu_copy" class="link">Copy link</a>
+                <a href="#" id="c-menu_cancel" class="link">Cancel</a>
+            </div>
+        </div>
+    </div>
+
+    <span id="prev-slide"></span>
+    <span id="next-slide"></span>
+    <div class="central-area" data-state="playing">
+        <div class="button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" />
+                <path id="path_play" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" d="M10 8l6 4-6 4V8z" />
+                <path id="path_pause" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" d="M10 15V9M14 15V9" />
+            </svg>
+        </div>
+    </div>
+
+</main> -->
+
+</body>
+
+</html>
