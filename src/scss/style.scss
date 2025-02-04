@@ -319,7 +319,7 @@ input[type="search"]::-webkit-search-results-decoration {
     min-width: 300px;
     max-width: 600px;
     padding: clamp-px(15, 30);
-    border-radius: clamp-px(12, 20);
+    border-radius: 0 clamp-px(12, 20) clamp-px(12, 20) clamp-px(12, 20);
     min-height: 400px;
     background-color: rgb(243 248 252);
     box-shadow: 0 0 20px 0.5px #0000008c;

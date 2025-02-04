@@ -1040,7 +1040,7 @@ input[type=search]::-webkit-search-results-decoration {
   min-width: 300px;
   max-width: 600px;
   padding: clamp(0.9375rem, 0.7099514563rem + 0.9708737864vw, 1.875rem);
-  border-radius: clamp(0.75rem, 0.6286407767rem + 0.5177993528vw, 1.25rem);
+  border-radius: 0 clamp(0.75rem, 0.6286407767rem + 0.5177993528vw, 1.25rem) clamp(0.75rem, 0.6286407767rem + 0.5177993528vw, 1.25rem) clamp(0.75rem, 0.6286407767rem + 0.5177993528vw, 1.25rem);
   min-height: 400px;
   background-color: rgb(243, 248, 252);
   -webkit-box-shadow: 0 0 20px 0.5px rgba(0, 0, 0, 0.5490196078);
