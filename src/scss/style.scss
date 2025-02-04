@@ -178,6 +178,193 @@ input[type="search"]::-webkit-search-results-decoration {
     }
 }
 
+.content {
+    &>img {
+        width: 100%;
+        aspect-ratio: 1 / 0.41;
+        border-radius: 20px;
+        margin-bottom: 40px;
+
+        @include respond-to('tel') {
+            aspect-ratio: 1 / 0.5;
+        }
+    }
+
+    &>h2 {
+        font-weight: 500;
+        font-size: clamp-px(28, 40);
+        line-height: 120%;
+        color: var(--grays-black);
+        margin-bottom: clamp-px(20, 24);
+    }
+
+    &>p {
+        font-weight: 400;
+        font-size: clamp-px(17, 18);
+        line-height: 156%;
+        color: var(--grays-black);
+        margin-bottom: clamp-px(20, 24);
+    }
+
+    &>h3 {
+        font-weight: 500;
+        font-size: clamp-px(20, 24);
+        line-height: 133%;
+        color: var(--grays-black);
+        margin-bottom: clamp-px(20, 24);
+    }
+
+    &>figure {
+        &>img {
+            width: 100%;
+            aspect-ratio: 1 / 0.41;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            margin-bottom: 12px;
+
+            @include respond-to('tel') {
+                aspect-ratio: 1 / 0.5;
+            }
+        }
+
+        &>figcaption {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 157%;
+            color: var(--grays-grey-1);
+            margin-bottom: clamp-px(20, 24);
+        }
+
+    }
+
+    &>.strong {
+        font-weight: 500;
+        font-size: clamp-px(17, 18);
+        line-height: 156%;
+        color: var(--grays-black);
+        margin-bottom: 18px;
+    }
+
+    &>ul {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 48px;
+
+        &>li {
+
+            font-weight: 400;
+            font-size: clamp-px(17, 18);
+            line-height: 156%;
+            color: var(--grays-black);
+            display: flex;
+            gap: clamp-px(10, 12);
+            align-items: flex-start;
+
+            &::before {
+                content: "";
+                display: flex;
+                border-radius: 100%;
+                border: 3px solid var(--blue-blue);
+                min-width: clamp-px(3, 4);
+                height: clamp-px(3, 4);
+                margin-top: 10px;
+
+                @include respond-to('tab') {
+                    border: 1px solid var(--blue-blue);
+                }
+            }
+        }
+    }
+}
+
+.sel-block {
+    border-radius: 16px;
+    padding: 28px 28px 28px 28px;
+    width: 100%;
+    min-height: 112px;
+    background: var(--bg-bg-3);
+    display: flex;
+    gap: 20px;
+
+    font-weight: 400;
+    font-size: clamp-px(17, 18);
+    line-height: 156%;
+    color: var(--grays-black);
+    margin-bottom: 48px;
+
+    @include respond-to('tab') {
+        gap: 20px;
+        padding: 20px;
+    }
+
+    &::before {
+        content: "";
+        background: url('../images/icons/Flash.png') 0 0/cover no-repeat;
+        display: flex;
+        min-width: 32px;
+        height: 32px;
+
+        @include respond-to('tab') {
+            min-width: 24px;
+            height: 24px;
+        }
+
+    }
+}
+
+.git-nav-box {
+    display: flex;
+    min-width: 300px;
+    max-width: 600px;
+    padding: clamp-px(15, 30);
+    border-radius: clamp-px(12, 20);
+    min-height: 400px;
+    background-color: rgb(243 248 252);
+    box-shadow: 0 0 20px 0.5px #0000008c;
+    position: fixed;
+    right: 0;
+    top: 150px;
+    z-index: 150;
+    transform: translateX(108%);
+    transition: 0.5s;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -35px;
+        width: 50px;
+        height: 50px;
+        max-height: 500px;
+        border-radius: clamp-px(5, 10);
+        background-color: rgb(243 248 252);
+        border-left: 1px solid rgb(198, 203, 207);
+    }
+
+    &.show {
+        transition: 0.5s;
+        transform: translateX(0);
+    }
+
+    &>ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        overflow-y: auto;
+
+        &>li {
+            &>a {
+                font-weight: 400;
+                font-size: clamp(0.75rem, 0.6893203883rem + 0.2588996764vw, 1rem);
+                line-height: 162%;
+                color: var(--grays-black);
+            }
+        }
+    }
+}
+
 
 //==================================
 
@@ -206,3 +393,5 @@ input[type="search"]::-webkit-search-results-decoration {
 @import "./components/monitoring";
 @import "./components/subscription";
 @import "./components/_monitoring-page";
+@import "./components/projects-page";
+@import "./components/project";

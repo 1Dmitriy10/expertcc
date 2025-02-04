@@ -315,5 +315,67 @@ const previewNewsSlider = new Swiper('.preview-news__slider', {
 
 });
 
+const progectGallerySlider = new Swiper('.progect-gallery__slider', {
+    // Стрелки
+    navigation: {
+        nextEl: '.progect-gallery__btn-slider-next',
+        prevEl: '.progect-gallery__btn-slider-prev',
+    },
+
+    /*Отступ у карточек*/
+    spaceBetween: 12,
+    /*Показывать по n карточек*/
+    slidesPerView: 1,
+
+    // effect: "coverflow",
+    // coverflowEffect: {
+    //     rotate: 0,              // added (Rotate of the prev and next slides)
+    //     // depth: 100,             // added (Depth of the prev and next slides)
+    //     // stretch: 100,            // added (Space between the slides)
+    //     modifier: 0.2,            // added (Multiply the values of rotate, depth, and stretch)
+    //     scale: 0.6,               // added (Size ratio of the prev and next slides)
+    //     slideShadows: false, 
+    //  },
+
+    /* При достижении конца, перепрыгнуть в начало */
+    // rewind: true,
+    /*Увеличение при наведении курсора мыши */
+    // zoom: true,
+    /*Ленивая подгрузка */
+    lazy: true,
+    /*Бесконечная прокрутка */
+    // loop: true,
+    /*Ориентация */
+    // direction: 'vertical',
+    /*Авто высота*/
+    // autoHeight: true,
+    /*иконка захвата при наведении на слайд*/
+    grabCursor: true,
+    /*Автоматическое перелистывание*/
+    // autoplay: {
+    //     delay: 5000,
+    //   },
+    /*Брек-поинты*/
+    breakpoints: {
+        1400: {
+            slidesPerView: "auto",
+            spaceBetween: 16,
+        },
+        // 1300: {
+        //     slidesPerView: 1.5,
+        //     spaceBetween: 15,
+        // },
+        768: {
+            slidesPerView: 3.2,
+            spaceBetween: 15,
+        },
+        575: {
+            slidesPerView: 1.5,
+            spaceBetween: 12,
+        }
+    },
+
+});
+
 
 

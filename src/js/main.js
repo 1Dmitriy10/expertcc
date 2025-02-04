@@ -7,6 +7,9 @@ import { mobMenu } from "./libs/burgerMenu.js";
 // ------------- Меню -------------------------
 import { menu } from "./libs/menu.js";
 
+// ------------- Навигация в гите -------------------------
+import { gitNav } from "./libs/gitNav.js";
+
 
 // -------------------------Табы--------------------
 import { tabs } from "./libs/tabs.js";
