@@ -21,7 +21,7 @@ import { slidrer } from "./libs/slider.js";
 
 
 //---------------------Модальные окна------------------
-// import { fancybox } from "./libs/fancybox.js";
+import { fancybox } from "./libs/fancybox.js";
 
 
 // ---------------------Маска для инпутов--------------

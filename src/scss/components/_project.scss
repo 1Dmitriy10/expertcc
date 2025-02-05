@@ -42,11 +42,15 @@
 
     @include respond-to('nout') {
         position: static;
-        max-width: 325px;
+        // max-width: 325px;
     }
 }
 
-.project-aside {}
+.project-aside {
+    @include respond-to('nout') {
+        max-width: 325px;
+    }
+}
 
 .project-aside__list {
     display: flex;

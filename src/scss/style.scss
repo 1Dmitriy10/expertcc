@@ -365,6 +365,10 @@ input[type="search"]::-webkit-search-results-decoration {
     }
 }
 
+.progect-reviews__img {
+    cursor: pointer;
+}
+
 
 //==================================
 
@@ -395,3 +399,5 @@ input[type="search"]::-webkit-search-results-decoration {
 @import "./components/_monitoring-page";
 @import "./components/projects-page";
 @import "./components/project";
+@import "./components/reviews";
+@import "./components/faq";

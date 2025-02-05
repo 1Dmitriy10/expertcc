@@ -1,0 +1,183 @@
+.reviews__h1 {
+    & h1 {
+        margin-bottom: clamp-px(20, 24);
+    }
+}
+
+.reviews__subtitle {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: clamp-px(16, 18);
+    line-height: 156%;
+    color: var(--grays-grey);
+    max-width: 860px;
+}
+
+.reviews {
+    margin-bottom: clamp-px(64, 160);
+}
+
+.reviews__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews__box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 16px;
+    margin-bottom: 16px;
+
+    @include respond-to('pc-old') {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.reviews__card {
+    min-height: 540px;
+
+    & .progect-reviews-link {
+        display: block;
+    }
+
+    &>.progect-reviews__text-box {
+        flex: 0 1 100%;
+    }
+
+    &>.progect-reviews__img-box {
+        display: none;
+    }
+
+    & .progect-reviews__text {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+    }
+
+    &:first-child,
+    &:nth-child(7),
+    &:nth-child(11) {
+        grid-column: span 2;
+
+        &>.progect-reviews__img-box {
+            display: flex;
+            height: 460px;
+            flex: 0 1 40.5%;
+        }
+
+        &>.progect-reviews__text-box {
+            flex: 0 1 56.5%;
+        }
+
+        @include respond-to('pc-old') {
+            grid-column: span 2;
+
+            &>.progect-reviews__img-box {
+                display: none;
+            }
+
+            &>.progect-reviews__text-box {
+                flex: 0 1 100%;
+            }
+        }
+
+        @include respond-to('tab') {
+            grid-column: span 4;
+
+        }
+
+
+    }
+
+    @include respond-to('pc-old') {
+        grid-column: span 2;
+
+    }
+
+    @include respond-to('tab') {
+        grid-column: span 4;
+        min-height: 462px;
+
+    }
+
+
+}
+
+.reviews-yandex {
+    border-radius: 24px;
+    padding: clamp-px(20, 40);
+    background: var(--bg-5);
+    display: flex;
+    gap: 10px;
+    margin-bottom: 16px;
+
+    @include respond-to('nout') {
+        flex-direction: column;
+    }
+
+}
+
+.reviews-yandex__icon-block {
+    display: flex;
+    margin-right: 32px;
+
+    @include respond-to('nout') {
+        margin-right: 0;
+        margin-bottom: 34px;
+    }
+}
+
+.reviews-yandex__icon-img {
+    width: 64px;
+    height: 64px;
+
+    @include respond-to('tab') {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.reviews-yandex__text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-right: 10px;
+
+    @include respond-to('nout') {
+        margin-right: 0;
+        margin-bottom: 32px;
+    }
+}
+
+.reviews-yandex__text-title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 125%;
+    color: var(--bg-white);
+}
+
+.reviews-yandex__text-subtitle {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    color: var(--bg-white);
+}
+
+
+.reviews-yandex__btn {
+    margin-left: auto;
+    align-self: center;
+
+    @include respond-to('nout') {
+        margin-left: 0;
+    }
+
+    @include respond-to('tel') {
+        width: 100%;
+    }
+}

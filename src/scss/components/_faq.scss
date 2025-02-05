@@ -1,0 +1,144 @@
+.faq {
+    margin-bottom: clamp-px(64, 160);
+}
+
+.faq__container {
+    display: grid;
+    grid-template-columns: auto clamp-px(240, 408);
+    gap: clamp-px(20, 64);
+
+    @include respond-to('nout') {
+        grid-template-columns: 1fr;
+        gap: 64px;
+    }
+}
+
+.faq-article {
+    display: flex;
+    flex-direction: column;
+}
+
+.aside {}
+
+.aside__info-box {}
+
+.aside-form {
+    border-radius: 20px;
+    padding: clamp-px(24, 32);
+    background: var(--bg-bg-3);
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+
+    // @include respond-to('nout') {
+    //     min-width: 350px;
+    // }
+
+    @include respond-to('tab') {
+        width: 100%;
+    }
+}
+
+.aside-form__title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 133%;
+    color: var(--grays-black);
+    margin-bottom: 12px;
+}
+
+.aside-form__subtitle {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: clamp-px(16, 18);
+    line-height: 156%;
+    color: var(--grays-grey);
+    margin-bottom: 10px;
+}
+
+.aside-form__btn-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    gap: 12px;
+
+}
+
+.aside-form__btn {
+    min-width: 165px;
+}
+
+.first-social__link_white {
+    background: var(--bg-white);
+}
+
+
+
+.first-social__link_watsup {
+    &>svg {
+        margin-left: 2px;
+    }
+
+}
+
+
+.faq-article {
+    border-top: 1px solid var(--grays-border);
+}
+
+.faq-spoiler {
+    width: 100%;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: clamp-px(18, 20);
+    line-height: 150%;
+    color: var(--grays-black);
+    border-bottom: 1px solid var(--grays-border);
+    padding: 24px 0px;
+    transition: 0.3s;
+    gap: 30px;
+    cursor: pointer;
+
+
+    &::after {
+        content: url(../images/icons/menu-arrow-icon.png);
+        transform: rotate(180deg);
+        margin-left: auto;
+        padding: 9px 16px;
+    }
+
+    &.active {
+        border-bottom: 1px solid transparent;
+        transition: 0.3s;
+
+        &::after {
+            transform: rotate(0);
+        }
+    }
+
+    &+.spoiler-content {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 32px;
+        gap: 16px;
+        font-weight: 400;
+        font-size: clamp-px(16, 18);
+        line-height: 156%;
+        color: var(--grays-grey);
+    }
+
+    &:hover {
+        color: var(--blue-blue);
+
+        &::after {
+            background-color: var(--bg-bg-2);
+            border-radius: 8px;
+            padding: 9px 16px;
+        }
+    }
+
+    @include respond-to('tab') {
+        gap: 15px;
+    }
+}

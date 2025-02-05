@@ -12,10 +12,17 @@ import { Spoilers } from "../vendor.js";
 
 
 const spoilers = new Spoilers({
-    item: '_spoiler-js', /*класс споилера*/
+    item: 'mob_spoiler', /*класс споилера*/
     timeAnimation: 300, /*время анимации*/
     accordion: true,    /*Режим аккордиона*/
     firstOpen: true    /*Первый элемент всегда открыт*/
+})
+
+const faqSpoilers = new Spoilers({
+    item: 'faq-spoiler', /*класс споилера*/
+    timeAnimation: 300, /*время анимации*/
+    accordion: true,    /*Режим аккордиона*/
+    firstOpen: false    /*Первый элемент всегда открыт*/
 })
 
 
