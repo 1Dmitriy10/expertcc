@@ -20,6 +20,18 @@
     margin: 0 auto;
     position: relative;
 
+    // @media (width<1870px) {
+    //     padding: 0 60px;
+    // }
+
+    // @include respond-to("nout") {
+    //     padding: 0 30px;
+    // }
+
+    // @include respond-to("tel") {
+    //     padding: 0;
+    // }
+
 }
 
 .header__topline {

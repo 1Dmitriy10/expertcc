@@ -195,6 +195,46 @@ summary::marker {
   max-width: 1480px;
   margin: 0 auto;
 }
+:root .container_f {
+  max-width: 1792px;
+  margin: 0 auto;
+}
+@media (width < 1850px) {
+  :root .container_f {
+    padding: 0 60px;
+  }
+}
+@media (width < 1550px) {
+  :root .container_f {
+    padding: 0;
+    max-width: 1400px;
+  }
+}
+@media (max-width: 1200px) {
+  :root .container_f {
+    max-width: 1010px;
+  }
+}
+@media (max-width: 992px) {
+  :root .container_f {
+    max-width: 800px;
+  }
+}
+@media (max-width: 768px) {
+  :root .container_f {
+    max-width: 650px;
+  }
+}
+@media (max-width: 576px) {
+  :root .container_f {
+    max-width: 410px;
+  }
+}
+@media (max-width: 420px) {
+  :root .container_f {
+    max-width: 343px;
+  }
+}
 :root section {
   padding: 0 10px;
 }
