@@ -369,6 +369,37 @@ input[type="search"]::-webkit-search-results-decoration {
     cursor: pointer;
 }
 
+.aside-wrap__container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto clamp(15rem, 12.4514563107rem + 10.8737864078vw, 25.5rem);
+    grid-template-columns: auto clamp(15rem, 12.4514563107rem + 10.8737864078vw, 25.5rem);
+    gap: clamp(1.25rem, 0.5825242718rem + 2.8478964401vw, 4rem);
+
+}
+
+.article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.aside {}
+
+.search-block__input-box_content {
+    & .search__input {
+        background: var(--bg-bg-1);
+        border: none;
+        padding: 20px 10px 20px 50px;
+    }
+}
+
+
+
 
 //==================================
 
@@ -401,3 +432,5 @@ input[type="search"]::-webkit-search-results-decoration {
 @import "./components/project";
 @import "./components/reviews";
 @import "./components/faq";
+@import "./components/job";
+@import "./components/documents";

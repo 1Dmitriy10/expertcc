@@ -21,8 +21,15 @@ const spoilers = new Spoilers({
 const faqSpoilers = new Spoilers({
     item: 'faq-spoiler', /*класс споилера*/
     timeAnimation: 300, /*время анимации*/
-    accordion: true,    /*Режим аккордиона*/
+    accordion: false,    /*Режим аккордиона*/
     firstOpen: false    /*Первый элемент всегда открыт*/
+})
+
+const jobSpoiler = new Spoilers({
+    item: 'job-spoiler', /*класс споилера*/
+    timeAnimation: 300, /*время анимации*/
+    accordion: false,    /*Режим аккордиона*/
+    firstOpen: true    /*Первый элемент всегда открыт*/
 })
 
 

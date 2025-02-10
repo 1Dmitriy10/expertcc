@@ -30,8 +30,15 @@ const spoilers = new _vendor_js__WEBPACK_IMPORTED_MODULE_0__.Spoilers({
 const faqSpoilers = new _vendor_js__WEBPACK_IMPORTED_MODULE_0__.Spoilers({
     item: 'faq-spoiler', /*класс споилера*/
     timeAnimation: 300, /*время анимации*/
-    accordion: true,    /*Режим аккордиона*/
+    accordion: false,    /*Режим аккордиона*/
     firstOpen: false    /*Первый элемент всегда открыт*/
+})
+
+const jobSpoiler = new _vendor_js__WEBPACK_IMPORTED_MODULE_0__.Spoilers({
+    item: 'job-spoiler', /*класс споилера*/
+    timeAnimation: 300, /*время анимации*/
+    accordion: false,    /*Режим аккордиона*/
+    firstOpen: true    /*Первый элемент всегда открыт*/
 })
 
 
