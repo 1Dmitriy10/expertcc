@@ -1,0 +1,236 @@
+.business-plans {
+    margin-bottom: clamp-px(64, 160);
+}
+
+.business-plans__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footnote {
+    margin-bottom: clamp-px(20, 40);
+}
+
+.footnote__container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding: 32px;
+    background: var(--bg-bg-3);
+    align-items: center;
+
+    @include respond-to('tab') {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.footnote__text-box {
+    flex: 0 1 78%;
+}
+
+.footnote__text {
+    font-weight: 400;
+    font-size: clamp-px(15, 18);
+    line-height: 156%;
+    color: var(--grays-black);
+}
+
+.footnote__btn {
+    padding: 17px 28px;
+    height: fit-content;
+
+    @include respond-to('tab') {
+        width: 100%;
+    }
+}
+
+.business-plans__content-search {
+    margin-bottom: clamp-px(32, 20);
+}
+
+.sort-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: clamp-px(20, 40);
+}
+
+.sort-val-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    @include respond-to("tab") {
+        display: none;
+    }
+}
+
+.sort-val-sel {
+    display: none;
+
+    &>select:after {
+        content: '\25BC';
+        color: red;
+    }
+
+    @include respond-to("tab") {
+        display: flex;
+    }
+}
+
+.sort-box_title {
+    font-weight: 400;
+    font-size: clamp-px(16, 18);
+    line-height: 156%;
+    color: var(--grays-grey-1);
+}
+
+.sort-box_val {
+    font-weight: 400;
+    font-size: clamp-px(16, 18);
+    line-height: 156%;
+    color: var(--grays-grey-1);
+
+    &.active {
+        color: var(--grays-black);
+    }
+
+    &:hover {
+        color: var(--grays-black);
+    }
+}
+
+.business-plans__card-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: clamp-px(12, 40);
+
+    &>.business-plan-card {
+        flex: 0 1 calc((100% - 16px * 1) / 2);
+    }
+
+    @include respond-to("pc-old") {
+        & .business-plan-card__down-row {
+            -ms-grid-column-span: 2;
+            grid-column: span 2;
+            gap: 16px 20px;
+        }
+    }
+
+    @include respond-to("tab") {
+        &>.business-plan-card {
+            flex: 0 1 100%;
+        }
+
+    }
+
+
+}
+
+.order-call {
+    margin-bottom: clamp-px(64, 160);
+}
+
+.order-call__container {
+    border-radius: 24px;
+    padding: clamp-px(20, 40) clamp-px(20, 48);
+    background: var(--bg-bg-3);
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    justify-content: space-between;
+
+    & .first-social__link {
+        background: var(--bg-white);
+    }
+
+    @include respond-to("nout") {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    @include respond-to("tel") {
+        min-height: 320px;
+        justify-content: flex-start;
+    }
+}
+
+.order-call__text-box {
+    max-width: 528px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+    z-index: 2;
+}
+
+.order-call__title {
+    font-weight: 500;
+    font-size: clamp-px(28, 40);
+    line-height: 120%;
+    color: var(--grays-black);
+}
+
+.order-call__subtitle {
+    font-weight: 400;
+    font-size: clamp-px(16, 18);
+    line-height: 156%;
+    color: var(--grays-grey-1);
+}
+
+.order-call__img-wrap {
+    position: absolute;
+    height: 174px;
+    width: 301px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+
+    @include respond-to("nout") {
+        left: 64%;
+        transform: translateX(0);
+        width: 225px;
+        height: 130px;
+    }
+
+    @include respond-to("tel") {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.order-call__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.order-call__btn-box {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: clamp-px(8, 10);
+
+    @include respond-to('tel') {
+        flex-wrap: wrap;
+    }
+}
+
+.order-call__btn {
+    height: fit-content;
+    height: 48px;
+    margin-right: clamp-px(8, 14);
+}
+
+.first-social__link {}
+
+.first-social__link_telegram {}
+
+.first-social__link_watsup {}
