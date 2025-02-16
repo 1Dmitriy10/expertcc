@@ -20,4 +20,4 @@ cтруктура
 import {Tabs} from "../vendor.js"
 
 
-let tabs = new Tabs({class: "_tabs-js"})
+let tabs = new Tabs({class: "business-tabs"})

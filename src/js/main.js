@@ -49,6 +49,10 @@ import { showSearch } from "./components/showSearch.js";
 // import { stories } from "./libs/stories.js";
 
 
+// Кастомный чекбокс
+import {customCheckbox} from "./components/customCheckbox.js";
+
+
 
 
 
