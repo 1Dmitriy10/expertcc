@@ -7,7 +7,29 @@
 
 <body>
     @@include('html/libs/header.html');
-    <main></main>
+    <main>
+        <section class='error'>
+            <div class='container error__container'>
+                <div class="error__content-box">
+                    <h1 class="error__title">
+                        Страница не найдена
+                    </h1>
+
+                    <div class="error__subtitle">
+                        Возможно, вы ошиблись адресом или страница была удалена.
+                    </div>
+
+                    <button class="btn error__btn">
+                        На главную
+                    </button>
+                </div>
+
+                <div class="error__img-wrap">
+                    <img src="@img/404.png" alt="" class="error__img">
+                </div>
+            </div>
+        </section>
+    </main>
     @@include('html/libs/footer.html');
 </body>
 
