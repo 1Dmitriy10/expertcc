@@ -1,0 +1,46 @@
+.search-page {
+    margin-bottom: clamp-px(64, 160);
+}
+
+.search-page__container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.search-page__item-box {
+    margin-top: 30px;
+    margin-bottom: clamp-px(40, 64);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.search-page__item {
+    display: flex;
+    flex-direction: column;
+    gap: clamp-px(14, 16);
+}
+
+.search-page__item-title {
+    font-weight: 500;
+    font-size: clamp-px(18, 24);
+    line-height: 133%;
+    color: var(--grays-black);
+    transition: 0.3s;
+
+    &:hover {
+        color: var(--blue-blue);
+        transition: 0.3s;
+    }
+}
+
+.search-page__item-tag-box {}
+
+
+.search-page__item-text {
+    font-weight: 400;
+    font-size: clamp-px(15, 18);
+    line-height: 156%;
+    color: var(--grays-grey);
+}
