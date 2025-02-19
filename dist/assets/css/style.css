@@ -9623,3 +9623,188 @@ p.footer__text-box-text:not(:last-child) {
   line-height: 156%;
   color: var(--grays-grey);
 }
+
+.industries-banner {
+  margin-top: clamp(0rem, -0.4854368932rem + 2.071197411vw, 2rem);
+  margin-bottom: clamp(4rem, 3.7572815534rem + 1.0355987055vw, 5rem);
+}
+
+.industries-banner__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-radius: 32px;
+  padding: clamp(1.5rem, 1.0145631068rem + 2.071197411vw, 3.5rem) clamp(1.25rem, 0.7038834951rem + 2.3300970874vw, 3.5rem);
+  background: var(--blue-blue);
+  overflow: hidden;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .industries-banner__container {
+    min-height: 420px;
+  }
+}
+
+.industries-banner__left-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 640px;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 992px) {
+  .industries-banner__left-box {
+    max-width: 500px;
+  }
+}
+
+.industries-banner__breadcrambs-box {
+  margin-bottom: 62px;
+}
+.industries-banner__breadcrambs-box .breadcrambs__item-link {
+  color: var(--bg-white);
+}
+
+.industries-banner-title {
+  font-weight: 500;
+  font-size: clamp(2rem, 1.3932038835rem + 2.5889967638vw, 4.5rem);
+  line-height: 106%;
+  color: var(--bg-white);
+  margin-bottom: clamp(1rem, 0.8786407767rem + 0.5177993528vw, 1.5rem);
+  margin-top: auto;
+}
+
+.industries-banner-text {
+  font-weight: 400;
+  font-size: clamp(1rem, 0.9393203883rem + 0.2588996764vw, 1.25rem);
+  line-height: 150%;
+  color: var(--bg-white);
+}
+
+.industries-banner__img-wrap {
+  position: absolute;
+  bottom: -160px;
+  width: 540px;
+  height: 540px;
+  right: 120px;
+}
+@media (max-width: 1200px) {
+  .industries-banner__img-wrap {
+    right: -60px;
+    width: 440px;
+    height: 440px;
+    bottom: -45px;
+  }
+}
+@media (max-width: 992px) {
+  .industries-banner__img-wrap {
+    width: 430px;
+    height: 420px;
+    bottom: auto;
+    top: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .industries-banner__img-wrap {
+    width: 240px;
+    height: 240px;
+    right: -44px;
+  }
+}
+
+.industries-banner__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.industries {
+  margin-bottom: clamp(4rem, 3.7572815534rem + 1.0355987055vw, 5rem);
+}
+
+.industries__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.industries__cart-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.industries__cart {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 calc((100% - 32px) / 3);
+  flex: 0 1 calc((100% - 32px) / 3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: clamp(1.25rem, 1.1893203883rem + 0.2588996764vw, 1.5rem);
+  min-height: 280px;
+  background: var(--bg-bg-1);
+}
+@media (max-width: 992px) {
+  .industries__cart {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 calc((100% - 16px) / 2);
+    flex: 0 1 calc((100% - 16px) / 2);
+  }
+}
+@media (max-width: 576px) {
+  .industries__cart {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+    min-height: 240px;
+  }
+}
+
+.industries__cart-header {
+  margin-bottom: 10px;
+}
+
+.industries__cart-content-box {
+  margin-top: auto;
+}
+
+.industries__cart__title {
+  font-weight: 500;
+  font-size: clamp(1.125rem, 1.0339805825rem + 0.3883495146vw, 1.5rem);
+  line-height: 133%;
+  color: var(--grays-black);
+  margin-bottom: clamp(0.75rem, 0.6893203883rem + 0.2588996764vw, 1rem);
+}
+
+.industries__cart-text {
+  font-weight: 400;
+  font-size: clamp(1rem, 0.9696601942rem + 0.1294498382vw, 1.125rem);
+  line-height: 156%;
+  color: var(--grays-grey-1);
+}
