@@ -1,0 +1,53 @@
+.industries-item-banner {
+    margin-bottom: clamp-px(64, 160);
+}
+
+.industries-item-banner__container {
+    position: relative;
+    border-radius: 32px;
+    padding: clamp-px(24, 56) clamp-px(20, 56);
+    height: clamp-px(520, 560);
+    display: flex;
+    flex-direction: column;
+    gap: clamp-px(16, 24);
+}
+
+.industries-item-banner__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 32px;
+}
+
+.industries-banner__breadcrambs-box {
+    position: relative;
+    z-index: 2;
+}
+
+.industries-item-banner__title {
+    margin-top: auto;
+    font-weight: 500;
+    font-size: clamp-px(32, 72);
+    line-height: 106%;
+    color: var(--bg-white);
+    position: relative;
+    z-index: 2;
+    max-width: 640px;
+}
+
+.industries-item-banner__subtitle {
+    font-weight: 400;
+    font-size: clamp-px(17, 20);
+    line-height: 150%;
+    color: var(--bg-white);
+    position: relative;
+    z-index: 2;
+    max-width: 640px;
+}
+
+.industries-item {
+    margin-bottom: clamp-px(64, 160);
+}
