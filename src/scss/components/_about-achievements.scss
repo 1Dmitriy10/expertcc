@@ -1,0 +1,37 @@
+.about-achievements__tabs {
+    flex-direction: row;
+    gap: clamp-px(25, 58);
+
+    &>.tabs__title-box {
+        flex: 0 1 40%;
+        flex-direction: column;
+        grid-area: clamp-px(20, 32);
+    }
+
+    &>.tabs__item-box {
+        flex: 0 1 40%;
+    }
+}
+
+.about-achievements-tabs__title {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    font-weight: 400;
+    font-size: clamp-px(18, 32);
+    line-height: 125%;
+    color: var(--grays-black);
+    text-align: left;
+    margin-left: 0;
+
+    &.active {
+        background-color: transparent;
+        color: var(--blue-blue);
+        margin-left: 32px;
+    }
+
+    &:hover {
+        color: var(--grays-grey-1);
+        background-color: transparent;
+    }
+}

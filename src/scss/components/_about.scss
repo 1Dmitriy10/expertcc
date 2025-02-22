@@ -144,3 +144,38 @@
         max-width: 100%;
     }
 }
+
+.about-achievements {
+    margin-bottom: clamp-px(64, 160);
+}
+
+.about-achievements__container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--bg-bg-1);
+    border-radius: 32px;
+    padding: 64px;
+    box-shadow: 0 4px 16px 0 rgba(0, 51, 153, 0.06), 0 2px 2px 0 rgba(0, 51, 153, 0.06);
+    background: var(--bg-white);
+}
+
+.about-achievements__title {
+    margin-bottom: clamp-px(24, 56);
+}
+
+.about-achievements__img-wrap {
+    position: absolute;
+    right: 0;
+    bottom: -6px;
+}
+
+.about-achievements-img {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // width: 100%;
+    // height: 100%;
+    // object-fit: cover;
+}

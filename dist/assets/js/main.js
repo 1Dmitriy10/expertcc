@@ -15246,6 +15246,8 @@ cтруктура
 
 let tabs = new _vendor_js__WEBPACK_IMPORTED_MODULE_0__.Tabs({class: "business-tabs"})
 
+let achievementsTabs = new _vendor_js__WEBPACK_IMPORTED_MODULE_0__.Tabs({class: "about-achievements__tabs"})
+
 
 /***/ }),
 /* 13 */

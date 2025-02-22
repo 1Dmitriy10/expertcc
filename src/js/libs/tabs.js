@@ -21,3 +21,5 @@ import {Tabs} from "../vendor.js"
 
 
 let tabs = new Tabs({class: "business-tabs"})
+
+let achievementsTabs = new Tabs({class: "about-achievements__tabs"})
