@@ -17,6 +17,8 @@
     @include respond-to('tab') {
         width: auto;
     }
+
+
 }
 
 .preview-news__slide {
@@ -36,6 +38,10 @@
     & .preview-news__card {
         // width: fit-content;
         width: 344px;
+    }
+
+    &.swiper-slide-active {
+        margin-left: 130px !important;
     }
 }
 

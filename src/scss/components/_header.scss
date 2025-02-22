@@ -417,10 +417,15 @@
     align-items: center;
     justify-content: center;
     min-width: 177px;
-
     font-weight: 500;
     font-size: clamp-px(14, 16);
     color: var(--bg-white);
+    transition: 0.3s;
+
+    &:hover {
+        background: var(--blue-blue-hover);
+        transition: 0.3s;
+    }
 }
 
 .header__btn {

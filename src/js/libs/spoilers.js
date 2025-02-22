@@ -32,5 +32,12 @@ const jobSpoiler = new Spoilers({
     firstOpen: true    /*Первый элемент всегда открыт*/
 })
 
+const achievementSpoiler = new Spoilers({
+    item: 'achievement-spoiler', /*класс споилера*/
+    timeAnimation: 300, /*время анимации*/
+    accordion: false,    /*Режим аккордиона*/
+    firstOpen: true    /*Первый элемент всегда открыт*/
+})
+
 
 

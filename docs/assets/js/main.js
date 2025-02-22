@@ -41,6 +41,13 @@ const jobSpoiler = new _vendor_js__WEBPACK_IMPORTED_MODULE_0__.Spoilers({
     firstOpen: true    /*Первый элемент всегда открыт*/
 })
 
+const achievementSpoiler = new _vendor_js__WEBPACK_IMPORTED_MODULE_0__.Spoilers({
+    item: 'achievement-spoiler', /*класс споилера*/
+    timeAnimation: 300, /*время анимации*/
+    accordion: false,    /*Режим аккордиона*/
+    firstOpen: true    /*Первый элемент всегда открыт*/
+})
+
 
 
 
@@ -15245,6 +15252,14 @@ cтруктура
 
 
 let tabs = new _vendor_js__WEBPACK_IMPORTED_MODULE_0__.Tabs({class: "business-tabs"})
+
+let achievementsTabs = new _vendor_js__WEBPACK_IMPORTED_MODULE_0__.Tabs({class: "about-achievements__tabs"})
+
+let historyTabs = new _vendor_js__WEBPACK_IMPORTED_MODULE_0__.Tabs({class: "history_tabs"})
+
+let mainPreviewBusinessPlanTabs = new _vendor_js__WEBPACK_IMPORTED_MODULE_0__.Tabs({class: "main-preview-business-plan_tabs"})
+
+
 
 
 /***/ }),

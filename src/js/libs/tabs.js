@@ -23,3 +23,9 @@ import {Tabs} from "../vendor.js"
 let tabs = new Tabs({class: "business-tabs"})
 
 let achievementsTabs = new Tabs({class: "about-achievements__tabs"})
+
+let historyTabs = new Tabs({class: "history_tabs"})
+
+let mainPreviewBusinessPlanTabs = new Tabs({class: "main-preview-business-plan_tabs"})
+
+

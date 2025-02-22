@@ -25,6 +25,14 @@
     border: 2px solid var(--blue-blue);
     border-radius: 24px;
     padding: clamp-px(4, 6);
+    transition: 0.3s;
+    box-shadow: 0 0 0 0 #4b48488f;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0 4px 8px 0 #4b48488f;
+        transition: 0.3s;
+    }
 
     @include respond-to('tab') {
         min-width: 140px;
