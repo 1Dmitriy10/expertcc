@@ -39,11 +39,14 @@ import { fancybox } from "./libs/fancybox.js";
 //---------------Сжатие изображений---------------
 //import { isWebp } from "./libs/isWebp.js";
 
+
 // Топлайн меню
 import { toplineMenu } from "./components/toplineMenu.js";
 
+
 // Показать поиск
 import { showSearch } from "./components/showSearch.js";
+
 
 // Сторис
 // import { stories } from "./libs/stories.js";
@@ -51,6 +54,15 @@ import { showSearch } from "./components/showSearch.js";
 
 // Кастомный чекбокс
 import {customCheckbox} from "./components/customCheckbox.js";
+
+
+// Отступ слайдов в слайдере новости
+import {sliderNews} from "./components/sliderNews.js";
+
+
+// Отступ слайдов в слайдере новости
+import {storiesSlider} from "./components/test.js";
+
 
 
 

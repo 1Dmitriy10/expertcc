@@ -52,6 +52,13 @@
     font-size: clamp-px(18, 24);
     line-height: 133%;
     color: var(--grays-black);
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+        transition: 0.3s;
+        color: var(--blue-blue);
+    }
 }
 
 .telegram-block__text-subtitle {

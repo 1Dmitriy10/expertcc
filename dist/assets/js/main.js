@@ -15781,6 +15781,8 @@ const previewExpertSlider = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["defa
 
 
 
+
+
 /***/ }),
 /* 14 */
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
@@ -28428,6 +28430,184 @@ jquery__WEBPACK_IMPORTED_MODULE_0__(".business-aside__main-present-check").on("c
 };
 customCheckbox();
 
+/***/ }),
+/* 66 */
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   sliderNews: () => (/* binding */ sliderNews)
+/* harmony export */ });
+function sliderNews() {
+let section = document.querySelector('.preview-news')
+let wrap = document.querySelector(".preview-news__swiper-wrapper");
+let arr = [...wrap.children]
+let cf = 135;
+
+section.addEventListener("click", getMargin)
+
+function getMargin() {
+    arr.forEach( el=> {
+        let numberCount = el.getAttribute("aria-label").split("/")[0];
+        numberCount = numberCount.replace(/\s/g, '');
+        
+        if(numberCount == "1") {
+            
+        }else{
+            if(el.classList.contains("swiper-slide-active")) {
+                console.log("ok")
+                el.style.cssText = `margin-left:${numberCount * cf}px`
+            }else{
+                el.style.cssText = `margin-left:16px`
+                
+            }
+        }
+    });
+};
+// getMargin();
+
+};
+sliderNews();
+
+/***/ }),
+/* 67 */
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   storiesSlider: () => (/* binding */ storiesSlider)
+/* harmony export */ });
+/* harmony import */ var swiper_bundle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(14);
+/* harmony import */ var swiper_swiper_bundle_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(47);
+
+
+
+
+
+function storiesSlider() {
+      let teasersWrap = document.querySelector(".teasers__container");
+      let block = document.querySelector(".teasers-popup");
+      let popupExit = document.querySelector('.teasers-popup-exit')
+
+      teasersWrap.addEventListener("click", getTeasers)
+      popupExit.addEventListener("click", hiddenTeasers)
+
+      function getTeasers(e) {
+        let el = e.target.parentElement.dataset.count;
+
+        showBlock(el)
+      }
+
+      function showBlock(el) {
+        const mediaQuery = window.matchMedia('(max-width: 768px)');
+        let ind = 0;
+        if (mediaQuery.matches) {
+            
+            ind = el - 1;
+            
+        } else {
+            ind = el - 1;
+        }
+        console.log(ind)
+         
+        block.classList.add("active");
+
+        const teaserSlider = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"]('.teasers__slider', {
+            // Стрелки
+            // navigation: {
+            //     nextEl: '.plan__btn-slider-next',
+            //     prevEl: '.plan__btn-slider-prev',
+            // },
+            pagination: {
+                clickable: true,
+                renderBullet: function (index, className) {
+                  return '<span class="' + className + '"></span>';
+                },
+                el: '.swiper-pagination',
+                
+              },
+        
+            /*Отступ у карточек*/
+            spaceBetween: 20,
+            /*Показывать по n карточек*/
+            slidesPerView: 1,
+            centeredSlides: true,
+            /* При достижении конца, перепрыгнуть в начало */
+            // rewind: true,
+            /*Увеличение при наведении курсора мыши */
+            // zoom: true,
+            /*Ленивая подгрузка */
+            // lazy: true,
+            /*Бесконечная прокрутка */
+            // loop: true,
+            /*Ориентация */
+            // direction: 'vertical',
+            /*Авто высота*/
+            // autoHeight: true,
+            /*иконка захвата при наведении на слайд*/
+            grabCursor: true,
+            /*Автоматическое перелистывание*/
+            autoplay: {
+                delay: 2000,
+              },
+            // 
+            
+            /*Брек-поинты*/
+            breakpoints: {
+                1600: {
+                    slidesPerView: 4.5,
+                    spaceBetween: 40,
+                },
+                1200: {
+                    slidesPerView: 3.5,
+                    spaceBetween: 30,
+                },
+                930: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 30,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                }
+            },
+        
+        });
+          
+        teaserSlider.slideTo(ind,300, false)
+        teaserSlider.autoplay.start();
+
+        let x = document.querySelector(".swiper-wrapper")
+        teaserSlider.on("progress", (ev) => {
+            let arr = ev.pagination.bullets
+            arr.forEach(el=>{
+                if(el.classList.contains("swiper-pagination-bullet-active")){
+                    console.log("ok");
+                    el.classList.add("viewed")
+                }
+                
+            })
+              
+            });
+       
+      }
+
+      function hiddenTeasers() {
+        block.classList.remove("active");
+        let bullets = document.querySelectorAll("swiper-pagination-bullet");
+
+        bullets.forEach(el=>{
+            el.classList.remove("viewed")
+        })
+        
+      }
+};
+storiesSlider();
+
+
+
 /***/ })
 /******/ 	]);
 /************************************************************************/
@@ -28546,6 +28726,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_toplineMenu_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(63);
 /* harmony import */ var _components_showSearch_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(64);
 /* harmony import */ var _components_customCheckbox_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(65);
+/* harmony import */ var _components_sliderNews_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(66);
+/* harmony import */ var _components_test_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(67);
 //------------------------Спойлеры-----------------------
 
 
@@ -28587,10 +28769,13 @@ __webpack_require__.r(__webpack_exports__);
 //---------------Сжатие изображений---------------
 //import { isWebp } from "./libs/isWebp.js";
 
+
 // Топлайн меню
 
 
+
 // Показать поиск
+
 
 
 // Сторис
@@ -28598,6 +28783,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // Кастомный чекбокс
+
+
+
+// Отступ слайдов в слайдере новости
+
+
+
+// Отступ слайдов в слайдере новости
+
 
 
 
