@@ -7,6 +7,7 @@ export function storiesSlider() {
       let teasersWrap = document.querySelector(".teasers__container");
       let block = document.querySelector(".teasers-popup");
       let popupExit = document.querySelector('.teasers-popup-exit')
+      let teaserSlider = {};
 
       teasersWrap.addEventListener("click", getTeasers)
       popupExit.addEventListener("click", hiddenTeasers)
@@ -18,20 +19,11 @@ export function storiesSlider() {
       }
 
       function showBlock(el) {
-        const mediaQuery = window.matchMedia('(max-width: 768px)');
-        let ind = 0;
-        if (mediaQuery.matches) {
-            
-            ind = el - 1;
-            
-        } else {
-            ind = el - 1;
-        }
-        console.log(ind)
+        let ind = el - 1;
          
         block.classList.add("active");
 
-        const teaserSlider = new Swiper('.teasers__slider', {
+        teaserSlider = new Swiper('.teasers__slider', {
             // Стрелки
             // navigation: {
             //     nextEl: '.plan__btn-slider-next',
@@ -67,7 +59,8 @@ export function storiesSlider() {
             grabCursor: true,
             /*Автоматическое перелистывание*/
             autoplay: {
-                delay: 2000,
+                delay: 3500,
+                disableOnInteraction: true
               },
             // 
             
@@ -118,6 +111,9 @@ export function storiesSlider() {
         bullets.forEach(el=>{
             el.classList.remove("viewed")
         })
+
+        teaserSlider.destroy();
+        console.log(teaserSlider)
         
       }
 };

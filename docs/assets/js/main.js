@@ -28490,6 +28490,7 @@ function storiesSlider() {
       let teasersWrap = document.querySelector(".teasers__container");
       let block = document.querySelector(".teasers-popup");
       let popupExit = document.querySelector('.teasers-popup-exit')
+      let teaserSlider = {};
 
       teasersWrap.addEventListener("click", getTeasers)
       popupExit.addEventListener("click", hiddenTeasers)
@@ -28501,20 +28502,11 @@ function storiesSlider() {
       }
 
       function showBlock(el) {
-        const mediaQuery = window.matchMedia('(max-width: 768px)');
-        let ind = 0;
-        if (mediaQuery.matches) {
-            
-            ind = el - 1;
-            
-        } else {
-            ind = el - 1;
-        }
-        console.log(ind)
+        let ind = el - 1;
          
         block.classList.add("active");
 
-        const teaserSlider = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"]('.teasers__slider', {
+        teaserSlider = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"]('.teasers__slider', {
             // Стрелки
             // navigation: {
             //     nextEl: '.plan__btn-slider-next',
@@ -28550,7 +28542,8 @@ function storiesSlider() {
             grabCursor: true,
             /*Автоматическое перелистывание*/
             autoplay: {
-                delay: 2000,
+                delay: 3500,
+                disableOnInteraction: true
               },
             // 
             
@@ -28601,6 +28594,9 @@ function storiesSlider() {
         bullets.forEach(el=>{
             el.classList.remove("viewed")
         })
+
+        teaserSlider.destroy();
+        console.log(teaserSlider)
         
       }
 };
@@ -28727,7 +28723,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_showSearch_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(64);
 /* harmony import */ var _components_customCheckbox_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(65);
 /* harmony import */ var _components_sliderNews_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(66);
-/* harmony import */ var _components_test_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(67);
+/* harmony import */ var _components_storiesSlider_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(67);
 //------------------------Спойлеры-----------------------
 
 

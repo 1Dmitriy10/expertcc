@@ -61,7 +61,7 @@ import {sliderNews} from "./components/sliderNews.js";
 
 
 // Отступ слайдов в слайдере новости
-import {storiesSlider} from "./components/test.js";
+import {storiesSlider} from "./components/storiesSlider.js";
 
 
 
