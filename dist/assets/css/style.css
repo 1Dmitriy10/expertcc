@@ -1264,6 +1264,10 @@ input[type=search]::-webkit-search-results-decoration {
   }
 }
 
+progress::-webkit-progress-value {
+  background: var(--bg-white);
+}
+
 .header {
   padding: 0 10px;
   border-radius: 0 0 16px 16px;
@@ -10979,4 +10983,178 @@ p.footer__text-box-text:not(:last-child) {
     display: block;
     margin-top: auto;
   }
+}
+
+.forms__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgba(0, 0, 0, 0.4196078431);
+}
+
+.forms__ui-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.form-first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 460px;
+  min-height: 920px;
+  border-radius: 24px 0 0 24px;
+  padding: 40px;
+  background: var(--bg-white);
+  gap: 20px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.form__title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 125%;
+  color: var(--grays-black);
+  margin-bottom: 24px;
+}
+
+.form__subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  color: var(--grays-grey-1);
+}
+
+.services-item__h1 {
+  margin-bottom: clamp(1.25rem, 0.9466019417rem + 1.2944983819vw, 2.5rem);
+}
+.services-item__h1 h1 {
+  margin-bottom: clamp(1.25rem, 1.1893203883rem + 0.2588996764vw, 1.5rem);
+}
+.services-item__h1 .services-item__subtitle {
+  max-width: 928px;
+}
+
+.form_bg-transparent {
+  background: transparent !important;
+  padding: 32px;
+  gap: 12px;
+}
+.form_bg-transparent input {
+  background: var(--bg-white);
+}
+
+.services-item-form-wrap {
+  background: var(--bg-bg-1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  padding-top: 32px;
+}
+
+.services-item__aside-nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 12px;
+  counter-reset: count 0;
+}
+.services-item__aside-nav-list > li {
+  counter-increment: count 1;
+}
+.services-item__aside-nav-list > li::before {
+  content: counter(count) ".";
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  color: var(--grays-grey-1);
+}
+.services-item__aside-nav-list > li > a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  color: var(--grays-grey-1);
+}
+.services-item__aside-nav-list > li.active::before {
+  color: var(--grays-black);
+}
+.services-item__aside-nav-list > li.active > a {
+  color: var(--grays-black);
+}
+
+.services-item__container {
+  -ms-grid-columns: clamp(25rem, 16.9902912621rem + 34.1747572816vw, 58rem) clamp(15rem, 12.4514563107rem + 10.8737864078vw, 25.5rem);
+  grid-template-columns: clamp(25rem, 16.9902912621rem + 34.1747572816vw, 58rem) clamp(15rem, 12.4514563107rem + 10.8737864078vw, 25.5rem);
+}
+@media (max-width: 992px) {
+  .services-item__container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+.services-item__btn-mob {
+  display: none;
+}
+@media (max-width: 992px) {
+  .services-item__btn-mob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media (max-width: 576px) {
+  .services-item__btn-mob {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.services-item__sticky-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 156%;
+  color: var(--grays-black);
+}
+
+.services-item__sticky__btn {
+  padding: 15px 24px !important;
+  width: 100%;
+}
+
+.services-item__sticky-sticky {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px 20px !important;
 }

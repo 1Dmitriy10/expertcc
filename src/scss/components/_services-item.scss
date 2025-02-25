@@ -1,0 +1,107 @@
+.services-item__h1 {
+    & h1 {
+        margin-bottom: clamp-px(20, 24);
+    }
+
+    & .services-item__subtitle {
+        max-width: 928px;
+    }
+
+    margin-bottom: clamp-px(20, 40);
+}
+
+.form_bg-transparent {
+    background: transparent !important;
+    padding: 32px;
+    gap: 12px;
+
+    & input {
+        background: var(--bg-white);
+    }
+}
+
+.services-item-form-wrap {
+    background: var(--bg-bg-1);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    padding-top: 32px;
+}
+
+.services-item__aside-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    counter-reset: count 0;
+
+    &>li {
+        counter-increment: count 1;
+
+        &::before {
+            content: counter(count)".";
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 156%;
+            color: var(--grays-grey-1);
+        }
+
+        &>a {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 156%;
+            color: var(--grays-grey-1);
+        }
+
+        &.active {
+            &::before {
+                color: var(--grays-black);
+            }
+
+            &>a {
+                color: var(--grays-black);
+            }
+
+        }
+    }
+}
+
+.services-item__container {
+    grid-template-columns: clamp(25rem, 16.9902912621rem + 34.1747572816vw, 58rem) clamp(15rem, 12.4514563107rem + 10.8737864078vw, 25.5rem);
+
+    @include respond-to("nout") {
+        grid-template-columns: 1fr;
+    }
+}
+
+.services-item__btn-mob {
+    display: none;
+
+    @include respond-to("nout") {
+        display: flex;
+    }
+
+    @include respond-to("tel") {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.services-item__sticky-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 156%;
+    color: var(--grays-black);
+}
+
+.services-item__sticky__btn {
+    padding: 15px 24px !important;
+    width: 100%;
+}
+
+.services-item__sticky-sticky {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 20px !important;
+}
